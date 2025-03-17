@@ -609,7 +609,7 @@ GameObject:
   - component: {fileID: 853890343}
   - component: {fileID: 853890342}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Right Button Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1037,7 +1037,7 @@ GameObject:
   - component: {fileID: 1892425756}
   - component: {fileID: 1892425755}
   m_Layer: 5
-  m_Name: Dialouge Text
+  m_Name: Dia Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1171,7 +1171,7 @@ GameObject:
   - component: {fileID: 1909208871}
   - component: {fileID: 1909208870}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Left Button Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1302,6 +1302,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1956102377}
+  - component: {fileID: 1956102378}
   m_Layer: 5
   m_Name: Game Manager
   m_TagString: Untagged
@@ -1328,6 +1329,22 @@ RectTransform:
   m_AnchoredPosition: {x: 960, y: 558}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1956102378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956102376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e75d0f226076141f7ab8293e8ad06568, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diaText: {fileID: 1892425755}
+  characterNameText: {fileID: 773353233}
+  leftButtonText: {fileID: 1909208870}
+  rightButtonText: {fileID: 853890342}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
