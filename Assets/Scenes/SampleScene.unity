@@ -1341,10 +1341,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e75d0f226076141f7ab8293e8ad06568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cdlist:
+  - id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+  - id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+  - id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+  currentConDot:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
   diaText: {fileID: 1892425755}
   characterNameText: {fileID: 773353233}
   leftButtonText: {fileID: 1909208870}
   rightButtonText: {fileID: 853890342}
+  LeftButton: {fileID: 474045957}
+  RightButton: {fileID: 991309870}
+  a:
+    id: 0
+    dia: Hello
+    characterName: Kale
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+  b:
+    id: 1
+    dia: Hai~!
+    characterName: Nim
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+  c:
+    id: 2
+    dia: God has fallen, only the sinners remain. Will you rise against the dark,
+      knowing there will be no heaven, or will you fall like the cowards before you?
+    characterName: Nim
+    buttonBool: 1
+    leftChoice: Stand
+    rightChoice: Fall
+  index: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
