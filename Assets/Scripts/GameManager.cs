@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
         [SerializeField] private bool buttonBool;
         [SerializeField] private string leftChoice;
         [SerializeField] private string rightChoice;
+        [SerializeField] private int leftConDot;
+        [SerializeField] private int rightConDot;
 
     // Properties to allow access in code (if needed)
         public int Id { get => id; set => id = value; }
@@ -36,9 +38,11 @@ public class GameManager : MonoBehaviour
         public bool ButtonBool { get => buttonBool; set => buttonBool = value; }
         public string LeftChoice { get => leftChoice; set => leftChoice = value; }
         public string RightChoice { get => rightChoice; set => rightChoice = value; }
+        public int LeftConDot { get => leftConDot; set => leftConDot = value; }
+        public int RightConDot { get => rightConDot; set => rightConDot = value; }
 
     // Constructor
-        public ConDot(int Id, string Dia, string CharacterName, bool ButtonBool, string LeftChoice, string RightChoice)
+        public ConDot(int Id, string Dia, string CharacterName, bool ButtonBool, string LeftChoice, string RightChoice, int LeftConDot, int RightConDot)
         {
             id = Id;
             dia = Dia;
@@ -46,10 +50,12 @@ public class GameManager : MonoBehaviour
             buttonBool = ButtonBool;
             leftChoice = LeftChoice;
             rightChoice = RightChoice;
+            leftConDot = LeftConDot;
+            rightConDot = RightConDot;
         }
 
         // Optional: ToString method
-        public override string ToString() => $"(Id: {id}, Dia: {dia}, CharacterName: {characterName}, ButtonBool: {buttonBool}, LeftChoice: {leftChoice}, RightChoice: {rightChoice})";
+        public override string ToString() => $"(Id: {id}, Dia: {dia}, CharacterName: {characterName}, ButtonBool: {buttonBool}, LeftChoice: {leftChoice}, RightChoice: {rightChoice}, LeftConDot: {LeftConDot}, RightConDot: {RightConDot})";
     
     }
 
@@ -61,12 +67,12 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI rightButtonText;
     public GameObject LeftButton;
     public GameObject RightButton;
-    public ConDot a = new ConDot(0, "Hello", "Kale", false, "", "");
-
-    public ConDot b = new ConDot(1, "Hai~!", "Nim", false, "", "");
-
-    public ConDot c = new ConDot(2, "God has fallen, only the sinners remain. Will you rise against the dark, knowing there will be no heaven, or will you fall like the cowards before you?", "Nim", true, "Stand", "Fall");
-    public int index;
+    public ConDot nnull = new ConDot (0, "You are not supposed to be here. Go home.", "", false, "", "", 0, 0);
+    public ConDot a = new ConDot(1, "Hello", "Kale", false, "", "", 2, 0);
+    public ConDot b = new ConDot(2, "Hai~!", "Nim", false, "", "", 3, 0);
+    public ConDot c = new ConDot(3, "God has fallen, only the sinners remain. Will you rise against the dark, knowing there will be no heaven, or will you fall like the cowards before you?", "Nim", true, "Stand", "Fall", 4, 5);
+    public ConDot d = new ConDot(4, "It is the only thing you can do. You wish to be replace God.", "", false, "", "", 0, 0);
+    public ConDot e = new ConDot(5, "It is the only thing you can do. You can only dig yourself deeper.", "", false, "", "", 0, 0);
 
     // Start is called before the first frame update
     void Awake()
@@ -81,11 +87,16 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
         }
 
-        cdlist[0] = a;
-        cdlist[1] = b;
-        cdlist[2] = c;
+        cdlist.Add(a);
+        cdlist.Add(b);
+        cdlist.Add(c);
+        cdlist.Add(d);
+        cdlist.Add(e);
+        cdlist.Add(nnull);
 
-        index = 0;
+        currentConDot = a;
+
+        print(currentConDot.LeftConDot + currentConDot.RightConDot);
 
         StartCoroutine(Test());
     }
@@ -98,25 +109,78 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator Test()
     {
-        currentConDot = cdlist[index];
-
         Render();
         
         yield return new WaitForSeconds(0.5f);
 
-        print("can press space now");
-
-        if (currentConDot.ButtonBool = true)
+        if (currentConDot.ButtonBool == false)
         {
+            print("can press space now");
+
             yield return StartCoroutine(WaitForSpace());
         }
 
-        else
+        else if (currentConDot.ButtonBool == true)
         {
+            iforpress = 0;
+
+            print("can press button now");
+
             yield return StartCoroutine(WaitForPress());
         }
 
-        index++;
+        if (iforpress == 1)
+        {
+            print("left button pressed");
+        }
+
+        if (iforpress == 2)
+        {
+            print("right button pressed");
+        }
+
+        StartCoroutine(DetermineNextCondot());
+
+        yield break;
+    }
+
+    public ConDot nextConDot;
+    public int targetConDotId;
+
+    IEnumerator DetermineNextCondot()
+    {
+        //aw shoot here we go again
+
+        if (currentConDot.ButtonBool == true)
+        {
+            if (iforpress == 1)
+            {
+                targetConDotId = currentConDot.LeftConDot;
+            }
+
+            else if (iforpress == 2)
+            {
+                targetConDotId = currentConDot.RightConDot;
+            }
+        }
+
+        else if (currentConDot.ButtonBool == false)
+        {
+            targetConDotId = currentConDot.LeftConDot;
+        }
+
+        foreach (ConDot cd in cdlist)
+            {
+                if (cd.Id == targetConDotId)
+                {
+                    nextConDot = cd;
+                    break;
+                }
+            }
+        
+        currentConDot = nextConDot;
+
+        print(currentConDot);
 
         StartCoroutine(Test());
 
@@ -129,7 +193,7 @@ public class GameManager : MonoBehaviour
 
         while (b == false)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
             {
                 b = true;
                 yield break;
@@ -138,24 +202,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public int iforpress;
     IEnumerator WaitForPress()
     {
         bool b = false;
 
-        int i = 0;
-
         while (b == false)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (iforpress == 1)
             {
-                i = 1
                 b = true;
                 yield break;
             }
 
-            if (LeftButton.)
+            if (iforpress == 2)
             {
-                i = 2
                 b = true;
                 yield break;
             }
@@ -163,6 +224,17 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
     }
+
+    public void LeftButtonPress()
+    {
+        iforpress = 1;
+    }
+
+    public void RightButtonPress()
+    {
+        iforpress = 2;
+    }
+
 
     public void Render()
     {
