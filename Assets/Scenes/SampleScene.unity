@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 474045960}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1956102378}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LeftButtonPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &474045960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,7 +825,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 991309873}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1956102378}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: RightButtonPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &991309873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1341,25 +1365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e75d0f226076141f7ab8293e8ad06568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cdlist:
-  - id: 0
-    dia: 
-    characterName: 
-    buttonBool: 0
-    leftChoice: 
-    rightChoice: 
-  - id: 0
-    dia: 
-    characterName: 
-    buttonBool: 0
-    leftChoice: 
-    rightChoice: 
-  - id: 0
-    dia: 
-    characterName: 
-    buttonBool: 0
-    leftChoice: 
-    rightChoice: 
+  cdlist: []
   currentConDot:
     id: 0
     dia: 
@@ -1367,35 +1373,80 @@ MonoBehaviour:
     buttonBool: 0
     leftChoice: 
     rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
   diaText: {fileID: 1892425755}
   characterNameText: {fileID: 773353233}
   leftButtonText: {fileID: 1909208870}
   rightButtonText: {fileID: 853890342}
   LeftButton: {fileID: 474045957}
   RightButton: {fileID: 991309870}
-  a:
+  nnull:
     id: 0
+    dia: You are not supposed to be here. Go home.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+  a:
+    id: 1
     dia: Hello
     characterName: Kale
     buttonBool: 0
     leftChoice: 
     rightChoice: 
+    leftConDot: 2
+    rightConDot: 0
   b:
-    id: 1
+    id: 2
     dia: Hai~!
     characterName: Nim
     buttonBool: 0
     leftChoice: 
     rightChoice: 
+    leftConDot: 3
+    rightConDot: 0
   c:
-    id: 2
+    id: 3
     dia: God has fallen, only the sinners remain. Will you rise against the dark,
       knowing there will be no heaven, or will you fall like the cowards before you?
     characterName: Nim
     buttonBool: 1
     leftChoice: Stand
     rightChoice: Fall
-  index: 0
+    leftConDot: 4
+    rightConDot: 5
+  d:
+    id: 4
+    dia: It is the only thing you can do. You wish to be replace God.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+  e:
+    id: 5
+    dia: It is the only thing you can do. You can only dig yourself deeper.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+  nextConDot:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+  targetConDotId: 0
+  iforpress: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
