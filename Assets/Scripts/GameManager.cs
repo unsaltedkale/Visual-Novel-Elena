@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
         [SerializeField] private string rightChoice;
         [SerializeField] private int leftConDot;
         [SerializeField] private int rightConDot;
+        [SerializeField] private FlagHold flagHold;
 
     // Properties to allow access in code (if needed)
         public int Id { get => id; set => id = value; }
@@ -40,9 +41,10 @@ public class GameManager : MonoBehaviour
         public string RightChoice { get => rightChoice; set => rightChoice = value; }
         public int LeftConDot { get => leftConDot; set => leftConDot = value; }
         public int RightConDot { get => rightConDot; set => rightConDot = value; }
-
+        public FlagHold FlagHold { get => flagHold; set => flagHold = value; }
+    
     // Constructor
-        public ConDot(int Id, string Dia, string CharacterName, bool ButtonBool, string LeftChoice, string RightChoice, int LeftConDot, int RightConDot)
+        public ConDot(int Id, string Dia, string CharacterName, bool ButtonBool, string LeftChoice, string RightChoice, int LeftConDot, int RightConDot, FlagHold FlagHold) : this()
         {
             id = Id;
             dia = Dia;
@@ -52,12 +54,56 @@ public class GameManager : MonoBehaviour
             rightChoice = RightChoice;
             leftConDot = LeftConDot;
             rightConDot = RightConDot;
+            flagHold = FlagHold;
         }
 
         // Optional: ToString method
-        public override string ToString() => $"(Id: {id}, Dia: {dia}, CharacterName: {characterName}, ButtonBool: {buttonBool}, LeftChoice: {leftChoice}, RightChoice: {rightChoice}, LeftConDot: {LeftConDot}, RightConDot: {RightConDot})";
+        public override string ToString() => $"(Id: {id}, Dia: {dia}, CharacterName: {characterName}, ButtonBool: {buttonBool}, LeftChoice: {leftChoice}, RightChoice: {rightChoice}, LeftConDot: {LeftConDot}, RightConDot: {RightConDot}, FlagHold: {flagHold})";
     
     }
+
+    [System.Serializable]
+    public struct FlagHold
+    {
+        [SerializeField] private int flagIdToBeSet;
+        // 0  if no flag to be set
+        [SerializeField] private FlagState flagIdStateToBeSet;
+        // unknown if no flag to be set
+        [SerializeField] private int flagIdToReadForNextConDot;
+        // 0 if no flag to read
+        [SerializeField] private int conDotIfFlagTrue;
+        [SerializeField] private int conDotIfFlagFalse;
+
+        // Properties to allow access in code (if needed)
+        public int FlagIdToBeSet{ get => flagIdToBeSet; set => flagIdToBeSet = value; }
+        public FlagState FlagIdStateToBeSet { get => flagIdStateToBeSet; set => flagIdStateToBeSet = value; }
+        public int FlagIdToReadForNextConDot { get => flagIdToReadForNextConDot; set => flagIdToReadForNextConDot = value; }
+        public int ConDotIfFlagTrue { get => conDotIfFlagTrue; set => conDotIfFlagTrue = value; }
+        public int ConDotIfFlagFalse { get => conDotIfFlagFalse; set => conDotIfFlagFalse = value; }
+    
+        // Constructor
+        public FlagHold(int FlagIdToSet, FlagState FlagIdStateToBeSet, int FlagIdToReadForNextConDot, int ConDotIfFlagTrue, int ConDotIfFlagFalse) : this()
+        {
+            flagIdToBeSet = FlagIdToBeSet;
+            flagIdStateToBeSet = FlagIdStateToBeSet;
+            flagIdToReadForNextConDot = FlagIdToReadForNextConDot;
+            conDotIfFlagTrue = ConDotIfFlagTrue;
+            conDotIfFlagFalse = ConDotIfFlagFalse;
+        }
+    
+        // Optional: ToString method
+        public override string ToString() => $"(FlagIdToBeSet: {flagIdToBeSet}, FlagIdStateToBeSet: {flagIdStateToBeSet}, FlagIdToReadForNextConDot: {flagIdToReadForNextConDot}, ConDotIfFlagTrue: {conDotIfFlagTrue}, ConDotIfFlagFalse: {conDotIfFlagFalse})";
+    }
+
+    [System.Serializable]
+    public enum FlagState
+    {
+        NotSet,
+        True,
+        False
+    }
+
+
 
     [SerializeField] public List<ConDot> cdlist;
     public ConDot currentConDot;
@@ -67,12 +113,15 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI rightButtonText;
     public GameObject LeftButton;
     public GameObject RightButton;
-    public ConDot nnull = new ConDot (0, "You are not supposed to be here. Go home.", "", false, "", "", 0, 0);
-    public ConDot a = new ConDot(1, "Hello", "Kale", false, "", "", 2, 0);
-    public ConDot b = new ConDot(2, "Hai~!", "Nim", false, "", "", 3, 0);
-    public ConDot c = new ConDot(3, "God has fallen, only the sinners remain. Will you rise against the dark, knowing there will be no heaven, or will you fall like the cowards before you?", "Nim", true, "Stand", "Fall", 4, 5);
-    public ConDot d = new ConDot(4, "It is the only thing you can do. You wish to be replace God.", "", false, "", "", 0, 0);
-    public ConDot e = new ConDot(5, "It is the only thing you can do. You can only dig yourself deeper.", "", false, "", "", 0, 0);
+    public GameObject Triangle;
+    public FlagHold fnnull = new FlagHold (0, FlagState.NotSet, 0, 0, 0);
+    public ConDot nnull = new ConDot (0, "You are not supposed to be here. Go home.", "", false, "", "", 0, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0));
+    
+    public ConDot a = new ConDot(1, "Hello", "Kale", false, "", "", 2, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0));
+    public ConDot b = new ConDot(2, "Hai~!", "Nim", false, "", "", 3, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0));
+    public ConDot c = new ConDot(3, "God has fallen, only the sinners remain. Will you rise against the dark, knowing there will be no heaven, or will you fall like the cowards before you?", "Nim", true, "Stand", "Fall", 4, 5, new FlagHold (0, FlagState.NotSet, 0, 0, 0));
+    public ConDot d = new ConDot(4, "It is the only thing you can do. You wish to be replace God.", "", false, "", "", 0, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0));
+    public ConDot e = new ConDot(5, "It is the only thing you can do. You can only dig yourself deeper.", "", false, "", "", 0, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0));
 
     // Start is called before the first frame update
     void Awake()
@@ -96,9 +145,9 @@ public class GameManager : MonoBehaviour
 
         currentConDot = a;
 
-        print(currentConDot.LeftConDot + currentConDot.RightConDot);
+        Triangle.SetActive(false);
 
-        StartCoroutine(Test());
+        StartCoroutine(Dialogue());
     }
 
     // Update is called once per frame
@@ -107,11 +156,13 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public IEnumerator Test()
+    public IEnumerator Dialogue()
     {
         Render();
         
         yield return new WaitForSeconds(0.5f);
+
+        Triangle.SetActive(true);
 
         if (currentConDot.ButtonBool == false)
         {
@@ -139,6 +190,8 @@ public class GameManager : MonoBehaviour
             print("right button pressed");
         }
 
+        Triangle.SetActive(false);
+
         StartCoroutine(DetermineNextCondot());
 
         yield break;
@@ -149,7 +202,6 @@ public class GameManager : MonoBehaviour
 
     IEnumerator DetermineNextCondot()
     {
-        //aw shoot here we go again
 
         if (currentConDot.ButtonBool == true)
         {
@@ -182,7 +234,7 @@ public class GameManager : MonoBehaviour
 
         print(currentConDot);
 
-        StartCoroutine(Test());
+        StartCoroutine(Dialogue());
 
         yield break;
     }
@@ -234,7 +286,6 @@ public class GameManager : MonoBehaviour
     {
         iforpress = 2;
     }
-
 
     public void Render()
     {
