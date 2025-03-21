@@ -1442,6 +1442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cdlist: []
+  fflaglist: []
   currentConDot:
     id: 0
     dia: 
@@ -1464,12 +1465,6 @@ MonoBehaviour:
   LeftButton: {fileID: 474045957}
   RightButton: {fileID: 991309870}
   Triangle: {fileID: 671363942}
-  fnnull:
-    flagIdToBeSet: 0
-    flagIdStateToBeSet: 0
-    flagIdToReadForNextConDot: 0
-    conDotIfFlagTrue: 0
-    conDotIfFlagFalse: 0
   nnull:
     id: 0
     dia: You are not supposed to be here. Go home.
@@ -1538,11 +1533,11 @@ MonoBehaviour:
     buttonBool: 0
     leftChoice: 
     rightChoice: 
-    leftConDot: 0
+    leftConDot: 6
     rightConDot: 0
     flagHold:
       flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
+      flagIdStateToBeSet: 1
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0
       conDotIfFlagFalse: 0
@@ -1550,6 +1545,36 @@ MonoBehaviour:
     id: 5
     dia: It is the only thing you can do. You can only dig yourself deeper.
     characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6
+    rightConDot: 0
+    flagHold:
+      flagIdToBeSet: 0
+      flagIdStateToBeSet: 2
+      flagIdToReadForNextConDot: 0
+      conDotIfFlagTrue: 0
+      conDotIfFlagFalse: 0
+  f:
+    id: 6
+    dia: Hhmpf.
+    characterName: Nim
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagHold:
+      flagIdToBeSet: 0
+      flagIdStateToBeSet: 0
+      flagIdToReadForNextConDot: 1
+      conDotIfFlagTrue: 7
+      conDotIfFlagFalse: 8
+  g:
+    id: 7
+    dia: The Sun will rise; it won't be shining upon *you*
+    characterName: Kale
     buttonBool: 0
     leftChoice: 
     rightChoice: 
@@ -1561,6 +1586,24 @@ MonoBehaviour:
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0
       conDotIfFlagFalse: 0
+  h:
+    id: 8
+    dia: I'm going to dig myself out of the bottom.
+    characterName: Kale
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagHold:
+      flagIdToBeSet: 0
+      flagIdStateToBeSet: 0
+      flagIdToReadForNextConDot: 0
+      conDotIfFlagTrue: 0
+      conDotIfFlagFalse: 0
+  fcHasRisen:
+    id: 1
+    flagState: 0
   nextConDot:
     id: 0
     dia: 
@@ -1577,6 +1620,9 @@ MonoBehaviour:
       conDotIfFlagTrue: 0
       conDotIfFlagFalse: 0
   targetConDotId: 0
+  targetFFlag:
+    id: 0
+    flagState: 0
   iforpress: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
