@@ -1458,13 +1458,13 @@ MonoBehaviour:
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0
       conDotIfFlagFalse: 0
-  diaText: {fileID: 1892425755}
-  characterNameText: {fileID: 773353233}
-  leftButtonText: {fileID: 1909208870}
-  rightButtonText: {fileID: 853890342}
-  LeftButton: {fileID: 474045957}
-  RightButton: {fileID: 991309870}
-  Triangle: {fileID: 671363942}
+  diaText: {fileID: 0}
+  characterNameText: {fileID: 0}
+  leftButtonText: {fileID: 0}
+  rightButtonText: {fileID: 0}
+  LeftButton: {fileID: 0}
+  RightButton: {fileID: 0}
+  Triangle: {fileID: 0}
   nnull:
     id: 0
     dia: You are not supposed to be here. Go home.
@@ -1536,7 +1536,7 @@ MonoBehaviour:
     leftConDot: 6
     rightConDot: 0
     flagHold:
-      flagIdToBeSet: 0
+      flagIdToBeSet: 1
       flagIdStateToBeSet: 1
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0
@@ -1551,7 +1551,7 @@ MonoBehaviour:
     leftConDot: 6
     rightConDot: 0
     flagHold:
-      flagIdToBeSet: 0
+      flagIdToBeSet: 1
       flagIdStateToBeSet: 2
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0

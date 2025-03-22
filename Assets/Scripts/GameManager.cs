@@ -139,8 +139,8 @@ public class GameManager : MonoBehaviour
     public ConDot d = new ConDot(4, "It is the only thing you can do. You wish to be replace God.", "", false, "", "", 6, 0, new FlagHold (1, FlagState.True, 0, 0, 0));
     public ConDot e = new ConDot(5, "It is the only thing you can do. You can only dig yourself deeper.", "", false, "", "", 6, 0, new FlagHold (1, FlagState.False, 0, 0, 0));
     public ConDot f = new ConDot(6, "Hhmpf.", "Nim", false, "", "", 0, 0, new FlagHold (0, FlagState.NotSet, 1, 7, 8));
-    public ConDot g = new ConDot(7, "The Sun will rise; it won't be shining upon *you*", "Kale", false, "", "", 0, 0, new FlagHold(0, FlagState.NotSet, 0, 0, 0));
-    public ConDot h = new ConDot(8, "I'm going to dig myself out of the bottom.", "Kale", false, "", "", 0, 0, new FlagHold());
+    public ConDot g = new ConDot(7, "The Sun will rise again; it just won't be shining upon *you*.", "Kale", false, "", "", 0, 0, new FlagHold(0, FlagState.NotSet, 0, 0, 0));
+    public ConDot h = new ConDot(8, "I'm going to dig myself out of the bottom. From Hell to Purgatory.", "Kale", false, "", "", 0, 0, new FlagHold());
     public FFlag fcHasRisen = new FFlag(1, FlagState.NotSet);
     // Start is called before the first frame update
     void Awake()
@@ -154,6 +154,14 @@ public class GameManager : MonoBehaviour
             gm = this;
             DontDestroyOnLoad(this.gameObject);
         }
+
+        diaText = GameObject.Find("Dia Text").GetComponent<TextMeshProUGUI>();
+        characterNameText = GameObject.Find("Character Name Text").GetComponent<TextMeshProUGUI>();
+        leftButtonText = GameObject.Find("Left Button Text").GetComponent<TextMeshProUGUI>();
+        rightButtonText = GameObject.Find("Right Button Text").GetComponent<TextMeshProUGUI>();
+        LeftButton = GameObject.Find("Left Button");
+        RightButton = GameObject.Find("Right Button");
+        Triangle = GameObject.Find("Triangle");
 
         cdlist.Add(a);
         cdlist.Add(b);
@@ -289,21 +297,28 @@ public class GameManager : MonoBehaviour
         yield break;
     }
 
-    public FFlag setFlagsFFlag;
     IEnumerator SetFlags()
     {
+        print("A");
         if (currentConDot.FlagHold.FlagIdToBeSet != 0)
         {
+            print("aa");
+
             foreach (FFlag f in fflaglist)
             {
                 if (f.Id == currentConDot.FlagHold.FlagIdToBeSet)
                 {
-                    setFlagsFFlag = f;
+                    int i = fflaglist.IndexOf(f);
+                    print(i);
+                    FFlag g = fflaglist[i];
+                    g.FlagState = currentConDot.FlagHold.FlagIdStateToBeSet;
+                    fflaglist[i] = g;
                     break;
                 }
             }
 
-            setFlagsFFlag.FlagState = currentConDot.FlagHold.FlagIdStateToBeSet;
+            //FFlag o = fflaglist[setFlagsi];
+            //o.FlagState = currentConDot.FlagHold.FlagIdStateToBeSet;
         }
 
         yield break;
