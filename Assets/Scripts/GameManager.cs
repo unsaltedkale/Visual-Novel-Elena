@@ -132,16 +132,20 @@ public class GameManager : MonoBehaviour
     public GameObject LeftButton;
     public GameObject RightButton;
     public GameObject Triangle;
+    public String pname;
+    public GameObject textInputField;
+    public TextMeshProUGUI textInputFieldText;
     public ConDot nnull = new ConDot (0, "You are not supposed to be here. Go home.", "", false, "", "", 0, 0, new FlagHold());
     public ConDot a = new ConDot(1, "Hello", "Kale", false, "", "", 2, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0));
     public ConDot b = new ConDot(2, "Hai~!", "Nim", false, "", "", 3, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0));
     public ConDot c = new ConDot(3, "God has fallen, only the sinners remain. Will you rise against the dark, knowing there will be no heaven, or will you fall like the cowards before you?", "Nim", true, "Stand", "Fall", 4, 5, new FlagHold (0, FlagState.NotSet, 0, 0, 0));
-    public ConDot d = new ConDot(4, "It is the only thing you can do. You wish to be replace God.", "", false, "", "", 6, 0, new FlagHold (1, FlagState.True, 0, 0, 0));
-    public ConDot e = new ConDot(5, "It is the only thing you can do. You can only dig yourself deeper.", "", false, "", "", 6, 0, new FlagHold (1, FlagState.False, 0, 0, 0));
+    public ConDot d = new ConDot(4, "It is the only thing you can do. You wish to be replace God.", "Nim", false, "", "", 6, 0, new FlagHold (1, FlagState.True, 0, 0, 0));
+    public ConDot e = new ConDot(5, "It is the only thing you can do. You can only dig yourself deeper.", "Nim", false, "", "", 6, 0, new FlagHold (1, FlagState.False, 0, 0, 0));
     public ConDot f = new ConDot(6, "Hhmpf.", "Nim", false, "", "", 0, 0, new FlagHold (0, FlagState.NotSet, 1, 7, 8));
     public ConDot g = new ConDot(7, "The Sun will rise again; it just won't be shining upon *you*.", "Kale", false, "", "", 0, 0, new FlagHold(0, FlagState.NotSet, 0, 0, 0));
     public ConDot h = new ConDot(8, "I'm going to dig myself out of the bottom. From Hell to Purgatory.", "Kale", false, "", "", 0, 0, new FlagHold());
     public FFlag fcHasRisen = new FFlag(1, FlagState.NotSet);
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -162,6 +166,8 @@ public class GameManager : MonoBehaviour
         LeftButton = GameObject.Find("Left Button");
         RightButton = GameObject.Find("Right Button");
         Triangle = GameObject.Find("Triangle");
+        textInputField = GameObject.Find("Text Input Field");
+        textInputFieldText = GameObject.Find("Text Input Field Text").GetComponent<TextMeshProUGUI>();
 
         cdlist.Add(a);
         cdlist.Add(b);
@@ -179,13 +185,56 @@ public class GameManager : MonoBehaviour
 
         Triangle.SetActive(false);
 
-        StartCoroutine(Dialogue());
+        StartCoroutine(GetNameFromPlayer());
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public IEnumerator GetNameFromPlayer()
+    {
+        currentConDot = new ConDot(0, "What is your name, child? [PRESS ENTER TO CONFIRM]", "", false, "", "", 0, 0, new FlagHold());
+        
+        Render();
+
+        ifortyping = 0;
+
+        yield return StartCoroutine(WaitForTyping());
+
+        textInputField.SetActive(false);
+
+        pname = textInputFieldText.text;
+
+        currentConDot = a;
+
+        StartCoroutine(Dialogue());
+
+        yield break;
+    }
+
+    public int ifortyping;
+
+    public IEnumerator WaitForTyping()
+    {
+        bool b = false;
+
+        while (b == false)
+        {
+            if (ifortyping == 1)
+            {
+                b = true;
+                yield break;
+            }
+            yield return null;
+        }
+    }
+
+    public void FinishedTyping()
+    {
+        ifortyping = 1;
     }
 
     public IEnumerator Dialogue()
