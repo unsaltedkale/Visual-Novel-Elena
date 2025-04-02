@@ -175,6 +175,62 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!1 &265572689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 265572691}
+  - component: {fileID: 265572692}
+  m_Layer: 5
+  m_Name: Image Bank
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &265572691
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265572689}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 960, y: 558}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &265572692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265572689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac35100f177404d6999670ede954220e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagelist:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 88aa2cae2e8604859ad9a7eaa1698bd5, type: 3}
+  - {fileID: 21300000, guid: 943215f10521743a5a42077b8df6cfa7, type: 3}
+  - {fileID: 21300000, guid: d9945127104324678a26fb4054b253ff, type: 3}
+  - {fileID: 21300000, guid: 512196b4721bf44e89ae8be815af5ba8, type: 3}
+  - {fileID: 21300000, guid: e996972a9c8244fcfa549f5d0f2705e8, type: 3}
 --- !u!1 &295952278
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +418,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295952278}
   m_CullTransparentMesh: 1
+--- !u!1 &303676361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 303676362}
+  - component: {fileID: 303676364}
+  - component: {fileID: 303676363}
+  m_Layer: 5
+  m_Name: Left Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &303676362
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303676361}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1549341358}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -560, y: 295}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &303676363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303676361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &303676364
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303676361}
+  m_CullTransparentMesh: 1
 --- !u!1 &474045957
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,7 +529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -500, y: 293}
+  m_AnchoredPosition: {x: -190, y: 293}
   m_SizeDelta: {x: 300, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &474045959
@@ -632,6 +763,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &575357232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 575357233}
+  - component: {fileID: 575357235}
+  - component: {fileID: 575357234}
+  m_Layer: 5
+  m_Name: Right Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &575357233
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575357232}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1549341358}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 560, y: 295}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &575357234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575357232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &575357235
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575357232}
+  m_CullTransparentMesh: 1
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,7 +1588,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 500, y: 293}
+  m_AnchoredPosition: {x: 190, y: 293}
   m_SizeDelta: {x: 300, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &991309872
@@ -1641,6 +1847,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 303676362}
+  - {fileID: 575357233}
   - {fileID: 474045958}
   - {fileID: 991309871}
   - {fileID: 671363943}
@@ -1972,6 +2180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cdlist: []
   fflaglist: []
+  imagelist: []
+  ImageBankObject: {fileID: 0}
   currentConDot:
     id: 0
     dia: 
@@ -1987,6 +2197,9 @@ MonoBehaviour:
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0
       conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 0
   diaText: {fileID: 0}
   characterNameText: {fileID: 0}
   leftButtonText: {fileID: 0}
@@ -1997,6 +2210,8 @@ MonoBehaviour:
   pname: 
   textInputField: {fileID: 0}
   textInputFieldText: {fileID: 0}
+  leftImage: {fileID: 0}
+  rightImage: {fileID: 0}
   nnull:
     id: 0
     dia: You are not supposed to be here. Go home.
@@ -2012,6 +2227,9 @@ MonoBehaviour:
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0
       conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 6
   a:
     id: 1
     dia: Hello
@@ -2027,6 +2245,9 @@ MonoBehaviour:
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0
       conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 2
+      idForRightImage: 0
   b:
     id: 2
     dia: Hai~!
@@ -2042,6 +2263,9 @@ MonoBehaviour:
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0
       conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 3
   c:
     id: 3
     dia: God has fallen, only the sinners remain. Will you rise against the dark,
@@ -2058,6 +2282,9 @@ MonoBehaviour:
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0
       conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 4
   d:
     id: 4
     dia: It is the only thing you can do. You wish to be replace God.
@@ -2073,6 +2300,9 @@ MonoBehaviour:
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0
       conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 5
   e:
     id: 5
     dia: It is the only thing you can do. You can only dig yourself deeper.
@@ -2088,6 +2318,9 @@ MonoBehaviour:
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0
       conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 5
   f:
     id: 6
     dia: Hhmpf.
@@ -2103,6 +2336,9 @@ MonoBehaviour:
       flagIdToReadForNextConDot: 1
       conDotIfFlagTrue: 7
       conDotIfFlagFalse: 8
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 3
   g:
     id: 7
     dia: The Sun will rise again; it just won't be shining upon *you*.
@@ -2118,6 +2354,9 @@ MonoBehaviour:
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0
       conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 0
   h:
     id: 8
     dia: I'm going to dig myself out of the bottom. From Hell to Purgatory.
@@ -2133,6 +2372,9 @@ MonoBehaviour:
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0
       conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 0
   fcHasRisen:
     id: 1
     flagState: 0
@@ -2152,6 +2394,9 @@ MonoBehaviour:
       flagIdToReadForNextConDot: 0
       conDotIfFlagTrue: 0
       conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 0
   targetConDotId: 0
   targetFFlag:
     id: 0
@@ -2165,4 +2410,5 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1549341358}
   - {fileID: 1445327117}
+  - {fileID: 265572691}
   - {fileID: 1956102377}

@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
         [SerializeField] private int leftConDot;
         [SerializeField] private int rightConDot;
         [SerializeField] private FlagHold flagHold;
+        [SerializeField] private ImageHold imageHold;
 
     // Properties to allow access in code (if needed)
         public int Id { get => id; set => id = value; }
@@ -42,9 +43,10 @@ public class GameManager : MonoBehaviour
         public int LeftConDot { get => leftConDot; set => leftConDot = value; }
         public int RightConDot { get => rightConDot; set => rightConDot = value; }
         public FlagHold FlagHold { get => flagHold; set => flagHold = value; }
+        public ImageHold ImageHold { get => imageHold; set => imageHold = value; }
     
     // Constructor
-        public ConDot(int Id, string Dia, string CharacterName, bool ButtonBool, string LeftChoice, string RightChoice, int LeftConDot, int RightConDot, FlagHold FlagHold) : this()
+        public ConDot(int Id, string Dia, string CharacterName, bool ButtonBool, string LeftChoice, string RightChoice, int LeftConDot, int RightConDot, FlagHold FlagHold, ImageHold Imagehold) : this()
         {
             id = Id;
             dia = Dia;
@@ -55,6 +57,7 @@ public class GameManager : MonoBehaviour
             leftConDot = LeftConDot;
             rightConDot = RightConDot;
             flagHold = FlagHold;
+            imageHold = ImageHold;
         }
 
         // Optional: ToString method
@@ -80,7 +83,7 @@ public class GameManager : MonoBehaviour
         public int FlagIdToReadForNextConDot { get => flagIdToReadForNextConDot; set => flagIdToReadForNextConDot = value; }
         public int ConDotIfFlagTrue { get => conDotIfFlagTrue; set => conDotIfFlagTrue = value; }
         public int ConDotIfFlagFalse { get => conDotIfFlagFalse; set => conDotIfFlagFalse = value; }
-    
+        
         // Constructor
         public FlagHold(int FlagIdToSet, FlagState FlagIdStateToBeSet, int FlagIdToReadForNextConDot, int ConDotIfFlagTrue, int ConDotIfFlagFalse) : this()
         {
@@ -122,8 +125,33 @@ public class GameManager : MonoBehaviour
         public override string ToString() => $"(Id: {id}, FlagState: {flagState})";
     }
 
+    [System.Serializable]
+    public struct ImageHold
+    {
+        [SerializeField] private int idForLeftImage;
+        // 0 if same as before
+        [SerializeField] private int idForRightImage;
+        // 0 if same as before
+
+        // Properties to allow access in code (if needed)
+        public int IdForLeftImage { get => idForLeftImage; set => idForLeftImage = value; }
+        public int IdForRightImage { get => idForRightImage; set => idForRightImage = value; }
+    
+        // Constructor
+        public ImageHold(int IdForLeftImage, int IdForRightImage) : this()
+        {
+            idForLeftImage = IdForLeftImage;
+            idForRightImage = IdForRightImage;
+        }
+    
+        // Optional: ToString method
+        public override string ToString() => $"(IdForLeftImage: {idForLeftImage}, IdForRightImage: {idForRightImage})";
+    }
+
     [SerializeField] public List<ConDot> cdlist;
     [SerializeField] public List<FFlag> fflaglist;
+    [SerializeField] public List<Sprite> imagelist;
+    public GameObject ImageBankObject;
     public ConDot currentConDot;
     public TextMeshProUGUI diaText;
     public TextMeshProUGUI characterNameText;
@@ -135,15 +163,17 @@ public class GameManager : MonoBehaviour
     public String pname;
     public GameObject textInputField;
     public TextMeshProUGUI textInputFieldText;
-    public ConDot nnull = new ConDot (0, "You are not supposed to be here. Go home.", "", false, "", "", 0, 0, new FlagHold());
-    public ConDot a = new ConDot(1, "Hello", "Kale", false, "", "", 2, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0));
-    public ConDot b = new ConDot(2, "Hai~!", "Nim", false, "", "", 3, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0));
-    public ConDot c = new ConDot(3, "God has fallen, only the sinners remain. Will you rise against the dark, knowing there will be no heaven, or will you fall like the cowards before you?", "Nim", true, "Stand", "Fall", 4, 5, new FlagHold (0, FlagState.NotSet, 0, 0, 0));
-    public ConDot d = new ConDot(4, "It is the only thing you can do. You wish to be replace God.", "Nim", false, "", "", 6, 0, new FlagHold (1, FlagState.True, 0, 0, 0));
-    public ConDot e = new ConDot(5, "It is the only thing you can do. You can only dig yourself deeper.", "Nim", false, "", "", 6, 0, new FlagHold (1, FlagState.False, 0, 0, 0));
-    public ConDot f = new ConDot(6, "Hhmpf.", "Nim", false, "", "", 0, 0, new FlagHold (0, FlagState.NotSet, 1, 7, 8));
-    public ConDot g = new ConDot(7, "The Sun will rise again; it just won't be shining upon *you*.", "Kale", false, "", "", 0, 0, new FlagHold(0, FlagState.NotSet, 0, 0, 0));
-    public ConDot h = new ConDot(8, "I'm going to dig myself out of the bottom. From Hell to Purgatory.", "Kale", false, "", "", 0, 0, new FlagHold());
+    public GameObject leftImage;
+    public GameObject rightImage;
+    public ConDot nnull = new ConDot (0, "You are not supposed to be here. Go home.", "", false, "", "", 0, 0, new FlagHold(), new ImageHold());
+    public ConDot a = new ConDot(1, "Hello", "Kale", false, "", "", 2, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0), new ImageHold(2, 0));
+    public ConDot b = new ConDot(2, "Hai~!", "Nim", false, "", "", 3, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0), new ImageHold(0, 3));
+    public ConDot c = new ConDot(3, "God has fallen, only the sinners remain. Will you rise against the dark, knowing there will be no heaven, or will you fall like the cowards before you?", "Nim", true, "Stand", "Fall", 4, 5, new FlagHold (0, FlagState.NotSet, 0, 0, 0), new ImageHold());
+    public ConDot d = new ConDot(4, "It is the only thing you can do. You wish to be replace God.", "Nim", false, "", "", 6, 0, new FlagHold (1, FlagState.True, 0, 0, 0), new ImageHold());
+    public ConDot e = new ConDot(5, "It is the only thing you can do. You can only dig yourself deeper.", "Nim", false, "", "", 6, 0, new FlagHold (1, FlagState.False, 0, 0, 0), new ImageHold());
+    public ConDot f = new ConDot(6, "Hhmpf.", "Nim", false, "", "", 0, 0, new FlagHold (0, FlagState.NotSet, 1, 7, 8), new ImageHold());
+    public ConDot g = new ConDot(7, "The Sun will rise again; it just won't be shining upon *you*.", "Kale", false, "", "", 0, 0, new FlagHold(0, FlagState.NotSet, 0, 0, 0), new ImageHold());
+    public ConDot h = new ConDot(8, "I'm going to dig myself out of the bottom. From Hell to Purgatory.", "Kale", false, "", "", 0, 0, new FlagHold(), new ImageHold());
     public FFlag fcHasRisen = new FFlag(1, FlagState.NotSet);
 
     // Start is called before the first frame update
@@ -168,6 +198,9 @@ public class GameManager : MonoBehaviour
         Triangle = GameObject.Find("Triangle");
         textInputField = GameObject.Find("Text Input Field");
         textInputFieldText = GameObject.Find("Text Input Field Text").GetComponent<TextMeshProUGUI>();
+        ImageBankObject = GameObject.Find("Image Bank");
+        leftImage = GameObject.Find("Left Image");
+        rightImage = GameObject.Find("Right Image");
 
         cdlist.Add(a);
         cdlist.Add(b);
@@ -181,9 +214,14 @@ public class GameManager : MonoBehaviour
 
         fflaglist.Add(fcHasRisen);
 
+        ImageBank imageBankScript = ImageBankObject.GetComponent<ImageBank>();
+        imagelist = imageBankScript.imagelist;
+
         currentConDot = a;
 
         Triangle.SetActive(false);
+        leftImage.SetActive(false);
+        rightImage.SetActive(false);
 
         StartCoroutine(GetNameFromPlayer());
     }
@@ -196,7 +234,7 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator GetNameFromPlayer()
     {
-        currentConDot = new ConDot(0, "What is your name, child? [PRESS ENTER TO CONFIRM]", "", false, "", "", 0, 0, new FlagHold());
+        currentConDot = new ConDot(0, "What is your name, child? [PRESS ENTER TO CONFIRM]", "", false, "", "", 0, 0, new FlagHold(), new ImageHold());
         
         Render();
 
@@ -438,6 +476,34 @@ public class GameManager : MonoBehaviour
             LeftButton.SetActive(false);
             RightButton.SetActive(false);
         }
+        
+        if (currentConDot.ImageHold.IdForLeftImage != 0)
+        {
+            if (currentConDot.ImageHold.IdForLeftImage == 1)
+            {
+                leftImage.SetActive(false);
+            }
+
+            else
+            {
+                leftImage.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[currentConDot.ImageHold.IdForLeftImage];
+                leftImage.SetActive(true);
+            }
             
+        }
+
+        if (currentConDot.ImageHold.IdForRightImage != 0)
+        {
+            if (currentConDot.ImageHold.IdForRightImage == 1)
+            {
+                rightImage.SetActive(false);
+            }
+
+            else
+            {
+                rightImage.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[currentConDot.ImageHold.IdForRightImage];
+                rightImage.SetActive(true);
+            }
+        }
     }
 }
