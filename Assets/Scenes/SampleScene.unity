@@ -227,10 +227,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 21300000, guid: 88aa2cae2e8604859ad9a7eaa1698bd5, type: 3}
-  - {fileID: 21300000, guid: 943215f10521743a5a42077b8df6cfa7, type: 3}
-  - {fileID: 21300000, guid: d9945127104324678a26fb4054b253ff, type: 3}
-  - {fileID: 21300000, guid: 512196b4721bf44e89ae8be815af5ba8, type: 3}
-  - {fileID: 21300000, guid: e996972a9c8244fcfa549f5d0f2705e8, type: 3}
 --- !u!1 &295952278
 GameObject:
   m_ObjectHideFlags: 0
@@ -2378,6 +2374,118 @@ MonoBehaviour:
   fcHasRisen:
     id: 1
     flagState: 0
+  prolouge1:
+    id: 1001
+    dia: Welcome to the Kingdom of Carisia.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 1002
+    rightConDot: 0
+    flagHold:
+      flagIdToBeSet: 0
+      flagIdStateToBeSet: 0
+      flagIdToReadForNextConDot: 0
+      conDotIfFlagTrue: 0
+      conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 0
+  prolouge2:
+    id: 1002
+    dia: You, Princess NAMEHERE I, are the youngest princess of Carisia.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 1003
+    rightConDot: 0
+    flagHold:
+      flagIdToBeSet: 0
+      flagIdStateToBeSet: 0
+      flagIdToReadForNextConDot: 0
+      conDotIfFlagTrue: 0
+      conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 0
+  prolouge3:
+    id: 1003
+    dia: Your dear father, King William II, and your dear mother, Queen Katherine
+      IV, are the rulers of Carisia.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 1004
+    rightConDot: 0
+    flagHold:
+      flagIdToBeSet: 0
+      flagIdStateToBeSet: 0
+      flagIdToReadForNextConDot: 0
+      conDotIfFlagTrue: 0
+      conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 0
+  prolouge4:
+    id: 1004
+    dia: And your lovely older sister, Princess Theodoria I, is second in line to
+      the throne.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 1005
+    rightConDot: 0
+    flagHold:
+      flagIdToBeSet: 0
+      flagIdStateToBeSet: 0
+      flagIdToReadForNextConDot: 0
+      conDotIfFlagTrue: 0
+      conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 0
+  prolouge5:
+    id: 1005
+    dia: Your oldest sister, Crown Princess Katherine V, has gone on a long voyage
+      to find a fair prince for the Kingdom or Carisia. You miss her greatly.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 1005
+    rightConDot: 0
+    flagHold:
+      flagIdToBeSet: 0
+      flagIdStateToBeSet: 0
+      flagIdToReadForNextConDot: 0
+      conDotIfFlagTrue: 0
+      conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 0
+  prolouge6:
+    id: 1006
+    dia: But now is not the time to worry yourself sick about dear Kat. Now, it is
+      time for dinner.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 1005
+    rightConDot: 0
+    flagHold:
+      flagIdToBeSet: 0
+      flagIdStateToBeSet: 0
+      flagIdToReadForNextConDot: 0
+      conDotIfFlagTrue: 0
+      conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 0
   ifortyping: 0
   nextConDot:
     id: 0

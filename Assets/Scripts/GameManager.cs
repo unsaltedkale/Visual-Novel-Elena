@@ -176,6 +176,17 @@ public class GameManager : MonoBehaviour
     public ConDot h = new ConDot(8, "I'm going to dig myself out of the bottom. From Hell to Purgatory.", "Kale", false, "", "", 0, 0, new FlagHold(), new ImageHold());
     public FFlag fcHasRisen = new FFlag(1, FlagState.NotSet);
 
+    public ConDot prolouge1 = new ConDot(1001, "Welcome to the Kingdom of Carisia.", "", false, "", "", 1002, 0, new FlagHold(), new ImageHold());
+    public ConDot prolouge2 = new ConDot(1002, "You, Princess NAMEHERE I, are the youngest princess of Carisia.", "", false, "", "", 1003, 0, new FlagHold(), new ImageHold(2, 0));
+    public ConDot prolouge3 = new ConDot(1003, "Your dear father, King William II, and your dear mother, Queen Katherine IV, are the rulers of Carisia.", "", false, "", "", 1004, 0, new FlagHold(), new ImageHold());
+    public ConDot prolouge4 = new ConDot(1004, "And your lovely older sister, Princess Theodoria I, is second in line to the throne.", "", false, "", "", 1005, 0, new FlagHold(), new ImageHold());
+    public ConDot prolouge5 = new ConDot(1005, "Your oldest sister, Crown Princess Katherine V, has gone on a long voyage to find a fair prince for the Kingdom or Carisia. You miss her greatly.", "", false, "", "", 1005, 0, new FlagHold(), new ImageHold());
+    public ConDot prolouge6 = new ConDot(1006, "But now is not the time to worry yourself sick about dear Kat. Now, it is time for dinner.", "", false, "", "", 1005, 0, new FlagHold(), new ImageHold(1, 1));
+
+
+
+    //public ConDot name = new ConDot(ID, "Dia", "Speaker", false, "", "", next id, 0, new FlagHold(), new ImageHold())
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -202,22 +213,18 @@ public class GameManager : MonoBehaviour
         leftImage = GameObject.Find("Left Image");
         rightImage = GameObject.Find("Right Image");
 
-        cdlist.Add(a);
-        cdlist.Add(b);
-        cdlist.Add(c);
-        cdlist.Add(d);
-        cdlist.Add(e);
-        cdlist.Add(f);
-        cdlist.Add(g);
-        cdlist.Add(h);
-        cdlist.Add(nnull);
+        cdlist.Add(prolouge1);
+        cdlist.Add(prolouge2);
+        cdlist.Add(prolouge3);
+        cdlist.Add(prolouge4);
+        cdlist.Add(prolouge5);
+        cdlist.Add(prolouge6);
 
-        fflaglist.Add(fcHasRisen);
 
         ImageBank imageBankScript = ImageBankObject.GetComponent<ImageBank>();
         imagelist = imageBankScript.imagelist;
 
-        currentConDot = a;
+        currentConDot = prolouge1;
 
         Triangle.SetActive(false);
         leftImage.SetActive(false);
@@ -246,7 +253,7 @@ public class GameManager : MonoBehaviour
 
         pname = textInputFieldText.text;
 
-        currentConDot = a;
+        currentConDot = prolouge1;
 
         StartCoroutine(Dialogue());
 
