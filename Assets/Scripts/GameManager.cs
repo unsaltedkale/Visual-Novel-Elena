@@ -30,8 +30,6 @@ public class GameManager : MonoBehaviour
         [SerializeField] private string rightChoice;
         [SerializeField] private int leftConDot;
         [SerializeField] private int rightConDot;
-        [SerializeField] private FlagHold flagHold;
-        [SerializeField] private ImageHold imageHold;
 
     // Properties to allow access in code (if needed)
         public int Id { get => id; set => id = value; }
@@ -42,32 +40,6 @@ public class GameManager : MonoBehaviour
         public string RightChoice { get => rightChoice; set => rightChoice = value; }
         public int LeftConDot { get => leftConDot; set => leftConDot = value; }
         public int RightConDot { get => rightConDot; set => rightConDot = value; }
-        public FlagHold FlagHold { get => flagHold; set => flagHold = value; }
-        public ImageHold ImageHold { get => imageHold; set => imageHold = value; }
-    
-    // Constructor
-        public ConDot(int Id, string Dia, string CharacterName, bool ButtonBool, string LeftChoice, string RightChoice, int LeftConDot, int RightConDot, FlagHold FlagHold, ImageHold Imagehold) : this()
-        {
-            id = Id;
-            dia = Dia;
-            characterName = CharacterName;
-            buttonBool = ButtonBool;
-            leftChoice = LeftChoice;
-            rightChoice = RightChoice;
-            leftConDot = LeftConDot;
-            rightConDot = RightConDot;
-            flagHold = FlagHold;
-            imageHold = ImageHold;
-        }
-
-        // Optional: ToString method
-        public override string ToString() => $"(Id: {id}, Dia: {dia}, CharacterName: {characterName}, ButtonBool: {buttonBool}, LeftChoice: {leftChoice}, RightChoice: {rightChoice}, LeftConDot: {LeftConDot}, RightConDot: {RightConDot}, FlagHold: {flagHold})";
-    
-    }
-
-    [System.Serializable]
-    public struct FlagHold
-    {
         [SerializeField] private int flagIdToBeSet;
         // 0  if no flag to be set
         [SerializeField] private FlagState flagIdStateToBeSet;
@@ -77,25 +49,43 @@ public class GameManager : MonoBehaviour
         [SerializeField] private int conDotIfFlagTrue;
         [SerializeField] private int conDotIfFlagFalse;
 
-        // Properties to allow access in code (if needed)
         public int FlagIdToBeSet{ get => flagIdToBeSet; set => flagIdToBeSet = value; }
         public FlagState FlagIdStateToBeSet { get => flagIdStateToBeSet; set => flagIdStateToBeSet = value; }
         public int FlagIdToReadForNextConDot { get => flagIdToReadForNextConDot; set => flagIdToReadForNextConDot = value; }
         public int ConDotIfFlagTrue { get => conDotIfFlagTrue; set => conDotIfFlagTrue = value; }
         public int ConDotIfFlagFalse { get => conDotIfFlagFalse; set => conDotIfFlagFalse = value; }
-        
-        // Constructor
-        public FlagHold(int FlagIdToSet, FlagState FlagIdStateToBeSet, int FlagIdToReadForNextConDot, int ConDotIfFlagTrue, int ConDotIfFlagFalse) : this()
+
+         [SerializeField] private int idForLeftImage;
+        // 0 if same as before
+        [SerializeField] private int idForRightImage;
+        // 0 if same as before
+        // Properties to allow access in code (if needed)
+        public int IdForLeftImage { get => idForLeftImage; set => idForLeftImage = value; }
+        public int IdForRightImage { get => idForRightImage; set => idForRightImage = value; }
+    
+    // Constructor
+        public ConDot(int Id, string Dia, string CharacterName, bool ButtonBool, string LeftChoice, string RightChoice, int LeftConDot, int RightConDot, int FlagIdToSet, FlagState FlagIdStateToBeSet, int FlagIdToReadForNextConDot, int ConDotIfFlagTrue, int ConDotIfFlagFalse, int IdForLeftImage, int IdForRightImage) : this()
         {
+            id = Id;
+            dia = Dia;
+            characterName = CharacterName;
+            buttonBool = ButtonBool;
+            leftChoice = LeftChoice;
+            rightChoice = RightChoice;
+            leftConDot = LeftConDot;
+            rightConDot = RightConDot;
             flagIdToBeSet = FlagIdToBeSet;
             flagIdStateToBeSet = FlagIdStateToBeSet;
             flagIdToReadForNextConDot = FlagIdToReadForNextConDot;
             conDotIfFlagTrue = ConDotIfFlagTrue;
             conDotIfFlagFalse = ConDotIfFlagFalse;
+            idForLeftImage = IdForLeftImage;
+            idForRightImage = IdForRightImage;
         }
-    
+
         // Optional: ToString method
-        public override string ToString() => $"(FlagIdToBeSet: {flagIdToBeSet}, FlagIdStateToBeSet: {flagIdStateToBeSet}, FlagIdToReadForNextConDot: {flagIdToReadForNextConDot}, ConDotIfFlagTrue: {conDotIfFlagTrue}, ConDotIfFlagFalse: {conDotIfFlagFalse})";
+        public override string ToString() => $"(Id: {id}, Dia: {dia}, CharacterName: {characterName}, ButtonBool: {buttonBool}, LeftChoice: {leftChoice}, RightChoice: {rightChoice}, LeftConDot: {LeftConDot}, RightConDot: {RightConDot}, FlagIdToBeSet: {flagIdToBeSet}, FlagIdStateToBeSet: {flagIdStateToBeSet}, FlagIdToReadForNextConDot: {flagIdToReadForNextConDot}, ConDotIfFlagTrue: {conDotIfFlagTrue}, ConDotIfFlagFalse: {conDotIfFlagFalse}, IdForLeftImage: {idForLeftImage}, IdForRightImage: {idForRightImage})";
+    
     }
 
     [System.Serializable]
@@ -125,28 +115,6 @@ public class GameManager : MonoBehaviour
         public override string ToString() => $"(Id: {id}, FlagState: {flagState})";
     }
 
-    [System.Serializable]
-    public struct ImageHold
-    {
-        [SerializeField] private int idForLeftImage;
-        // 0 if same as before
-        [SerializeField] private int idForRightImage;
-        // 0 if same as before
-
-        // Properties to allow access in code (if needed)
-        public int IdForLeftImage { get => idForLeftImage; set => idForLeftImage = value; }
-        public int IdForRightImage { get => idForRightImage; set => idForRightImage = value; }
-    
-        // Constructor
-        public ImageHold(int IdForLeftImage, int IdForRightImage) : this()
-        {
-            idForLeftImage = IdForLeftImage;
-            idForRightImage = IdForRightImage;
-        }
-    
-        // Optional: ToString method
-        public override string ToString() => $"(IdForLeftImage: {idForLeftImage}, IdForRightImage: {idForRightImage})";
-    }
 
     [SerializeField] public List<ConDot> cdlist;
     [SerializeField] public List<FFlag> fflaglist;
@@ -176,14 +144,14 @@ public class GameManager : MonoBehaviour
     public ConDot h = new ConDot(8, "I'm going to dig myself out of the bottom. From Hell to Purgatory.", "Kale", false, "", "", 0, 0, new FlagHold(), new ImageHold());
     public FFlag fcHasRisen = new FFlag(1, FlagState.NotSet);*/
 
-    public ConDot prolouge1 = new ConDot(1001, "Welcome to the Kingdom of Carisia.", "", false, "", "", 1002, 0, new FlagHold(), new ImageHold());
-    public ConDot prolouge2 = new ConDot(1002, "You, Princess Riley I, are the youngest princess of Carisia.", "", false, "", "", 1003, 0, new FlagHold(), new ImageHold(2, 0));
-    public ConDot prolouge3 = new ConDot(1003, "Your dear father, King William IV, and your dear mother, Queen Katherine XXII, are the rulers of Carisia.", "", false, "", "", 1004, 0, new FlagHold(), new ImageHold(6, 5));
-    public ConDot prolouge4 = new ConDot(1004, "And your lovely older sister, Princess Theodoria I, is second in line to the throne.", "", false, "", "", 1005, 0, new FlagHold(), new ImageHold(1, 3));
-    public ConDot prolouge5 = new ConDot(1005, "Your oldest sister, Crown Princess Katherine XXIII, has gone on a long voyage to find a fair prince for the Kingdom or Carisia. You miss her greatly.", "", false, "", "", 1006, 0, new FlagHold(), new ImageHold(1, 4));
-    public ConDot prolouge6 = new ConDot(1006, "But now is not the time to worry yourself sick about dear Kat. Now, it is time for dinner.", "", false, "", "", 1005, 0, new FlagHold(), new ImageHold(1, 1));
+    public ConDot prolouge1 = new ConDot(1001, "Welcome to the Kingdom of Carisia.", "", false, "", "", 1002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot prolouge2 = new ConDot(1002, "You, Princess Riley I, are the youngest princess of Carisia.", "", false, "", "", 1003, 0, 0, FlagState.NotSet, 0, 0, 0, 2, 0);
+    public ConDot prolouge3 = new ConDot(1003, "Your dear father, King William IV, and your dear mother, Queen Katherine XXII, are the rulers of Carisia.", "", false, "", "", 1004, 0, 0, FlagState.NotSet, 0, 0, 0, 6, 5);
+    public ConDot prolouge4 = new ConDot(1004, "And your lovely older sister, Princess Theodoria I, is second in line to the throne.", "", false, "", "", 1005, 0, 0, FlagState.NotSet, 0, 0, 0, 1, 3);
+    public ConDot prolouge5 = new ConDot(1005, "Your oldest sister, Crown Princess Katherine XXIII, has gone on a long voyage to find a fair prince for the Kingdom or Carisia. You miss her greatly.", "", false, "", "", 1006, 0, 0, FlagState.NotSet, 0, 0, 0, 1, 4);
+    public ConDot prolouge6 = new ConDot(1006, "But now is not the time to worry yourself sick about dear Kat. Now, it is time for dinner.", "", false, "", "", 1005, 0, 0, FlagState.NotSet, 0, 0, 0, 1, 1);
 
-    public ConDot breakfast1 = new ConDot(2001, "Ring ring ring", "", false, "", "", 2002, 0, new FlagHold(), new ImageHold());
+    public ConDot breakfast1 = new ConDot(2001, "Ring ring ring", "", false, "", "", 2002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     //public ConDot breakfast2 = new ConDot(2002, "Dia", "Speaker", false, "", "", next id, 0, new FlagHold(), new ImageHold());
 
 
@@ -240,27 +208,6 @@ public class GameManager : MonoBehaviour
     {
         
     }
-
-    /*public IEnumerator GetNameFromPlayer()
-    {
-        currentConDot = new ConDot(0, "What is your name, child? [PRESS ENTER TO CONFIRM]", "", false, "", "", 0, 0, new FlagHold(), new ImageHold());
-        
-        Render();
-
-        ifortyping = 0;
-
-        yield return StartCoroutine(WaitForTyping());
-
-        textInputField.SetActive(false);
-
-        pname = textInputFieldText.text;
-
-        currentConDot = prolouge1;
-
-        StartCoroutine(Dialogue());
-
-        yield break;
-    }*/
 
     public int ifortyping;
 
