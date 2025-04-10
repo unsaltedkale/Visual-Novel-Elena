@@ -227,6 +227,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 21300000, guid: 88aa2cae2e8604859ad9a7eaa1698bd5, type: 3}
+  - {fileID: 21300000, guid: 88b6fca5015ab492e884b8df300c050f, type: 3}
+  - {fileID: 21300000, guid: e2b1bac3824524693848dcd18c5baf70, type: 3}
+  - {fileID: 21300000, guid: 8b76247413e1e4017b0a51732a7f320b, type: 3}
+  - {fileID: 21300000, guid: d06df19c3c49c48aeb3eb91b98308d27, type: 3}
 --- !u!1 &295952278
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &295952279
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2203,177 +2207,8 @@ MonoBehaviour:
   LeftButton: {fileID: 0}
   RightButton: {fileID: 0}
   Triangle: {fileID: 0}
-  pname: 
-  textInputField: {fileID: 0}
-  textInputFieldText: {fileID: 0}
   leftImage: {fileID: 0}
   rightImage: {fileID: 0}
-  nnull:
-    id: 0
-    dia: You are not supposed to be here. Go home.
-    characterName: 
-    buttonBool: 0
-    leftChoice: 
-    rightChoice: 
-    leftConDot: 0
-    rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 6
-  a:
-    id: 1
-    dia: Hello
-    characterName: Kale
-    buttonBool: 0
-    leftChoice: 
-    rightChoice: 
-    leftConDot: 2
-    rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 2
-      idForRightImage: 0
-  b:
-    id: 2
-    dia: Hai~!
-    characterName: Nim
-    buttonBool: 0
-    leftChoice: 
-    rightChoice: 
-    leftConDot: 3
-    rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 3
-  c:
-    id: 3
-    dia: God has fallen, only the sinners remain. Will you rise against the dark,
-      knowing there will be no heaven, or will you fall like the cowards before you?
-    characterName: Nim
-    buttonBool: 1
-    leftChoice: Stand
-    rightChoice: Fall
-    leftConDot: 4
-    rightConDot: 5
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 4
-  d:
-    id: 4
-    dia: It is the only thing you can do. You wish to be replace God.
-    characterName: Nim
-    buttonBool: 0
-    leftChoice: 
-    rightChoice: 
-    leftConDot: 6
-    rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 1
-      flagIdStateToBeSet: 1
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 5
-  e:
-    id: 5
-    dia: It is the only thing you can do. You can only dig yourself deeper.
-    characterName: Nim
-    buttonBool: 0
-    leftChoice: 
-    rightChoice: 
-    leftConDot: 6
-    rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 1
-      flagIdStateToBeSet: 2
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 5
-  f:
-    id: 6
-    dia: Hhmpf.
-    characterName: Nim
-    buttonBool: 0
-    leftChoice: 
-    rightChoice: 
-    leftConDot: 0
-    rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 1
-      conDotIfFlagTrue: 7
-      conDotIfFlagFalse: 8
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 3
-  g:
-    id: 7
-    dia: The Sun will rise again; it just won't be shining upon *you*.
-    characterName: Kale
-    buttonBool: 0
-    leftChoice: 
-    rightChoice: 
-    leftConDot: 0
-    rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 0
-  h:
-    id: 8
-    dia: I'm going to dig myself out of the bottom. From Hell to Purgatory.
-    characterName: Kale
-    buttonBool: 0
-    leftChoice: 
-    rightChoice: 
-    leftConDot: 0
-    rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 0
-  fcHasRisen:
-    id: 1
-    flagState: 0
   prolouge1:
     id: 1001
     dia: Welcome to the Kingdom of Carisia.
@@ -2394,7 +2229,7 @@ MonoBehaviour:
       idForRightImage: 0
   prolouge2:
     id: 1002
-    dia: You, Princess NAMEHERE I, are the youngest princess of Carisia.
+    dia: You, Princess Riley I, are the youngest princess of Carisia.
     characterName: 
     buttonBool: 0
     leftChoice: 
@@ -2412,8 +2247,8 @@ MonoBehaviour:
       idForRightImage: 0
   prolouge3:
     id: 1003
-    dia: Your dear father, King William II, and your dear mother, Queen Katherine
-      IV, are the rulers of Carisia.
+    dia: Your dear father, King William IV, and your dear mother, Queen Katherine
+      XXII, are the rulers of Carisia.
     characterName: 
     buttonBool: 0
     leftChoice: 
@@ -2450,13 +2285,13 @@ MonoBehaviour:
       idForRightImage: 0
   prolouge5:
     id: 1005
-    dia: Your oldest sister, Crown Princess Katherine V, has gone on a long voyage
+    dia: Your oldest sister, Crown Princess Katherine XXIII, has gone on a long voyage
       to find a fair prince for the Kingdom or Carisia. You miss her greatly.
     characterName: 
     buttonBool: 0
     leftChoice: 
     rightChoice: 
-    leftConDot: 1005
+    leftConDot: 1006
     rightConDot: 0
     flagHold:
       flagIdToBeSet: 0
@@ -2476,6 +2311,24 @@ MonoBehaviour:
     leftChoice: 
     rightChoice: 
     leftConDot: 1005
+    rightConDot: 0
+    flagHold:
+      flagIdToBeSet: 0
+      flagIdStateToBeSet: 0
+      flagIdToReadForNextConDot: 0
+      conDotIfFlagTrue: 0
+      conDotIfFlagFalse: 0
+    imageHold:
+      idForLeftImage: 0
+      idForRightImage: 0
+  breakfast1:
+    id: 2001
+    dia: Ring ring ring
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2002
     rightConDot: 0
     flagHold:
       flagIdToBeSet: 0
