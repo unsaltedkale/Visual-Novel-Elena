@@ -160,12 +160,12 @@ public class GameManager : MonoBehaviour
     public GameObject LeftButton;
     public GameObject RightButton;
     public GameObject Triangle;
-    public String pname;
-    public GameObject textInputField;
-    public TextMeshProUGUI textInputFieldText;
+    // public String pname = "Riley";
+    // public GameObject textInputField;
+    // public TextMeshProUGUI textInputFieldText;
     public GameObject leftImage;
     public GameObject rightImage;
-    public ConDot nnull = new ConDot (0, "You are not supposed to be here. Go home.", "", false, "", "", 0, 0, new FlagHold(), new ImageHold());
+    /*public ConDot nnull = new ConDot (0, "You are not supposed to be here. Go home.", "", false, "", "", 0, 0, new FlagHold(), new ImageHold());
     public ConDot a = new ConDot(1, "Hello", "Kale", false, "", "", 2, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0), new ImageHold(2, 0));
     public ConDot b = new ConDot(2, "Hai~!", "Nim", false, "", "", 3, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0), new ImageHold(0, 3));
     public ConDot c = new ConDot(3, "God has fallen, only the sinners remain. Will you rise against the dark, knowing there will be no heaven, or will you fall like the cowards before you?", "Nim", true, "Stand", "Fall", 4, 5, new FlagHold (0, FlagState.NotSet, 0, 0, 0), new ImageHold());
@@ -174,15 +174,17 @@ public class GameManager : MonoBehaviour
     public ConDot f = new ConDot(6, "Hhmpf.", "Nim", false, "", "", 0, 0, new FlagHold (0, FlagState.NotSet, 1, 7, 8), new ImageHold());
     public ConDot g = new ConDot(7, "The Sun will rise again; it just won't be shining upon *you*.", "Kale", false, "", "", 0, 0, new FlagHold(0, FlagState.NotSet, 0, 0, 0), new ImageHold());
     public ConDot h = new ConDot(8, "I'm going to dig myself out of the bottom. From Hell to Purgatory.", "Kale", false, "", "", 0, 0, new FlagHold(), new ImageHold());
-    public FFlag fcHasRisen = new FFlag(1, FlagState.NotSet);
+    public FFlag fcHasRisen = new FFlag(1, FlagState.NotSet);*/
 
     public ConDot prolouge1 = new ConDot(1001, "Welcome to the Kingdom of Carisia.", "", false, "", "", 1002, 0, new FlagHold(), new ImageHold());
-    public ConDot prolouge2 = new ConDot(1002, "You, Princess NAMEHERE I, are the youngest princess of Carisia.", "", false, "", "", 1003, 0, new FlagHold(), new ImageHold(2, 0));
-    public ConDot prolouge3 = new ConDot(1003, "Your dear father, King William II, and your dear mother, Queen Katherine IV, are the rulers of Carisia.", "", false, "", "", 1004, 0, new FlagHold(), new ImageHold());
-    public ConDot prolouge4 = new ConDot(1004, "And your lovely older sister, Princess Theodoria I, is second in line to the throne.", "", false, "", "", 1005, 0, new FlagHold(), new ImageHold());
-    public ConDot prolouge5 = new ConDot(1005, "Your oldest sister, Crown Princess Katherine V, has gone on a long voyage to find a fair prince for the Kingdom or Carisia. You miss her greatly.", "", false, "", "", 1005, 0, new FlagHold(), new ImageHold());
+    public ConDot prolouge2 = new ConDot(1002, "You, Princess Riley I, are the youngest princess of Carisia.", "", false, "", "", 1003, 0, new FlagHold(), new ImageHold(2, 0));
+    public ConDot prolouge3 = new ConDot(1003, "Your dear father, King William IV, and your dear mother, Queen Katherine XXII, are the rulers of Carisia.", "", false, "", "", 1004, 0, new FlagHold(), new ImageHold(6, 5));
+    public ConDot prolouge4 = new ConDot(1004, "And your lovely older sister, Princess Theodoria I, is second in line to the throne.", "", false, "", "", 1005, 0, new FlagHold(), new ImageHold(1, 3));
+    public ConDot prolouge5 = new ConDot(1005, "Your oldest sister, Crown Princess Katherine XXIII, has gone on a long voyage to find a fair prince for the Kingdom or Carisia. You miss her greatly.", "", false, "", "", 1006, 0, new FlagHold(), new ImageHold(1, 4));
     public ConDot prolouge6 = new ConDot(1006, "But now is not the time to worry yourself sick about dear Kat. Now, it is time for dinner.", "", false, "", "", 1005, 0, new FlagHold(), new ImageHold(1, 1));
 
+    public ConDot breakfast1 = new ConDot(2001, "Ring ring ring", "", false, "", "", 2002, 0, new FlagHold(), new ImageHold());
+    //public ConDot breakfast2 = new ConDot(2002, "Dia", "Speaker", false, "", "", next id, 0, new FlagHold(), new ImageHold());
 
 
     //public ConDot name = new ConDot(ID, "Dia", "Speaker", false, "", "", next id, 0, new FlagHold(), new ImageHold())
@@ -207,8 +209,8 @@ public class GameManager : MonoBehaviour
         LeftButton = GameObject.Find("Left Button");
         RightButton = GameObject.Find("Right Button");
         Triangle = GameObject.Find("Triangle");
-        textInputField = GameObject.Find("Text Input Field");
-        textInputFieldText = GameObject.Find("Text Input Field Text").GetComponent<TextMeshProUGUI>();
+        // textInputField = GameObject.Find("Text Input Field");
+        // textInputFieldText = GameObject.Find("Text Input Field Text").GetComponent<TextMeshProUGUI>();
         ImageBankObject = GameObject.Find("Image Bank");
         leftImage = GameObject.Find("Left Image");
         rightImage = GameObject.Find("Right Image");
@@ -230,7 +232,7 @@ public class GameManager : MonoBehaviour
         leftImage.SetActive(false);
         rightImage.SetActive(false);
 
-        StartCoroutine(GetNameFromPlayer());
+        StartCoroutine(Dialogue());
     }
 
     // Update is called once per frame
@@ -239,7 +241,7 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public IEnumerator GetNameFromPlayer()
+    /*public IEnumerator GetNameFromPlayer()
     {
         currentConDot = new ConDot(0, "What is your name, child? [PRESS ENTER TO CONFIRM]", "", false, "", "", 0, 0, new FlagHold(), new ImageHold());
         
@@ -258,7 +260,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(Dialogue());
 
         yield break;
-    }
+    }*/
 
     public int ifortyping;
 
