@@ -763,6 +763,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &521695446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 521695448}
+  - component: {fileID: 521695447}
+  m_Layer: 0
+  m_Name: ConDot Bank
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &521695447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521695446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f214e00e8d8a4699be68d2735f6a10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condotlist: []
+--- !u!4 &521695448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521695446}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1005.95984, y: 831.67786, z: -2.7401438}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &575357232
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,13 +833,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575357232}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1549341358}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 560, y: 295}
@@ -2191,15 +2236,13 @@ MonoBehaviour:
     rightChoice: 
     leftConDot: 0
     rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
   diaText: {fileID: 0}
   characterNameText: {fileID: 0}
   leftButtonText: {fileID: 0}
@@ -2218,36 +2261,32 @@ MonoBehaviour:
     rightChoice: 
     leftConDot: 1002
     rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
   prolouge2:
     id: 1002
-    dia: You, Princess Riley I, are the youngest princess of Carisia.
+    dia: You, Princess Elena I, are the youngest princess of Carisia.
     characterName: 
     buttonBool: 0
     leftChoice: 
     rightChoice: 
     leftConDot: 1003
     rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 2
+    idForRightImage: 0
   prolouge3:
     id: 1003
-    dia: Your dear father, King William IV, and your dear mother, Queen Katherine
+    dia: Your dear Father, King William IV, and your dear Mother, Queen Katherine
       XXII, are the rulers of Carisia.
     characterName: 
     buttonBool: 0
@@ -2255,18 +2294,16 @@ MonoBehaviour:
     rightChoice: 
     leftConDot: 1004
     rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 6
+    idForRightImage: 5
   prolouge4:
     id: 1004
-    dia: And your lovely older sister, Princess Theodoria I, is second in line to
+    dia: And your lovely older sister, Princess Theodora VI, is second in line to
       the throne.
     characterName: 
     buttonBool: 0
@@ -2274,71 +2311,469 @@ MonoBehaviour:
     rightChoice: 
     leftConDot: 1005
     rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 1
+    idForRightImage: 3
   prolouge5:
     id: 1005
     dia: Your oldest sister, Crown Princess Katherine XXIII, has gone on a long voyage
-      to find a fair prince for the Kingdom or Carisia. You miss her greatly.
+      to find a fair prince for the Kingdom of Carisia. You miss her greatly.
     characterName: 
     buttonBool: 0
     leftChoice: 
     rightChoice: 
     leftConDot: 1006
     rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 1
+    idForRightImage: 4
   prolouge6:
     id: 1006
     dia: But now is not the time to worry yourself sick about dear Kat. Now, it is
-      time for dinner.
+      time for breakfast.
     characterName: 
     buttonBool: 0
     leftChoice: 
     rightChoice: 
-    leftConDot: 1005
+    leftConDot: 2001
     rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 0
-  breakfast1:
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 1
+    idForRightImage: 1
+  breakfast001:
     id: 2001
-    dia: Ring ring ring
+    dia: The church bells ring in the distance. Ding! Ding! Ding!
     characterName: 
     buttonBool: 0
     leftChoice: 
     rightChoice: 
     leftConDot: 2002
     rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast002:
+    id: 2002
+    dia: The royal family is gathered, alongside all the nobles and high society
+      to dine.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2003
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast003:
+    id: 2003
+    dia: Your Father stands and raises his cup. You and everyone else follow.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2004
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 6
+  breakfast004:
+    id: 2004
+    dia: May the Lord in His grace protect our harvest, our Crown Princess, and our
+      scared Kingdom, Carisia!
+    characterName: Father
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2005
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast005:
+    id: 2005
+    dia: Amen! Here here! Thank the lord!
+    characterName: Crowd
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2006
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast006:
+    id: 2006
+    dia: Your Father sits down and everyone else follows suit. Breakfast begins and
+      everyone starts to talk.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2007
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast007:
+    id: 2007
+    dia: Why, isn't this just the best? Everyone gathered in merriment, what joy!
+    characterName: Mother
+    buttonBool: 1
+    leftChoice: Act Nice
+    rightChoice: Act Annoyed
+    leftConDot: 2008
+    rightConDot: 2009
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 2
+    idForRightImage: 5
+  breakfast008:
+    id: 2008
+    dia: Yes, it's very nice, Mother. The food is very rich.
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2010
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast009:
+    id: 2009
+    dia: You say that every morning, Mother...
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2011
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast010:
+    id: 2010
+    dia: Yes, it's all so nice! Wouldn't you agree, Theodora?
+    characterName: Mother
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2012
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast011:
+    id: 2011
+    dia: Oh, how rude! Even your sister wouldn't be so rude to her Mother! Right,
+      Theodora?
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2012
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast012:
+    id: 2012
+    dia: Your sister's head whips around and she blinks a few times.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2013
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 3
+  breakfast013:
+    id: 2013
+    dia: Uh.. yeah, of course, Mother.
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2014
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast014:
+    id: 2014
+    dia: Your Mother starts rambling on about something or other but you keep looking
+      at Theodora.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2015
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 5
+  breakfast015:
+    id: 2015
+    dia: She seems to be... zoned out.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2016
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 3
+  breakfast016:
+    id: 2016
+    dia: She is not usually zoned out.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2017
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast017:
+    id: 2017
+    dia: Something seems wrong...
+    characterName: 
+    buttonBool: 1
+    leftChoice: Act Secretively
+    rightChoice: Act Agressively
+    leftConDot: 2018
+    rightConDot: 2027
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast018:
+    id: 2018
+    dia: You whisper in a low tone, so no one else can hear you. You poke her and
+      she jumps again.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2019
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast019:
+    id: 2019
+    dia: Psst! Theo! What's going on?
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2020
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast020:
+    id: 2020
+    dia: Huh? What?
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2021
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast021:
+    id: 2021
+    dia: You seem... off, you know? What's up?
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2022
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast022:
+    id: 2022
+    dia: Oh. I'm... I'm fine, don't worry about me. I'm just tired.
+    characterName: Theodora
+    buttonBool: 1
+    leftChoice: Let it Go
+    rightChoice: Pressure Her
+    leftConDot: 2023
+    rightConDot: 2026
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast023:
+    id: 2023
+    dia: Okay, okay. Just wanted to ask, Theo.
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2024
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast024:
+    id: 2024
+    dia: Mhmm...
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2025
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast025:
+    id: 2025
+    dia: She zones back out again.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2025
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast026:
+    id: 2026
+    dia: No, really Theo, what's going on?
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2027
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
   ifortyping: 0
   nextConDot:
     id: 0
@@ -2349,15 +2784,13 @@ MonoBehaviour:
     rightChoice: 
     leftConDot: 0
     rightConDot: 0
-    flagHold:
-      flagIdToBeSet: 0
-      flagIdStateToBeSet: 0
-      flagIdToReadForNextConDot: 0
-      conDotIfFlagTrue: 0
-      conDotIfFlagFalse: 0
-    imageHold:
-      idForLeftImage: 0
-      idForRightImage: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
   targetConDotId: 0
   targetFFlag:
     id: 0
@@ -2372,4 +2805,5 @@ SceneRoots:
   - {fileID: 1549341358}
   - {fileID: 1445327117}
   - {fileID: 265572691}
+  - {fileID: 521695448}
   - {fileID: 1956102377}

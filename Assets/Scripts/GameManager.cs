@@ -128,32 +128,45 @@ public class GameManager : MonoBehaviour
     public GameObject LeftButton;
     public GameObject RightButton;
     public GameObject Triangle;
-    // public String pname = "Riley";
-    // public GameObject textInputField;
-    // public TextMeshProUGUI textInputFieldText;
     public GameObject leftImage;
     public GameObject rightImage;
-    /*public ConDot nnull = new ConDot (0, "You are not supposed to be here. Go home.", "", false, "", "", 0, 0, new FlagHold(), new ImageHold());
-    public ConDot a = new ConDot(1, "Hello", "Kale", false, "", "", 2, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0), new ImageHold(2, 0));
-    public ConDot b = new ConDot(2, "Hai~!", "Nim", false, "", "", 3, 0, new FlagHold (0, FlagState.NotSet, 0, 0, 0), new ImageHold(0, 3));
-    public ConDot c = new ConDot(3, "God has fallen, only the sinners remain. Will you rise against the dark, knowing there will be no heaven, or will you fall like the cowards before you?", "Nim", true, "Stand", "Fall", 4, 5, new FlagHold (0, FlagState.NotSet, 0, 0, 0), new ImageHold());
-    public ConDot d = new ConDot(4, "It is the only thing you can do. You wish to be replace God.", "Nim", false, "", "", 6, 0, new FlagHold (1, FlagState.True, 0, 0, 0), new ImageHold());
-    public ConDot e = new ConDot(5, "It is the only thing you can do. You can only dig yourself deeper.", "Nim", false, "", "", 6, 0, new FlagHold (1, FlagState.False, 0, 0, 0), new ImageHold());
-    public ConDot f = new ConDot(6, "Hhmpf.", "Nim", false, "", "", 0, 0, new FlagHold (0, FlagState.NotSet, 1, 7, 8), new ImageHold());
-    public ConDot g = new ConDot(7, "The Sun will rise again; it just won't be shining upon *you*.", "Kale", false, "", "", 0, 0, new FlagHold(0, FlagState.NotSet, 0, 0, 0), new ImageHold());
-    public ConDot h = new ConDot(8, "I'm going to dig myself out of the bottom. From Hell to Purgatory.", "Kale", false, "", "", 0, 0, new FlagHold(), new ImageHold());
-    public FFlag fcHasRisen = new FFlag(1, FlagState.NotSet);*/
+    
 
     public ConDot prolouge1 = new ConDot(1001, "Welcome to the Kingdom of Carisia.", "", false, "", "", 1002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot prolouge2 = new ConDot(1002, "You, Princess Riley I, are the youngest princess of Carisia.", "", false, "", "", 1003, 0, 0, FlagState.NotSet, 0, 0, 0, 2, 0);
-    public ConDot prolouge3 = new ConDot(1003, "Your dear father, King William IV, and your dear mother, Queen Katherine XXII, are the rulers of Carisia.", "", false, "", "", 1004, 0, 0, FlagState.NotSet, 0, 0, 0, 6, 5);
-    public ConDot prolouge4 = new ConDot(1004, "And your lovely older sister, Princess Theodoria I, is second in line to the throne.", "", false, "", "", 1005, 0, 0, FlagState.NotSet, 0, 0, 0, 1, 3);
-    public ConDot prolouge5 = new ConDot(1005, "Your oldest sister, Crown Princess Katherine XXIII, has gone on a long voyage to find a fair prince for the Kingdom or Carisia. You miss her greatly.", "", false, "", "", 1006, 0, 0, FlagState.NotSet, 0, 0, 0, 1, 4);
-    public ConDot prolouge6 = new ConDot(1006, "But now is not the time to worry yourself sick about dear Kat. Now, it is time for dinner.", "", false, "", "", 1005, 0, 0, FlagState.NotSet, 0, 0, 0, 1, 1);
+    public ConDot prolouge2 = new ConDot(1002, "You, Princess Elena I, are the youngest princess of Carisia.", "", false, "", "", 1003, 0, 0, FlagState.NotSet, 0, 0, 0, 2, 0);
+    public ConDot prolouge3 = new ConDot(1003, "Your dear Father, King William IV, and your dear Mother, Queen Katherine XXII, are the rulers of Carisia.", "", false, "", "", 1004, 0, 0, FlagState.NotSet, 0, 0, 0, 6, 5);
+    public ConDot prolouge4 = new ConDot(1004, "And your lovely older sister, Princess Theodora VI, is second in line to the throne.", "", false, "", "", 1005, 0, 0, FlagState.NotSet, 0, 0, 0, 1, 3);
+    public ConDot prolouge5 = new ConDot(1005, "Your oldest sister, Crown Princess Katherine XXIII, has gone on a long voyage to find a fair prince for the Kingdom of Carisia. You miss her greatly.", "", false, "", "", 1006, 0, 0, FlagState.NotSet, 0, 0, 0, 1, 4);
+    public ConDot prolouge6 = new ConDot(1006, "But now is not the time to worry yourself sick about dear Kat. Now, it is time for breakfast.", "", false, "", "", 2001, 0, 0, FlagState.NotSet, 0, 0, 0, 1, 1);
 
-    public ConDot breakfast1 = new ConDot(2001, "Ring ring ring", "", false, "", "", 2002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    //public ConDot breakfast2 = new ConDot(2002, "Dia", "Speaker", false, "", "", next id, 0, new FlagHold(), new ImageHold());
+    public ConDot breakfast001 = new ConDot(2001, "The church bells ring in the distance. Ding! Ding! Ding!", "", false, "", "", 2002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast002 = new ConDot(2002, "The royal family is gathered, alongside all the nobles and high society to dine.", "", false, "", "", 2003, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast003 = new ConDot(2003, "Your Father stands and raises his cup. You and everyone else follow.", "", false, "", "", 2004, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 6);
+    public ConDot breakfast004 = new ConDot(2004, "May the Lord in His grace protect our harvest, our Crown Princess, and our scared Kingdom, Carisia!", "Father", false, "", "", 2005, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast005 = new ConDot(2005, "Amen! Here here! Thank the lord!", "Crowd", false, "", "", 2006, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast006 = new ConDot(2006, "Your Father sits down and everyone else follows suit. Breakfast begins and everyone starts to talk.", "", false, "", "", 2007, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);                                                    
+    public ConDot breakfast007 = new ConDot(2007, "Why, isn't this just the best? Everyone gathered in merriment, what joy!", "Mother", true, "Act Nice", "Act Annoyed", 2008, 2009, 0, FlagState.NotSet, 0, 0, 0, 2, 5);
+    public ConDot breakfast008 = new ConDot(2008, "Yes, it's very nice, Mother. The food is very rich.", "You", false, "", "", 2010, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast009 = new ConDot(2009, "You say that every morning, Mother...", "You", false, "", "", 2011, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast010 = new ConDot(2010, "Yes, it's all so nice! Wouldn't you agree, Theodora?", "Mother", false, "", "", 2012, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast011 = new ConDot(2011, "Oh, how rude! Even your sister wouldn't be so rude to her Mother! Right, Theodora?", "You", false, "", "", 2012, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast012 = new ConDot(2012, "Your sister's head whips around and she blinks a few times.", "", false, "", "", 2013, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 3);
+    public ConDot breakfast013 = new ConDot(2013, "Uh.. yeah, of course, Mother.", "Theodora", false, "", "", 2014, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast014 = new ConDot(2014, "Your Mother starts rambling on about something or other but you keep looking at Theodora.", "", false, "", "", 2015, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 5);
+    public ConDot breakfast015 = new ConDot(2015, "She seems to be... zoned out.", "", false, "", "", 2016, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 3);
+    public ConDot breakfast016 = new ConDot(2016, "She is not usually zoned out.", "", false, "", "", 2017, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast017 = new ConDot(2017, "Something seems wrong...", "", true, "Act Secretively", "Act Agressively", 2018, 2027, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast018 = new ConDot(2018, "You whisper in a low tone, so no one else can hear you. You poke her and she jumps again.", "", false, "", "", 2019, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast019 = new ConDot(2019, "Psst! Theo! What's going on?", "You", false, "", "", 2020, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast020 = new ConDot(2020, "Huh? What?", "Theodora", false, "", "", 2021, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast021 = new ConDot(2021, "You seem... off, you know? What's up?", "You", false, "", "", 2022, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast022 = new ConDot(2022, "Oh. I'm... I'm fine, don't worry about me. I'm just tired.", "Theodora", true, "Let it Go", "Pressure Her", 2023, 2026, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast023 = new ConDot(2023, "Okay, okay. Just wanted to ask, Theo.", "You", false, "", "", 2024, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast024 = new ConDot(2024, "Mhmm...", "Theodora", false, "", "", 2025, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast025 = new ConDot(2025, "She zones back out again.", "", false, "", "", 2025, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast026 = new ConDot(2026, "No, really Theo, what's going on?", "You", false, "", "", 2027, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
+    //public ConDot breakfast0 = new ConDot(200x, "Dia", "Speaker", false, "", "", next id, 0, 0, FlagState.NotSet, 0, 0, 0, leftimage, rightimage);
 
     //public ConDot name = new ConDot(ID, "Dia", "Speaker", false, "", "", next id, 0, new FlagHold(), new ImageHold())
 
@@ -177,8 +190,6 @@ public class GameManager : MonoBehaviour
         LeftButton = GameObject.Find("Left Button");
         RightButton = GameObject.Find("Right Button");
         Triangle = GameObject.Find("Triangle");
-        // textInputField = GameObject.Find("Text Input Field");
-        // textInputFieldText = GameObject.Find("Text Input Field Text").GetComponent<TextMeshProUGUI>();
         ImageBankObject = GameObject.Find("Image Bank");
         leftImage = GameObject.Find("Left Image");
         rightImage = GameObject.Find("Right Image");
@@ -190,9 +201,29 @@ public class GameManager : MonoBehaviour
         cdlist.Add(prolouge5);
         cdlist.Add(prolouge6);
 
+        cdlist.Add(breakfast001);
+        cdlist.Add(breakfast002);
+        cdlist.Add(breakfast003);
+        cdlist.Add(breakfast004);
+        cdlist.Add(breakfast005);
+        cdlist.Add(breakfast006);
+        cdlist.Add(breakfast007);
+        cdlist.Add(breakfast008);
+        cdlist.Add(breakfast009);
+        cdlist.Add(breakfast010);
+        cdlist.Add(breakfast011);
+        cdlist.Add(breakfast012);
+        cdlist.Add(breakfast013);
+        cdlist.Add(breakfast014);
+        cdlist.Add(breakfast015);
+        cdlist.Add(breakfast016);
+        cdlist.Add(breakfast017);
+
 
         ImageBank imageBankScript = ImageBankObject.GetComponent<ImageBank>();
         imagelist = imageBankScript.imagelist;
+
+
 
         currentConDot = prolouge1;
 
@@ -300,11 +331,11 @@ public class GameManager : MonoBehaviour
 
         targetFFlag.FlagState = FlagState.NotSet;
 
-        if (currentConDot.FlagHold.FlagIdToReadForNextConDot != 0)
+        if (currentConDot.FlagIdToReadForNextConDot != 0)
         {
             foreach (FFlag f in fflaglist)
             {
-                if (f.Id == currentConDot.FlagHold.FlagIdToReadForNextConDot)
+                if (f.Id == currentConDot.FlagIdToReadForNextConDot)
                 {
                     targetFFlag = f;
                     break;
@@ -314,12 +345,12 @@ public class GameManager : MonoBehaviour
 
         if (targetFFlag.FlagState == FlagState.True)
             {
-                targetConDotId = currentConDot.FlagHold.ConDotIfFlagTrue;
+                targetConDotId = currentConDot.ConDotIfFlagTrue;
             }
 
         if (targetFFlag.FlagState == FlagState.False)
             {
-                targetConDotId = currentConDot.FlagHold.ConDotIfFlagFalse;
+                targetConDotId = currentConDot.ConDotIfFlagFalse;
             }
 
         foreach (ConDot cd in cdlist)
@@ -343,25 +374,25 @@ public class GameManager : MonoBehaviour
     IEnumerator SetFlags()
     {
         print("A");
-        if (currentConDot.FlagHold.FlagIdToBeSet != 0)
+        if (currentConDot.FlagIdToBeSet != 0)
         {
             print("aa");
 
             foreach (FFlag f in fflaglist)
             {
-                if (f.Id == currentConDot.FlagHold.FlagIdToBeSet)
+                if (f.Id == currentConDot.FlagIdToBeSet)
                 {
                     int i = fflaglist.IndexOf(f);
                     print(i);
                     FFlag g = fflaglist[i];
-                    g.FlagState = currentConDot.FlagHold.FlagIdStateToBeSet;
+                    g.FlagState = currentConDot.FlagIdStateToBeSet;
                     fflaglist[i] = g;
                     break;
                 }
             }
 
             //FFlag o = fflaglist[setFlagsi];
-            //o.FlagState = currentConDot.FlagHold.FlagIdStateToBeSet;
+            //o.FlagState = currentConDot.FlagIdStateToBeSet;
         }
 
         yield break;
@@ -433,31 +464,31 @@ public class GameManager : MonoBehaviour
             RightButton.SetActive(false);
         }
         
-        if (currentConDot.ImageHold.IdForLeftImage != 0)
+        if (currentConDot.IdForLeftImage != 0)
         {
-            if (currentConDot.ImageHold.IdForLeftImage == 1)
+            if (currentConDot.IdForLeftImage == 1)
             {
                 leftImage.SetActive(false);
             }
 
             else
             {
-                leftImage.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[currentConDot.ImageHold.IdForLeftImage];
+                leftImage.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[currentConDot.IdForLeftImage];
                 leftImage.SetActive(true);
             }
             
         }
 
-        if (currentConDot.ImageHold.IdForRightImage != 0)
+        if (currentConDot.IdForRightImage != 0)
         {
-            if (currentConDot.ImageHold.IdForRightImage == 1)
+            if (currentConDot.IdForRightImage == 1)
             {
                 rightImage.SetActive(false);
             }
 
             else
             {
-                rightImage.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[currentConDot.ImageHold.IdForRightImage];
+                rightImage.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[currentConDot.IdForRightImage];
                 rightImage.SetActive(true);
             }
         }
