@@ -155,7 +155,7 @@ public class GameManager : MonoBehaviour
     public ConDot breakfast014 = new ConDot(2014, "Your Mother starts rambling on about something or other but you keep looking at Theodora.", "", false, "", "", 2015, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 5);
     public ConDot breakfast015 = new ConDot(2015, "She seems to be... zoned out.", "", false, "", "", 2016, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 3);
     public ConDot breakfast016 = new ConDot(2016, "She is not usually zoned out.", "", false, "", "", 2017, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfast017 = new ConDot(2017, "Something seems wrong...", "", true, "Act Secretively", "Act Agressively", 2018, 2027, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast017 = new ConDot(2017, "Something seems wrong...", "", false, "", "", 2018, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot breakfast018 = new ConDot(2018, "You whisper in a low tone, so no one else can hear you. You poke her and she jumps again.", "", false, "", "", 2019, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot breakfast019 = new ConDot(2019, "Psst! Theo! What's going on?", "You", false, "", "", 2020, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot breakfast020 = new ConDot(2020, "Huh? What?", "Theodora", false, "", "", 2021, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
@@ -163,12 +163,42 @@ public class GameManager : MonoBehaviour
     public ConDot breakfast022 = new ConDot(2022, "Oh. I'm... I'm fine, don't worry about me. I'm just tired.", "Theodora", true, "Let it Go", "Pressure Her", 2023, 2026, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot breakfast023 = new ConDot(2023, "Okay, okay. Just wanted to ask, Theo.", "You", false, "", "", 2024, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot breakfast024 = new ConDot(2024, "Mhmm...", "Theodora", false, "", "", 2025, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfast025 = new ConDot(2025, "She zones back out again.", "", false, "", "", 2025, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast025 = new ConDot(2025, "She zones back out again.", "", false, "", "", 3001, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot breakfast026 = new ConDot(2026, "No, really Theo, what's going on?", "You", false, "", "", 2027, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast027 = new ConDot(2027, "I'm-- fine, okay?! Just leave me alone...", "Theodora", false, "", "", 2028, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast028 = new ConDot(2028, "It seems like this isn't going anywhere.", "", false, "", "", 2029, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast029 = new ConDot(2029, "You side-eye her. She sticks her tongue out at you.", "", false, "", "", 2030, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast030 = new ConDot(2030, "You make a mean face at her. She does it back.", "", false, "", "", 2031, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast031 = new ConDot(2031, "Why don't you--?!", "You", false, "", "", 2032, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast032 = new ConDot(2032, "CHILDREN!", "Mother", false, "", "", 2033, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 5);
+    public ConDot breakfast033 = new ConDot(2033, "Children, both of you! You will sit and eat like proper ladys of the court!", "Mother", false, "", "", 2034, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfast034 = new ConDot(2034, "Something tightens in your chest and you look down at your food. You try eating it again, but it doesn't seem as appetizing.", "", false, "", "", 3001, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 1);
+    public ConDot breakfastend001 = new ConDot (3001, "The rest of breakfast is uneventful.", "", false, "", "", 3002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 1);
+    public ConDot breakfastend002 = new ConDot (3002, "Your Father stands and taps his fork against his glass to get the crowd's attention.", "", false, "", "", 3003, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 6);
+    public ConDot breakfastend003 = new ConDot (3003, "This breakfast is offically over. Everyone is free to go. Court will be in session in an hour.", "Father", false, "", "", 3004, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend004 = new ConDot (3004, "He sits back down and people begin to leave. Others stay to finish their meal. One of your teachers walks up to you and Theodora.", "", false, "", "", 3005, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 3);
+    public ConDot breakfastend005 = new ConDot (3005, "Remember, after your meals, you must report to the stables for your horse-back riding lessons, okay?", "Teacher", false, "", "", 3006, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend006 = new ConDot (3006, "Okay...", "You & Theodora", false, "", "", 3007, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend007 = new ConDot (3007, "Be more merry, Princesses! Today will be very exciting. You are going to learn how to make your horses jump!", "Teacher", false, "", "", 3008, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend008 = new ConDot (3008, "Mhm...", "You & Theodora", false, "", "", 3009, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend009 = new ConDot (3009, "You both know it will not be very exciting.", "", false, "", "", 3010, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend010 = new ConDot (3010, "Your teacher gets called away by a Lady-in-Waiting to discuss something you can't care about.", "", false, "", "", 3011, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend011 = new ConDot (3011, "After sitting for a few seconds, Theodora gets up and leaves.", "", false, "", "", 3012, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend012 = new ConDot (3012, "She seems to be going to the stables, but you notice at the last second she turns in the wrong direction.", "", false, "", "", 3013, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend013 = new ConDot (3013, "You quickly get up and follow her, peeking around the corner to see where she is going.", "", false, "", "", 3014, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend014 = new ConDot (3014, "Your sister turns one more corner and steps outside. She's going to the garden.", "", false, "", "", 3015, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend015 = new ConDot (3015, "She does not usually go to the garden randomly.", "", false, "", "", 3016, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend016 = new ConDot (3016, "She does not usually skip class. That's your job.", "", false, "", "", 3017, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend017 = new ConDot (3017, "Something is definitely wrong.", "", false, "", "", 3018, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend018 = new ConDot (3018, "You follow her into the garden.", "", false, "", "", 3018, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    
+    // flowbers: lavender (LGBTQ), green carnations (homosexual), rose (gay men), violets (lesbian and bi women)
+    // lily (yuri, lesbians), trillium (bisexuality), watermelon (abrosexual), orchid (intersex)
+    // Coltsfoot (justice shall be done)
 
     //public ConDot breakfast0 = new ConDot(200x, "Dia", "Speaker", false, "", "", next id, 0, 0, FlagState.NotSet, 0, 0, 0, leftimage, rightimage);
 
-    //public ConDot name = new ConDot(ID, "Dia", "Speaker", false, "", "", next id, 0, new FlagHold(), new ImageHold())
+    //public ConDot name = new ConDot(ID, "Dia", "Speaker", false, "", "", next id, 0, new FlagHold(), new ImageHold()
 
     // Start is called before the first frame update
     void Awake()
@@ -218,6 +248,42 @@ public class GameManager : MonoBehaviour
         cdlist.Add(breakfast015);
         cdlist.Add(breakfast016);
         cdlist.Add(breakfast017);
+        cdlist.Add(breakfast018);
+        cdlist.Add(breakfast019);
+        cdlist.Add(breakfast020);
+        cdlist.Add(breakfast021);
+        cdlist.Add(breakfast022);
+        cdlist.Add(breakfast023);
+        cdlist.Add(breakfast024);
+        cdlist.Add(breakfast025);
+        cdlist.Add(breakfast026);
+        cdlist.Add(breakfast027);
+        cdlist.Add(breakfast028);
+        cdlist.Add(breakfast029);
+        cdlist.Add(breakfast030);
+        cdlist.Add(breakfast031);
+        cdlist.Add(breakfast032);
+        cdlist.Add(breakfast033);
+        cdlist.Add(breakfast034);
+
+        cdlist.Add(breakfastend001);
+        cdlist.Add(breakfastend002);
+        cdlist.Add(breakfastend003);
+        cdlist.Add(breakfastend004);
+        cdlist.Add(breakfastend005);
+        cdlist.Add(breakfastend006);
+        cdlist.Add(breakfastend007);
+        cdlist.Add(breakfastend008);
+        cdlist.Add(breakfastend009);
+        cdlist.Add(breakfastend010);
+        cdlist.Add(breakfastend011);
+        cdlist.Add(breakfastend012);
+        cdlist.Add(breakfastend013);
+        cdlist.Add(breakfastend014);
+        cdlist.Add(breakfastend015);
+        cdlist.Add(breakfastend016);
+        cdlist.Add(breakfastend017);
+        cdlist.Add(breakfastend018);
 
 
         ImageBank imageBankScript = ImageBankObject.GetComponent<ImageBank>();
@@ -266,7 +332,7 @@ public class GameManager : MonoBehaviour
     {
         Render();
         
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
 
         Triangle.SetActive(true);
 

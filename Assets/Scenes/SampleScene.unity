@@ -883,6 +883,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575357232}
   m_CullTransparentMesh: 1
+--- !u!1 &609643306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 609643307}
+  - component: {fileID: 609643309}
+  - component: {fileID: 609643308}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &609643307
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609643306}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1549341358}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -246}
+  m_SizeDelta: {x: 1300, y: 438.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &609643308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609643306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &609643309
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609643306}
+  m_CullTransparentMesh: 1
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,8 +1488,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1892,6 +1967,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 609643307}
+  - {fileID: 2037305852}
   - {fileID: 303676362}
   - {fileID: 575357233}
   - {fileID: 474045958}
@@ -2125,8 +2202,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2617,11 +2694,11 @@ MonoBehaviour:
     id: 2017
     dia: Something seems wrong...
     characterName: 
-    buttonBool: 1
-    leftChoice: Act Secretively
-    rightChoice: Act Agressively
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
     leftConDot: 2018
-    rightConDot: 2027
+    rightConDot: 0
     flagIdToBeSet: 0
     flagIdStateToBeSet: 0
     flagIdToReadForNextConDot: 0
@@ -2749,7 +2826,7 @@ MonoBehaviour:
     buttonBool: 0
     leftChoice: 
     rightChoice: 
-    leftConDot: 2025
+    leftConDot: 3001
     rightConDot: 0
     flagIdToBeSet: 0
     flagIdStateToBeSet: 0
@@ -2766,6 +2843,432 @@ MonoBehaviour:
     leftChoice: 
     rightChoice: 
     leftConDot: 2027
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast027:
+    id: 2027
+    dia: I'm-- fine, okay?! Just leave me alone...
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2028
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast028:
+    id: 2028
+    dia: It seems like this isn't going anywhere.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2029
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast029:
+    id: 2029
+    dia: You side-eye her. She sticks her tongue out at you.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2030
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast030:
+    id: 2030
+    dia: You make a mean face at her. She does it back.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2031
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast031:
+    id: 2031
+    dia: Why don't you--?!
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2032
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast032:
+    id: 2032
+    dia: CHILDREN!
+    characterName: Mother
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2033
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 5
+  breakfast033:
+    id: 2033
+    dia: Children, both of you! You will sit and eat like proper ladys of the court!
+    characterName: Mother
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 2034
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfast034:
+    id: 2034
+    dia: Something tightens in your chest and you look down at your food. You try
+      eating it again, but it doesn't seem as appetizing.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3001
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 1
+  breakfastend001:
+    id: 3001
+    dia: The rest of breakfast is uneventful.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3002
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 1
+  breakfastend002:
+    id: 3002
+    dia: Your Father stands and taps his fork against his glass to get the crowd's
+      attention.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3003
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 6
+  breakfastend003:
+    id: 3003
+    dia: This breakfast is offically over. Everyone is free to go. Court will be
+      in session in an hour.
+    characterName: Father
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3004
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfastend004:
+    id: 3004
+    dia: He sits back down and people begin to leave. Others stay to finish their
+      meal. One of your teachers walks up to you and Theodora.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3005
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 3
+  breakfastend005:
+    id: 3005
+    dia: Remember, after your meals, you must report to the stables for your horse-back
+      riding lessons, okay?
+    characterName: Teacher
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3006
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfastend006:
+    id: 3006
+    dia: Okay...
+    characterName: You & Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3007
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfastend007:
+    id: 3007
+    dia: Be more merry, Princesses! Today will be very exciting. You are going to
+      learn how to make your horses jump!
+    characterName: Teacher
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3008
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfastend008:
+    id: 3008
+    dia: Mhm...
+    characterName: You & Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3009
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfastend009:
+    id: 3009
+    dia: You both know it will not be very exciting.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3010
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfastend010:
+    id: 3010
+    dia: Your teacher gets called away by a Lady-in-Waiting to discuss something
+      you can't care about.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3011
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfastend011:
+    id: 3011
+    dia: After sitting for a few seconds, Theodora gets up and leaves.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3012
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfastend012:
+    id: 3012
+    dia: She seems to be going to the stables, but you notice at the last second
+      she turns in the wrong direction.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3013
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfastend013:
+    id: 3013
+    dia: You quickly get up and follow her, peeking around the corner to see where
+      she is going.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3014
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfastend014:
+    id: 3014
+    dia: Your sister turns one more corner and steps outside. She's going to the
+      garden.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3015
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfastend015:
+    id: 3015
+    dia: She does not usually go to the garden randomly.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3016
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfastend016:
+    id: 3016
+    dia: She does not usually skip class. That's your job.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3017
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfastend017:
+    id: 3017
+    dia: Something is definitely wrong.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3018
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  breakfastend018:
+    id: 3018
+    dia: You follow her into the garden.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 3018
     rightConDot: 0
     flagIdToBeSet: 0
     flagIdStateToBeSet: 0
@@ -2796,6 +3299,81 @@ MonoBehaviour:
     id: 0
     flagState: 0
   iforpress: 0
+--- !u!1 &2037305851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2037305852}
+  - component: {fileID: 2037305854}
+  - component: {fileID: 2037305853}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2037305852
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037305851}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1549341358}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -399, y: 32.2}
+  m_SizeDelta: {x: 500, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2037305853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037305851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2037305854
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037305851}
+  m_CullTransparentMesh: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
