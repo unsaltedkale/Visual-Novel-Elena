@@ -231,6 +231,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e2b1bac3824524693848dcd18c5baf70, type: 3}
   - {fileID: 21300000, guid: 8b76247413e1e4017b0a51732a7f320b, type: 3}
   - {fileID: 21300000, guid: d06df19c3c49c48aeb3eb91b98308d27, type: 3}
+  - {fileID: 21300000, guid: 3799ce1af30804224a19483a85987bd3, type: 3}
 --- !u!1 &295952278
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +493,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303676361}
+  m_CullTransparentMesh: 1
+--- !u!1 &395700022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 395700023}
+  - component: {fileID: 395700025}
+  - component: {fileID: 395700024}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &395700023
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395700022}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1549341358}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 96, y: 54}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &395700024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395700022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 381c34a81c3224520a09cd49f367c5a0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &395700025
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395700022}
   m_CullTransparentMesh: 1
 --- !u!1 &474045957
 GameObject:
@@ -895,7 +971,7 @@ GameObject:
   - component: {fileID: 609643309}
   - component: {fileID: 609643308}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Dia Rectangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -933,7 +1009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.7372549}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1967,6 +2043,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 395700023}
   - {fileID: 609643307}
   - {fileID: 2037305852}
   - {fileID: 303676362}
@@ -2329,6 +2406,8 @@ MonoBehaviour:
   Triangle: {fileID: 0}
   leftImage: {fileID: 0}
   rightImage: {fileID: 0}
+  speakerRectangle: {fileID: 0}
+  background: {fileID: 0}
   prolouge1:
     id: 1001
     dia: Welcome to the Kingdom of Carisia.
@@ -3215,7 +3294,7 @@ MonoBehaviour:
     idForRightImage: 0
   breakfastend015:
     id: 3015
-    dia: She does not usually go to the garden randomly.
+    dia: She does not go to the garden randomly.
     characterName: 
     buttonBool: 0
     leftChoice: 
@@ -3231,7 +3310,7 @@ MonoBehaviour:
     idForRightImage: 0
   breakfastend016:
     id: 3016
-    dia: She does not usually skip class. That's your job.
+    dia: She does not skip class. That's your job.
     characterName: 
     buttonBool: 0
     leftChoice: 
@@ -3268,8 +3347,73 @@ MonoBehaviour:
     buttonBool: 0
     leftChoice: 
     rightChoice: 
-    leftConDot: 3018
+    leftConDot: 4001
     rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden001:
+    id: 4001
+    dia: The Royal Gardens contain a while variety of plants across Carisia.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4002
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 1
+    idForRightImage: 1
+  garden002:
+    id: 4002
+    dia: Some beautiful, some tasty, some very toxic.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4003
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden003:
+    id: 4003
+    dia: Theodora is trudging around the garden grounds, dress getting progressively
+      more muddy, seeming searching for some kind of plant.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4004
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 3
+  garden004:
+    id: 4004
+    dia: She hasn't noticed you yet.
+    characterName: 
+    buttonBool: 1
+    leftChoice: Act Accusatory
+    rightChoice: Act Kindly
+    leftConDot: 4005
+    rightConDot: 4006
     flagIdToBeSet: 0
     flagIdStateToBeSet: 0
     flagIdToReadForNextConDot: 0
@@ -3311,7 +3455,7 @@ GameObject:
   - component: {fileID: 2037305854}
   - component: {fileID: 2037305853}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Speaker Rectangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3349,7 +3493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.7372549}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

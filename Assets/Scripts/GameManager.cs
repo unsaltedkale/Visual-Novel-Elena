@@ -130,7 +130,8 @@ public class GameManager : MonoBehaviour
     public GameObject Triangle;
     public GameObject leftImage;
     public GameObject rightImage;
-    
+    public GameObject speakerRectangle;
+    public GameObject background;
 
     public ConDot prolouge1 = new ConDot(1001, "Welcome to the Kingdom of Carisia.", "", false, "", "", 1002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot prolouge2 = new ConDot(1002, "You, Princess Elena I, are the youngest princess of Carisia.", "", false, "", "", 1003, 0, 0, FlagState.NotSet, 0, 0, 0, 2, 0);
@@ -187,16 +188,21 @@ public class GameManager : MonoBehaviour
     public ConDot breakfastend012 = new ConDot (3012, "She seems to be going to the stables, but you notice at the last second she turns in the wrong direction.", "", false, "", "", 3013, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot breakfastend013 = new ConDot (3013, "You quickly get up and follow her, peeking around the corner to see where she is going.", "", false, "", "", 3014, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot breakfastend014 = new ConDot (3014, "Your sister turns one more corner and steps outside. She's going to the garden.", "", false, "", "", 3015, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend015 = new ConDot (3015, "She does not usually go to the garden randomly.", "", false, "", "", 3016, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend016 = new ConDot (3016, "She does not usually skip class. That's your job.", "", false, "", "", 3017, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend015 = new ConDot (3015, "She does not go to the garden randomly.", "", false, "", "", 3016, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend016 = new ConDot (3016, "She does not skip class. That's your job.", "", false, "", "", 3017, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot breakfastend017 = new ConDot (3017, "Something is definitely wrong.", "", false, "", "", 3018, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend018 = new ConDot (3018, "You follow her into the garden.", "", false, "", "", 3018, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    
+    public ConDot breakfastend018 = new ConDot (3018, "You follow her into the garden.", "", false, "", "", 4001, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden001 = new ConDot(4001, "The Royal Gardens contain a while variety of plants across Carisia.", "", false, "", "", 4002, 0, 0, FlagState.NotSet, 0, 0, 0, 1, 1);
+    public ConDot garden002 = new ConDot(4002, "Some beautiful, some tasty, some very toxic.", "", false, "", "", 4003, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden003 = new ConDot(4003, "Theodora is trudging around the garden grounds, dress getting progressively more muddy, seeming searching for some kind of plant.", "", false, "", "", 4004, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 3);
+    public ConDot garden004 = new ConDot(4004, "She hasn't noticed you yet.", "", true, "Act Accusatory", "Act Kindly", 4005, 4006, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
     // flowbers: lavender (LGBTQ), green carnations (homosexual), rose (gay men), violets (lesbian and bi women)
     // lily (yuri, lesbians), trillium (bisexuality), watermelon (abrosexual), orchid (intersex)
     // Coltsfoot (justice shall be done)
 
-    //public ConDot breakfast0 = new ConDot(200x, "Dia", "Speaker", false, "", "", next id, 0, 0, FlagState.NotSet, 0, 0, 0, leftimage, rightimage);
+    //public ConDot garden001 = new ConDot(4001, "Dia", "Speaker", false, "", "", next id, 0, 0, FlagState.NotSet, 0, 0, 0, leftimage, rightimage);
 
     //public ConDot name = new ConDot(ID, "Dia", "Speaker", false, "", "", next id, 0, new FlagHold(), new ImageHold()
 
@@ -223,6 +229,8 @@ public class GameManager : MonoBehaviour
         ImageBankObject = GameObject.Find("Image Bank");
         leftImage = GameObject.Find("Left Image");
         rightImage = GameObject.Find("Right Image");
+        speakerRectangle = GameObject.Find("Speaker Rectangle");
+        background = GameObject.Find("Background");
 
         cdlist.Add(prolouge1);
         cdlist.Add(prolouge2);
@@ -284,6 +292,11 @@ public class GameManager : MonoBehaviour
         cdlist.Add(breakfastend016);
         cdlist.Add(breakfastend017);
         cdlist.Add(breakfastend018);
+
+        cdlist.Add(garden001);
+        cdlist.Add(garden002);
+        cdlist.Add(garden003);
+        cdlist.Add(garden004);
 
 
         ImageBank imageBankScript = ImageBankObject.GetComponent<ImageBank>();
@@ -516,6 +529,16 @@ public class GameManager : MonoBehaviour
         diaText.text = currentConDot.Dia;
         characterNameText.text = currentConDot.CharacterName;
 
+        if (currentConDot.CharacterName == "")
+        {
+            speakerRectangle.SetActive(false);
+        }
+
+        else
+        {
+            speakerRectangle.SetActive(true);
+        }
+
         if (currentConDot.ButtonBool == true)
         {
             LeftButton.SetActive(true);
@@ -557,6 +580,11 @@ public class GameManager : MonoBehaviour
                 rightImage.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[currentConDot.IdForRightImage];
                 rightImage.SetActive(true);
             }
+        }
+
+        if (currentConDot.Id == 4001)
+        {
+            background.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[7];
         }
     }
 }
