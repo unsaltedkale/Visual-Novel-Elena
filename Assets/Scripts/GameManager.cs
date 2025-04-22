@@ -196,6 +196,7 @@ public class GameManager : MonoBehaviour
     public ConDot garden002 = new ConDot(4002, "Some beautiful, some tasty, some very toxic.", "", false, "", "", 4003, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot garden003 = new ConDot(4003, "Theodora is trudging around the garden grounds, dress getting progressively more muddy, seeming searching for some kind of plant.", "", false, "", "", 4004, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 3);
     public ConDot garden004 = new ConDot(4004, "She hasn't noticed you yet.", "", true, "Act Accusatory", "Act Kindly", 4005, 4006, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+     public ConDot garden005 = new ConDot(4005, "heyyyyyyy whatsuppppppp", "You", false, "", "", 4006, 0, 0, FlagState.NotSet, 0, 0, 0, 2, 0);
 
 
     // flowbers: lavender (LGBTQ), green carnations (homosexual), rose (gay men), violets (lesbian and bi women)
@@ -297,6 +298,7 @@ public class GameManager : MonoBehaviour
         cdlist.Add(garden002);
         cdlist.Add(garden003);
         cdlist.Add(garden004);
+        cdlist.Add(garden005);
 
 
         ImageBank imageBankScript = ImageBankObject.GetComponent<ImageBank>();
