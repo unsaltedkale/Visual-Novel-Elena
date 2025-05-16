@@ -3413,7 +3413,366 @@ MonoBehaviour:
     leftChoice: Act Accusatory
     rightChoice: Act Kindly
     leftConDot: 4005
-    rightConDot: 4006
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden005:
+    id: 4005
+    dia: Theodora, what are you doing here?!
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4006
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 2
+    idForRightImage: 0
+  garden006:
+    id: 4006
+    dia: She turns to look at you. For a second, you see her face full of fear before
+      it hardens into anger.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4007
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden007:
+    id: 4007
+    dia: I could ask the same of you! What are you doing here, Elena?
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4008
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden008:
+    id: 4008
+    dia: You know, just following after my sister who has seemingly *forgotten* how
+      to get to the stables even though she's been getting lessons there since she
+      was five--
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4009
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden009:
+    id: 4009
+    dia: Stay in your own lane, Elena! I don't care about any of that shit!
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4010
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden010:
+    id: 4010
+    dia: You stare at her.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4011
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden011:
+    id: 4011
+    dia: She stares back at you. There's something behind it, though.
+    characterName: 
+    buttonBool: 1
+    leftChoice: Why are you so angry? (Unconcerned)
+    rightChoice: Why are you so scared? (Concerned)
+    leftConDot: 4012
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden012:
+    id: 4012
+    dia: Why are you so angry? Why are you like this all of the sudden?
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4013
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden013:
+    id: 4013
+    dia: You wouldn't care, Elena! No one here at this airheaded castle does!
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4014
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden014:
+    id: 4014
+    dia: All these stupid horseback riding lessons and dancing lessons and courting
+      lessons and all this stuff on how to be a *good little princess*-- it doesn't
+      matter!
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4015
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden015:
+    id: 4015
+    dia: None of it matters. It's all just things our parents made up.
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4016
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden016:
+    id: 4016
+    dia: What?
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4017
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden017:
+    id: 4017
+    dia: You wouldn't get it. You don't care.
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4018
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden018:
+    id: 4018
+    dia: Wait, I--
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4019
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden019:
+    id: 4019
+    dia: Theodora hikes up her skirts and petticoats.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4020
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden020:
+    id: 4020
+    dia: Just wait and see what some *real* royalty can do.
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4021
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  garden021:
+    id: 4021
+    dia: Theodora turns and heads down a secert path you've never seen before. When
+      you try to follow her, she's gone without a trace. The path she took is already
+      hidden again.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 4022
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 1
+  garden022:
+    id: 4022
+    dia: There's no use in staying here. There's nothing left to say.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 5001
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  gardenend001:
+    id: 5001
+    dia: You trudge back into the castle, already late for lessons.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 5002
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  gardenend002:
+    id: 5002
+    dia: Your teacher reprimands you for being late and having a dirty dress.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 5003
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  gardenend003:
+    id: 5003
+    dia: Your teacher doesn't take notice of Theodora's abscence at all.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 5004
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 1
+    idForRightImage: 0
+  gardenend004:
+    id: 5004
+    dia: You do.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 5005
+    rightConDot: 0
     flagIdToBeSet: 0
     flagIdStateToBeSet: 0
     flagIdToReadForNextConDot: 0
