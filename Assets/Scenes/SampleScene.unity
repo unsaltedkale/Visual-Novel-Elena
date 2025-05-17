@@ -3409,7 +3409,7 @@ MonoBehaviour:
     id: 4004
     dia: She hasn't noticed you yet.
     characterName: 
-    buttonBool: 1
+    buttonBool: 0
     leftChoice: Act Accusatory
     rightChoice: Act Kindly
     leftConDot: 4005
@@ -4079,7 +4079,7 @@ MonoBehaviour:
     buttonBool: 0
     leftChoice: 
     rightChoice: 
-    leftConDot: 4046
+    leftConDot: 5101
     rightConDot: 0
     flagIdToBeSet: 0
     flagIdStateToBeSet: 0
@@ -4088,23 +4088,7 @@ MonoBehaviour:
     conDotIfFlagFalse: 0
     idForLeftImage: 0
     idForRightImage: 0
-  garden046:
-    id: 4046
-    dia: Anything for your sisters.
-    characterName: 
-    buttonBool: 0
-    leftChoice: 
-    rightChoice: 
-    leftConDot: 5001
-    rightConDot: 0
-    flagIdToBeSet: 0
-    flagIdStateToBeSet: 0
-    flagIdToReadForNextConDot: 0
-    conDotIfFlagTrue: 0
-    conDotIfFlagFalse: 0
-    idForLeftImage: 0
-    idForRightImage: 0
-  gardenend001:
+  hostileGardenEnd001:
     id: 5001
     dia: You trudge back into the castle, already late for lessons.
     characterName: 
@@ -4120,7 +4104,7 @@ MonoBehaviour:
     conDotIfFlagFalse: 0
     idForLeftImage: 0
     idForRightImage: 0
-  gardenend002:
+  hostileGardenEnd002:
     id: 5002
     dia: Your teacher reprimands you for being late and having a dirty dress.
     characterName: 
@@ -4136,7 +4120,7 @@ MonoBehaviour:
     conDotIfFlagFalse: 0
     idForLeftImage: 0
     idForRightImage: 0
-  gardenend003:
+  hostileGardenEnd003:
     id: 5003
     dia: Your teacher doesn't take notice of Theodora's abscence at all.
     characterName: 
@@ -4152,14 +4136,174 @@ MonoBehaviour:
     conDotIfFlagFalse: 0
     idForLeftImage: 1
     idForRightImage: 0
-  gardenend004:
+  hostileGardenEnd004:
     id: 5004
     dia: You do.
     characterName: 
     buttonBool: 0
     leftChoice: 
     rightChoice: 
-    leftConDot: 5005
+    leftConDot: 8001
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  sisterGardenEnd001:
+    id: 5101
+    dia: You return to the castle, already late for lessons.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 5102
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  sisterGardenEnd002:
+    id: 5102
+    dia: Your teacher reprimands you for being late and having a dirty dress.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 5103
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  sisterGardenEnd003:
+    id: 5103
+    dia: Your teacher doesn't even mention Theodora's absence.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 5104
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 1
+    idForRightImage: 0
+  sisterGardenEnd004:
+    id: 5104
+    dia: You stay quiet.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 5105
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  sisterGardenEnd005:
+    id: 5105
+    dia: Anything for your sisters.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6001
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden001:
+    id: 6001
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd001:
+    id: 7001
+    dia: Something in your stomach hurts. The world starts to warp around you.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  sisterNightGardenEnd001ConDot:
+    id: 7101
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileTea:
+    id: 8001
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  sisterTea:
+    id: 9001
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
     rightConDot: 0
     flagIdToBeSet: 0
     flagIdStateToBeSet: 0
