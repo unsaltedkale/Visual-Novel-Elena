@@ -4234,12 +4234,389 @@ MonoBehaviour:
     idForRightImage: 0
   nightGarden001:
     id: 6001
-    dia: 
+    dia: Theodora reappears by midday for lunch in a freshly cleaned dress. No one
+      comments on her disappearence. You don't either, to keep the secret.
     characterName: 
     buttonBool: 0
     leftChoice: 
     rightChoice: 
-    leftConDot: 0
+    leftConDot: 6002
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 3
+  nightGarden002:
+    id: 6002
+    dia: Days pass. Everything seems normal again...
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6003
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 1
+  nightGarden003:
+    id: 6003
+    dia: ... until tonight.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6004
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden004:
+    id: 6004
+    dia: You're about lie down and sleep when you notice the moonlight that usually
+      shines through your bedchambers' window is dim.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6005
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden005:
+    id: 6005
+    dia: You approach the window. You remember it's a new moon tonight. The astrological
+      oracle that your Father and Mother loves was blabbering on about it today.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6006
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden006:
+    id: 6006
+    dia: Then it hits you.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6007
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden007:
+    id: 6007
+    dia: An empty moon.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6008
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden008:
+    id: 6008
+    dia: The darkest night.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6009
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden009:
+    id: 6009
+    dia: Curses. You need to get out to the garden. Fast.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6010
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden010:
+    id: 6010
+    dia: You look to the door. Curses again. The Guards stationed outside of your
+      bedchamber would never allow that.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6011
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden011:
+    id: 6011
+    dia: Maybe there's... another way...
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6012
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden012:
+    id: 6012
+    dia: You ever-so-carefully lean out the window.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6013
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden013:
+    id: 6013
+    dia: You quickly lean back into your bedchamber. Nope nope nope. Even with insane
+      acrobatics, you can't survive a drop from your bedchamber tower.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6014
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden014:
+    id: 6014
+    dia: You sigh and dramatically lay down on the floor. If only there was a distraction...
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6015
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden015:
+    id: 6015
+    dia: Abruptly, the wood floor trembles and lurches as at least eleven cannons
+      discharge one after the other and shake the foundations of the castle.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6016
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden016:
+    id: 6016
+    dia: You hear the muffled voices of your guards through your bedchamber door.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6017
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden017:
+    id: 6017
+    dia: A danger for the princess! We must go promptly!
+    characterName: Guard 1
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6018
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden018:
+    id: 6018
+    dia: But we cannot protect the princess if we are not near her!
+    characterName: Guard 2
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6019
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden019:
+    id: 6019
+    dia: Forsooth, however, we must think long term. If we let the danger come to
+      us, the enemy will be fully prepared!
+    characterName: Guard 1
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6020
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden020:
+    id: 6020
+    dia: Verily. We must proceed at once!
+    characterName: Guard 2
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6021
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden021:
+    id: 6021
+    dia: Guard 1 and Guard 2 rush off, full plate armor clanking loudly as they leave.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6022
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden022:
+    id: 6022
+    dia: After a few moment of silence, you get up and creak open the door.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6023
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden023:
+    id: 6023
+    dia: All of the torches are blown out. The halls are deserted. Seemingly everyone
+      hurried towards the noise.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6024
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden024:
+    id: 6024
+    dia: You easily sneak out of your bedchambers, through the halls, and into the
+      garden.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6025
     rightConDot: 0
     flagIdToBeSet: 0
     flagIdStateToBeSet: 0
@@ -4250,7 +4627,7 @@ MonoBehaviour:
     idForRightImage: 0
   hostileNightGardenEnd001:
     id: 7001
-    dia: Something in your stomach hurts. The world starts to warp around you.
+    dia: Something in your stomach turns. The world starts to warp around you.
     characterName: 
     buttonBool: 0
     leftChoice: 

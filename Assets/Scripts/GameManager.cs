@@ -253,16 +253,34 @@ public class GameManager : MonoBehaviour
 
 
 
-    public ConDot nightGarden001 = new ConDot(6001, "", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden001 = new ConDot(6001, "Theodora reappears by midday for lunch in a freshly cleaned dress. No one comments on her disappearence. You don't either, to keep the secret.", "", false, "", "", 6002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 3);
+    public ConDot nightGarden002 = new ConDot(6002, "Days pass. Everything seems normal again...", "", false, "", "", 6003, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 1);
+    public ConDot nightGarden003 = new ConDot(6003, "... until tonight.", "", false, "", "", 6004, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden004 = new ConDot(6004, "You're about lie down and sleep when you notice the moonlight that usually shines through your bedchambers' window is dim.", "", false, "", "", 6005, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden005 = new ConDot(6005, "You approach the window. You remember it's a new moon tonight. The astrological oracle that your Father and Mother loves was blabbering on about it today.", "", false, "", "", 6006, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden006 = new ConDot(6006, "Then it hits you.", "", false, "", "", 6007, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden007 = new ConDot(6007, "An empty moon.", "", false, "", "", 6008, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden008 = new ConDot(6008, "The darkest night.", "", false, "", "", 6009, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden009 = new ConDot(6009, "Curses. You need to get out to the garden. Fast.", "", false, "", "", 6010, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden010 = new ConDot(6010, "You look to the door. Curses again. The Guards stationed outside of your bedchamber would never allow that.", "", false, "", "", 6011, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden011 = new ConDot(6011, "Maybe there's... another way...", "", false, "", "", 6012, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden012 = new ConDot(6012, "You ever-so-carefully lean out the window.", "", false, "", "", 6013, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden013 = new ConDot(6013, "You quickly lean back into your bedchamber. Nope nope nope. Even with insane acrobatics, you can't survive a drop from your bedchamber tower.", "", false, "", "", 6014, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden014 = new ConDot(6014, "You sigh and dramatically lay down on the floor. If only there was a distraction...", "", false, "", "", 6015, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden015 = new ConDot(6015, "Abruptly, the wood floor trembles and lurches as at least eleven cannons discharge one after the other and shake the foundations of the castle.", "", false, "", "", 6016, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden016 = new ConDot(6016, "You hear the muffled voices of your guards through your bedchamber door.", "", false, "", "", 6017, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden017 = new ConDot(6017, "A danger for the princess! We must go promptly!", "Guard 1", false, "", "", 6018, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden018 = new ConDot(6018, "But we cannot protect the princess if we are not near her!", "Guard 2", false, "", "", 6019, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden019 = new ConDot(6019, "Forsooth, however, we must think long term. If we let the danger come to us, the enemy will be fully prepared!", "Guard 1", false, "", "", 6020, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden020 = new ConDot(6020, "Verily. We must proceed at once!", "Guard 2", false, "", "", 6021, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden021 = new ConDot(6021, "Guard 1 and Guard 2 rush off, full plate armor clanking loudly as they leave.", "", false, "", "", 6022, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden022 = new ConDot(6022, "After a few moment of silence, you get up and creak open the door.", "", false, "", "", 6023, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden023 = new ConDot(6023, "All of the torches are blown out. The halls are deserted. Seemingly everyone hurried towards the noise.", "", false, "", "", 6024, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden024 = new ConDot(6024, "You easily sneak out of your bedchambers, through the halls, and into the garden.", "", false, "", "", 6025, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
 
 
-
-
-
-
-
-    public ConDot hostileNightGardenEnd001 = new ConDot(7001, "Something in your stomach hurts. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd001 = new ConDot(7001, "Something in your stomach turns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
     public ConDot sisterNightGardenEnd001ConDot = new ConDot (7101, "", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
@@ -427,6 +445,31 @@ public class GameManager : MonoBehaviour
         cdlist.Add(sisterGardenEnd003);
         cdlist.Add(sisterGardenEnd004);
         cdlist.Add(sisterGardenEnd005);
+
+        cdlist.Add(nightGarden001);
+        cdlist.Add(nightGarden002);
+        cdlist.Add(nightGarden003);
+        cdlist.Add(nightGarden004);
+        cdlist.Add(nightGarden005);
+        cdlist.Add(nightGarden006);
+        cdlist.Add(nightGarden007);
+        cdlist.Add(nightGarden008);
+        cdlist.Add(nightGarden009);
+        cdlist.Add(nightGarden010);
+        cdlist.Add(nightGarden011);
+        cdlist.Add(nightGarden012);
+        cdlist.Add(nightGarden013);
+        cdlist.Add(nightGarden014);
+        cdlist.Add(nightGarden015);
+        cdlist.Add(nightGarden016);
+        cdlist.Add(nightGarden017);
+        cdlist.Add(nightGarden018);
+        cdlist.Add(nightGarden019);
+        cdlist.Add(nightGarden020);
+        cdlist.Add(nightGarden021);
+        cdlist.Add(nightGarden022);
+        cdlist.Add(nightGarden023);
+        cdlist.Add(nightGarden024);
 
 
 
