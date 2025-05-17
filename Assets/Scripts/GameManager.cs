@@ -202,7 +202,7 @@ public class GameManager : MonoBehaviour
     public ConDot garden008 = new ConDot(4008, "You know, just following after my sister who has seemingly *forgotten* how to get to the stables even though she's been getting lessons there since she was five--", "You", false, "", "", 4009, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot garden009 = new ConDot(4009, "Stay in your own lane, Elena! I don't care about any of that shit!", "Theodora", false, "", "", 4010, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot garden010 = new ConDot(4010, "You stare at her.", "", false, "", "", 4011, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot garden011 = new ConDot(4011, "She stares back at you. There's something behind it, though.", "", true, "Why are you so angry? (Unconcerned)", "Why are you so scared? (Concerned)", 4012, 00, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden011 = new ConDot(4011, "She stares back at you. There's something behind it, though.", "", true, "Why are you so angry? (Unconcerned)", "Why are you so scared? (Concerned)", 4012, 4023, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot garden012 = new ConDot(4012, "Why are you so angry? Why are you like this all of the sudden?", "You", false, "", "", 4013, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot garden013 = new ConDot(4013, "You wouldn't care, Elena! No one here at this airheaded castle does!", "Theodora", false, "", "", 4014, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot garden014 = new ConDot(4014, "All these stupid horseback riding lessons and dancing lessons and courting lessons and all this stuff on how to be a *good little princess*-- it doesn't matter!", "Theodora", false, "", "", 4015, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
@@ -214,9 +214,30 @@ public class GameManager : MonoBehaviour
     public ConDot garden020 = new ConDot(4020, "Just wait and see what some *real* royalty can do.", "Theodora", false, "", "", 4021, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot garden021 = new ConDot(4021, "Theodora turns and heads down a secert path you've never seen before. When you try to follow her, she's gone without a trace. The path she took is already hidden again.", "", false, "", "", 4022, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 1);
     public ConDot garden022 = new ConDot(4022, "There's no use in staying here. There's nothing left to say.", "", false, "", "", 5001, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-
-
-
+    public ConDot garden023 = new ConDot(4023, "Why are you scared? Is something wrong, Theo?", "You", false, "", "", 4024, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden024 = new ConDot(4024, "Something in Theodora's guise breaks a little.", "", false, "", "", 4025, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden025 = new ConDot(4025, "Scared? What-- What are you talking about, Elena?!", "Theodora", false, "", "", 4026, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden026 = new ConDot(4026, "Theodora's trying to be angry, but you can tell she's just terrified.", "", false, "", "", 4027, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden027 = new ConDot(4027, "Theo I-- look, I'm sorry for following you, I just want to make sure you're okay. You don't seem well.", "You", false, "", "", 4028, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden028 = new ConDot(4028, "Theodora is silent. Her eyes start watering. She turns her face away from you.", "", false, "", "", 4029, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden029 = new ConDot(4029, "Her voice turns low and careful.", "", false, "", "", 4030, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden030 = new ConDot(4030, "Meet me here when the moon is empty and the night is it's darkest. I need you there.", "Theodora", false, "", "", 4031, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden031 = new ConDot(4031, "You're taken aback.", "", false, "", "", 4032, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden032 = new ConDot(4032, "But Theo is your sister.", "", false, "", "", 4033, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden033 = new ConDot(4033, "It's for her. Always for her.", "", false, "", "", 4034, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden034 = new ConDot(4034, "You sharply nod your head.", "", false, "", "", 4035, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden035 = new ConDot(4035, "Theodora does the same back.", "", false, "", "", 4036, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden036 = new ConDot(4036, "I need to gather things. You need to go back. If only one of us are gone Father and Mother won't worry as much.", "Theodora", false, "", "", 4037, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden037 = new ConDot(4037, "You simply nod your head again and turn to leave.", "", false, "", "", 4038, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden038 = new ConDot(4038, "After a split second, Theodora stops you.", "", false, "", "", 4039, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden039 = new ConDot(4039, "Wait-- wait one more moment.", "Theodora", false, "", "", 4040, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden040 = new ConDot(4040, "You look back.", "", false, "", "", 4041, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden041 = new ConDot(4041, "...", "Theodora", false, "", "", 4042, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden042 = new ConDot(4042, "Thank you, Ellie. Thank you.", "Theodora", false, "", "", 4043, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden043 = new ConDot(4043, "You smile at her.", "", false, "", "", 4044, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden044 = new ConDot(4044, "Of course, Theo. Anything for you.", "You", false, "", "", 4045, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden045 = new ConDot(4045, "You turn and leave the garden.", "", false, "", "", 4046, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot garden046 = new ConDot(4046, "Anything for your sisters.", "", false, "", "", 5001, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
     public ConDot gardenend001 = new ConDot(5001, "You trudge back into the castle, already late for lessons.", "", false, "", "", 5002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot gardenend002 = new ConDot(5002, "Your teacher reprimands you for being late and having a dirty dress.", "", false, "", "", 5003, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
@@ -342,6 +363,33 @@ public class GameManager : MonoBehaviour
         cdlist.Add(garden020);
         cdlist.Add(garden021);
         cdlist.Add(garden022);
+
+        cdlist.Add(garden023);
+        cdlist.Add(garden024);
+        cdlist.Add(garden025);
+        cdlist.Add(garden026);
+        cdlist.Add(garden027);
+        cdlist.Add(garden028);
+        cdlist.Add(garden029);
+        cdlist.Add(garden030);
+        cdlist.Add(garden031);
+        cdlist.Add(garden032);
+        cdlist.Add(garden033);
+        cdlist.Add(garden034);
+        cdlist.Add(garden035);
+        cdlist.Add(garden036);
+        cdlist.Add(garden037);
+        cdlist.Add(garden038);
+        cdlist.Add(garden039);
+        cdlist.Add(garden040);
+        cdlist.Add(garden041);
+        cdlist.Add(garden042);
+        cdlist.Add(garden043);
+        cdlist.Add(garden044);
+        cdlist.Add(garden045);
+        cdlist.Add(garden046);
+
+        
 
 
 
