@@ -277,6 +277,28 @@ public class GameManager : MonoBehaviour
     public ConDot nightGarden022 = new ConDot(6022, "After a few moment of silence, you get up and creak open the door.", "", false, "", "", 6023, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden023 = new ConDot(6023, "All of the torches are blown out. The halls are deserted. Seemingly everyone hurried towards the noise.", "", false, "", "", 6024, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden024 = new ConDot(6024, "You easily sneak out of your bedchambers, through the halls, and into the garden.", "", false, "", "", 6025, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden025 = new ConDot(6025, "The garden takes on an eerie tone as you walk through it. You can barley see a thing.", "", false, "", "", 6026, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden026 = new ConDot(6026, "You carefully squint into the darkness.", "", false, "", "", 6027, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden027 = new ConDot(6027, "Suddenly, a bit in the distance, a figure pokes their head out of the space between two trees and silently motions for you to follow.", "", false, "", "", 6028, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden028 = new ConDot(6028, "It takes you a good few seconds of staring at them to realize, oh, that's just Theodora.", "", false, "", "", 6025, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 3);
+    public ConDot nightGarden029 = new ConDot(6029, "You quickly follow her.", "", false, "", "", 6030, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden030 = new ConDot(6030, "She leads you through dense brush and trees, on a path you've never been through before, until you arrive at a very small clearing.", "", false, "", "", 6031, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden031 = new ConDot(6031, "Someone is already there. You startle.", "", false, "", "", 6032, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden032 = new ConDot(6032, "Wait, Theo--!", "You", false, "", "", 6033, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden033 = new ConDot(6033, "Shh! Keep your voice down. She's with us.", "Theodora", false, "", "", 6034, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden034 = new ConDot(6034, "The women's voice sounds familiar, slow and even. She wears a mask that covers almost all her face.", "", false, "", "", 6035, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden035 = new ConDot(6035, "I thought you were gonna keep her out of this, Theodora. What is she even gonna do that won't just place her in more danger?", "???", false, "", "", 6036, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden036 = new ConDot(6036, "Look, I-- ... She might have ruined the whole plot if she didn't know about it. Ellie is the only one who actually studies for our botony class.", "Theodora", false, "", "", 6037, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden037 = new ConDot(6037, "*What* is *happening*?!", "You", false, "", "", 6038, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden038 = new ConDot(6038, "Lower your voice. We don't want them to find us.", "???", false, "", "", 6039, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden039 = new ConDot(6039, "Okay, fine, sorry, but can you please explain what you're doing Theo?!", "", false, "", "", 6040, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden040 = new ConDot(6040, "", "Theodora", false, "", "", 6041, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
+
+
+
+
 
 
 
@@ -760,6 +782,18 @@ public class GameManager : MonoBehaviour
         {
             background.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[7];
         }
+
+        if (currentConDot.Id == 6001)
+        {
+            //background.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[n]; bedchamber
+        }
+
+        if (currentConDot.Id == 8001)
+        {
+            //background.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[n]; tea room
+        }
+
+
 
         if (currentConDot.Id == 5002 || currentConDot.Id == 5102)
         {
