@@ -280,7 +280,7 @@ public class GameManager : MonoBehaviour
     public ConDot nightGarden025 = new ConDot(6025, "The garden takes on an eerie tone as you walk through it. You can barley see a thing.", "", false, "", "", 6026, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden026 = new ConDot(6026, "You carefully squint into the darkness.", "", false, "", "", 6027, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden027 = new ConDot(6027, "Suddenly, a bit in the distance, a figure pokes their head out of the space between two trees and silently motions for you to follow.", "", false, "", "", 6028, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot nightGarden028 = new ConDot(6028, "It takes you a good few seconds of staring at them to realize, oh, that's just Theodora.", "", false, "", "", 6025, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 3);
+    public ConDot nightGarden028 = new ConDot(6028, "It takes you a good few seconds of staring at them to realize, oh, that's just Theodora.", "", false, "", "", 6029, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 3);
     public ConDot nightGarden029 = new ConDot(6029, "You quickly follow her.", "", false, "", "", 6030, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden030 = new ConDot(6030, "She leads you through dense brush and trees, on a path you've never been through before, until you arrive at a very small clearing.", "", false, "", "", 6031, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden031 = new ConDot(6031, "Someone is already there. You startle.", "", false, "", "", 6032, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
@@ -292,23 +292,49 @@ public class GameManager : MonoBehaviour
     public ConDot nightGarden037 = new ConDot(6037, "*What* is *happening*?!", "You", false, "", "", 6038, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden038 = new ConDot(6038, "Lower your voice. We don't want them to find us.", "???", false, "", "", 6039, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden039 = new ConDot(6039, "Okay, fine, sorry, but can you please explain what you're doing Theo?!", "", false, "", "", 6040, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot nightGarden040 = new ConDot(6040, "", "Theodora", false, "", "", 6041, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden040 = new ConDot(6040, "Just give me a minute, okay?", "Theodora", false, "", "", 6041, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden041 = new ConDot(6041, "Theodora looks at the mystery woman.", "", false, "", "", 6042, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden042 = new ConDot(6042, "Do you have the fresh Angel's Breath?", "Theodora", false, "", "", 6043, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden043 = new ConDot(6043, "The mystery woman holds out freshly picked flowers with their stems wrapped in a damp cloth. They are white with hints of a deep black around the edges and center.", "", false, "", "", 6044, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden044 = new ConDot(6044, "They don't look like any native plant around here. The flowers must have been express delivered on horseback from very far away.", "", false, "", "", 6045, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden045 = new ConDot(6045, "Great. They still look fresh enough. I checked eariler and the jasmine flowers just bloomed. We have everything.", "Theodora", false, "", "", 6046, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden046 = new ConDot(6046, "The mystery woman looks at you.", "", false, "", "", 6047, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden047 = new ConDot(6047, "They're for the tea. Angel's Breath smells and tastes horrible when brewed. The jasmine is to cover it up.", "", false, "", "", 6048, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden048 = new ConDot(6048, "Why are you brewing Angel's Breath? That stuff it only used for bouquets in flower languages at this point.", "You", false, "", "", 6049, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden049 = new ConDot(6049, "We're using it because Angel's Breath contains a deadly toxin!", "Theodora", true, "WHY ARE YOU BREWING POISON???", "MAYBE *THATS* WHY IT SMELLS SO BAD???", 6056, 6051, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden050 = new ConDot(6050, "Actually, Angel's Breath smells bad when brewed because it attracts fruit flies for pollination.", "???", false, "", "", 6051, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden051 = new ConDot(6051, "It makes the smell of fruit when it's young which quickly develops into the smell of rotten fruit as the blossom develops.", "???", false, "", "", 6052, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden052 = new ConDot(6052, "Most Angel's Breath found in markets is actually harvested prematurely, before it smells rotten and the flowers have become mostly black.", "???", false, "", "", 6051, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden053 = new ConDot(6053, "However, no matter the stage, when brewed, Angel's Breath quickly develops and gains it's not-so-famous rotten smell.", "???", false, "", "", 6054, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden054 = new ConDot(6054, "Oh, huh, that's actually pretty interesting.", "You", false, "", "", 6055, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden055 = new ConDot(6055, "Wait.", "You", false, "", "", 6056, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden056 = new ConDot(6056, "WHY ARE YOU MAKING POISON??????", "You", false, "", "", 6057, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
 
 
 
 
 
+    public ConDot hostileNightGardenEnd001 = new ConDot(7001, "Your stomach churns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+    public ConDot sisterNightGardenEnd001 = new ConDot (7101, "", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
 
 
-    public ConDot hostileNightGardenEnd001 = new ConDot(7001, "Something in your stomach turns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
-    public ConDot sisterNightGardenEnd001ConDot = new ConDot (7101, "", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileTea = new ConDot(8001, "", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
-    public ConDot hostileTea = new ConDot (8001, "", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileTeaJoinedEnd001 = new ConDot(8101, "Your stomach churns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
-    public ConDot sisterTea = new ConDot (9001, "", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileTeaDissentEnd001 = new ConDot(8201, "Your stomach churns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
+
+    public ConDot sisterTea = new ConDot(9001, "", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+    public ConDot sisterTeaJoinedEnd001 = new ConDot(9101, "Your stomach churns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+    public ConDot sisterTeaDissentEnd001 = new ConDot(9201, "Your stomach churns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);    
 
 
 
@@ -492,6 +518,23 @@ public class GameManager : MonoBehaviour
         cdlist.Add(nightGarden022);
         cdlist.Add(nightGarden023);
         cdlist.Add(nightGarden024);
+        cdlist.Add(nightGarden025);
+        cdlist.Add(nightGarden026);
+        cdlist.Add(nightGarden027);
+        cdlist.Add(nightGarden028);
+        cdlist.Add(nightGarden029);
+        cdlist.Add(nightGarden030);
+        cdlist.Add(nightGarden031);
+        cdlist.Add(nightGarden032);
+        cdlist.Add(nightGarden033);
+        cdlist.Add(nightGarden034);
+        cdlist.Add(nightGarden035);
+        cdlist.Add(nightGarden036);
+        cdlist.Add(nightGarden037);
+        cdlist.Add(nightGarden038);
+        cdlist.Add(nightGarden039);
+        cdlist.Add(nightGarden040);
+        
 
 
 
