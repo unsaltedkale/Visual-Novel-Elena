@@ -132,7 +132,7 @@ public class GameManager : MonoBehaviour
     public GameObject rightImage;
     public GameObject speakerRectangle;
     public GameObject background;
-
+    public Color32 color137 = new Color32(137, 137, 137, 255);
     public ConDot prolouge1 = new ConDot(1001, "Welcome to the Kingdom of Carisia.", "", false, "", "", 1002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot prolouge2 = new ConDot(1002, "You, Princess Elena I, are the youngest princess of Carisia.", "", false, "", "", 1003, 0, 0, FlagState.NotSet, 0, 0, 0, 2, 0);
     public ConDot prolouge3 = new ConDot(1003, "Your dear Father, King William IV, and your dear Mother, Queen Katherine XXII, are the rulers of Carisia.", "", false, "", "", 1004, 0, 0, FlagState.NotSet, 0, 0, 0, 6, 5);
@@ -376,6 +376,8 @@ public class GameManager : MonoBehaviour
         rightImage = GameObject.Find("Right Image");
         speakerRectangle = GameObject.Find("Speaker Rectangle");
         background = GameObject.Find("Background");
+
+        background.GetComponent<UnityEngine.UI.Image>().color = color137;
 
         cdlist.Add(prolouge1);
         cdlist.Add(prolouge2);
@@ -825,17 +827,19 @@ public class GameManager : MonoBehaviour
 
         if (currentConDot.Id == 4001)
         {
-            background.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[7];
+            background.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[9];
         }
 
-        if (currentConDot.Id == 6001)
+        if (currentConDot.Id == 6025)
         {
-            //background.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[n]; bedchamber
+            background.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[10];
+            background.GetComponent<UnityEngine.UI.Image>().color = color137;
         }
 
         if (currentConDot.Id == 8001)
         {
-            //background.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[n]; tea room
+            background.GetComponent<UnityEngine.UI.Image>().color = color137;
+            background.GetComponent<UnityEngine.UI.Image>().sprite = imagelist[11];
         }
 
 
@@ -845,9 +849,5 @@ public class GameManager : MonoBehaviour
             background.GetComponent<UnityEngine.UI.Image>().color = Color.black;
         }
 
-        if (currentConDot.Id == 6001 || currentConDot.Id == 8001)
-        {
-            background.GetComponent<UnityEngine.UI.Image>().color = Color.white;
-        }
     }
 }

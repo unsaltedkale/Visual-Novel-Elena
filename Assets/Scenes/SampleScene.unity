@@ -231,7 +231,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e2b1bac3824524693848dcd18c5baf70, type: 3}
   - {fileID: 21300000, guid: 8b76247413e1e4017b0a51732a7f320b, type: 3}
   - {fileID: 21300000, guid: d06df19c3c49c48aeb3eb91b98308d27, type: 3}
-  - {fileID: 21300000, guid: 3799ce1af30804224a19483a85987bd3, type: 3}
+  - {fileID: 21300000, guid: 0ca974c47ac2d4acaa325c1504658365, type: 3}
+  - {fileID: 21300000, guid: eb7170f80c30f4708a9e2d80090758b3, type: 3}
+  - {fileID: 21300000, guid: b343cdbdc9290471596347d5e93f709d, type: 3}
+  - {fileID: 21300000, guid: 82c5ba75f1d8e4d34a0e8466e31e219e, type: 3}
+  - {fileID: 21300000, guid: 381c34a81c3224520a09cd49f367c5a0, type: 3}
 --- !u!1 &295952278
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,6 +2125,9 @@ MonoBehaviour:
   rightImage: {fileID: 0}
   speakerRectangle: {fileID: 0}
   background: {fileID: 0}
+  color137:
+    serializedVersion: 2
+    rgba: 4287203721
   prolouge1:
     id: 1001
     dia: Welcome to the Kingdom of Carisia.
@@ -4859,6 +4866,122 @@ MonoBehaviour:
     leftChoice: 
     rightChoice: 
     leftConDot: 6057
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden057:
+    id: 6057
+    dia: Elena, do you... know what's going on?
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6058
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden058:
+    id: 6058
+    dia: Well, clearly *not*, because all of this seems--
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6059
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden059:
+    id: 6059
+    dia: No, Elena, in the outside world. Do you know what's going on in the outside
+      world.
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6060
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden060:
+    id: 6060
+    dia: ...What? What do you mean?
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6061
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden061:
+    id: 6061
+    dia: Okay. King William and Queen Katherine are really bad at foreign diplomacy,
+      so all the other monarches are angry and all the citizens who came from those
+      nations are angry.
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6062
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden062:
+    id: 6062
+    dia: What?! No, Father and Mother could ever do that! They're so nice... and...
+      kind...
+    characterName: Elena
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6063
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden063:
+    id: 6063
+    dia: Both Theodora and the mystery woman are raising their eyebrows at you.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6064
     rightConDot: 0
     flagIdToBeSet: 0
     flagIdStateToBeSet: 0
