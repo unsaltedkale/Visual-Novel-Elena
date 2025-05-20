@@ -308,12 +308,14 @@ public class GameManager : MonoBehaviour
     public ConDot nightGarden053 = new ConDot(6053, "However, no matter the stage, when brewed, Angel's Breath quickly develops and gains it's not-so-famous rotten smell.", "???", false, "", "", 6054, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden054 = new ConDot(6054, "Oh, huh, that's actually pretty interesting.", "You", false, "", "", 6055, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden055 = new ConDot(6055, "Wait.", "You", false, "", "", 6056, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot nightGarden056 = new ConDot(6056, "WHY ARE YOU MAKING POISON??????", "You", false, "", "", 6057, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-
-
-
-
-
+    public ConDot nightGarden056 = new ConDot(6056, "WHY ARE YOU BREWING POISON??????", "You", false, "", "", 6057, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden057 = new ConDot(6057, "Elena, do you... know what's going on?", "???", false, "", "", 6058, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden058 = new ConDot(6058, "Well, clearly *not*, because all of this seems--", "You", false, "", "", 6059, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden059 = new ConDot(6059, "No, Elena, in the outside world. Do you know what's going on in the outside world.", "???", false, "", "", 6060, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden060 = new ConDot(6060, "...What? What do you mean?", "You", false, "", "", 6061, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden061 = new ConDot(6061, "Okay. King William and Queen Katherine are really bad at foreign diplomacy, so all the other monarches are angry and all the citizens who came from those nations are angry.", "???", false, "", "", 6062, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden062 = new ConDot(6062, "What?! No, Father and Mother could ever do that! They're so nice... and... kind...", "Elena", false, "", "", 6063, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden063 = new ConDot(6063, "Both Theodora and the mystery woman are raising their eyebrows at you.", "", false, "", "", 6064, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
     public ConDot hostileNightGardenEnd001 = new ConDot(7001, "Your stomach churns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
