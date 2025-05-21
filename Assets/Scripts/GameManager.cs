@@ -316,6 +316,13 @@ public class GameManager : MonoBehaviour
     public ConDot nightGarden061 = new ConDot(6061, "Okay. King William and Queen Katherine are really bad at foreign diplomacy, so all the other monarches are angry and all the citizens who came from those nations are angry.", "???", false, "", "", 6062, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden062 = new ConDot(6062, "What?! No, Father and Mother could ever do that! They're so nice... and... kind...", "Elena", false, "", "", 6063, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden063 = new ConDot(6063, "Both Theodora and the mystery woman are raising their eyebrows at you.", "", false, "", "", 6064, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden064 = new ConDot(6064, "No. No no no no no. It has to be some mistake or--", "You", false, "", "", 6065, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden065 = new ConDot(6065, "Your father claimed he was King of Kings to the Kindgom to the West last week and your Mother called the Kingdom to the North's heir a bastard child yesterday.", "???", false, "", "", 6066, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden066 = new ConDot(6066, "The mystery woman keeps listing more things but your ears start ringing. Your legs almost buckle but you steady yourself against a tree.", "", false, "", "", 6067, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden067 = new ConDot(6067, "Woah, okay, Ellie, it's okay, it's okay.", "Theodora", false, "", "", 6068, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
+
 
     public ConDot hostileNightGardenEnd001 = new ConDot(7001, "Your stomach churns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
