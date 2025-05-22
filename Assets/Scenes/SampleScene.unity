@@ -236,6 +236,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b343cdbdc9290471596347d5e93f709d, type: 3}
   - {fileID: 21300000, guid: 82c5ba75f1d8e4d34a0e8466e31e219e, type: 3}
   - {fileID: 21300000, guid: 381c34a81c3224520a09cd49f367c5a0, type: 3}
+  - {fileID: 21300000, guid: 381c34a81c3224520a09cd49f367c5a0, type: 3}
 --- !u!1 &295952278
 GameObject:
   m_ObjectHideFlags: 0
@@ -4800,7 +4801,7 @@ MonoBehaviour:
     buttonBool: 0
     leftChoice: 
     rightChoice: 
-    leftConDot: 6051
+    leftConDot: 6053
     rightConDot: 0
     flagIdToBeSet: 0
     flagIdStateToBeSet: 0
@@ -4860,7 +4861,7 @@ MonoBehaviour:
     idForRightImage: 0
   nightGarden056:
     id: 6056
-    dia: WHY ARE YOU MAKING POISON??????
+    dia: WHY ARE YOU BREWING POISON??????
     characterName: You
     buttonBool: 0
     leftChoice: 
@@ -4982,6 +4983,284 @@ MonoBehaviour:
     leftChoice: 
     rightChoice: 
     leftConDot: 6064
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden064:
+    id: 6064
+    dia: No. No no no no no. It has to be some mistake or--
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6065
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden065:
+    id: 6065
+    dia: Your father claimed he was King of Kings to the Kindgom to the West last
+      week and your Mother called the Kingdom to the North's heir a bastard child
+      yesterday.
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6066
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden066:
+    id: 6066
+    dia: The mystery woman keeps listing more things but your ears start ringing.
+      Your legs almost buckle but you steady yourself against a tree.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6067
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden067:
+    id: 6067
+    dia: Woah, okay, Ellie, it's okay, it's okay.
+    characterName: Theodora
+    buttonBool: 1
+    leftChoice: They couldn't have done that-- I dont believe it!
+    rightChoice: What are we doing about this?
+    leftConDot: 6068
+    rightConDot: 6080
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden068:
+    id: 6068
+    dia: You want more evidence? You just got it about ten minutes ago.
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6069
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden069:
+    id: 6069
+    dia: What?
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6070
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden070:
+    id: 6070
+    dia: The explosion. You heard it. Everyone heard it.
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6071
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden071:
+    id: 6071
+    dia: Was-- did Father and Mother do that?
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6072
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden072:
+    id: 6072
+    dia: No. That was the citizens. They're fed up.
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6073
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden073:
+    id: 6073
+    dia: How did the citizens get cannons??
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6074
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden074:
+    id: 6074
+    dia: If anyone is hungry enough and done with the rule of the monarch, they can
+      get anything.
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6075
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden075:
+    id: 6075
+    dia: I honest thought that was a purposeful distraction.
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6076
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden076:
+    id: 6076
+    dia: No, just very good timing. I didn't know they were going to try to raid
+      the castle today.
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6077
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden077:
+    id: 6077
+    dia: What--?! Raid?? The castle??? What?!
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6078
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden078:
+    id: 6078
+    dia: Listen, there's a lot of stuff you're sheltered from. You're gonna have
+      to catch up.
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6079
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden079:
+    id: 6079
+    dia: Okay. Okay okay okay... okay.
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6080
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden080:
+    id: 6080
+    dia: What are we doing about this?
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6081
     rightConDot: 0
     flagIdToBeSet: 0
     flagIdStateToBeSet: 0

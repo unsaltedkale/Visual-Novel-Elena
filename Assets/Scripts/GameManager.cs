@@ -304,7 +304,7 @@ public class GameManager : MonoBehaviour
     public ConDot nightGarden049 = new ConDot(6049, "We're using it because Angel's Breath contains a deadly toxin!", "Theodora", true, "WHY ARE YOU BREWING POISON???", "MAYBE *THATS* WHY IT SMELLS SO BAD???", 6056, 6051, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden050 = new ConDot(6050, "Actually, Angel's Breath smells bad when brewed because it attracts fruit flies for pollination.", "???", false, "", "", 6051, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden051 = new ConDot(6051, "It makes the smell of fruit when it's young which quickly develops into the smell of rotten fruit as the blossom develops.", "???", false, "", "", 6052, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot nightGarden052 = new ConDot(6052, "Most Angel's Breath found in markets is actually harvested prematurely, before it smells rotten and the flowers have become mostly black.", "???", false, "", "", 6051, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden052 = new ConDot(6052, "Most Angel's Breath found in markets is actually harvested prematurely, before it smells rotten and the flowers have become mostly black.", "???", false, "", "", 6053, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden053 = new ConDot(6053, "However, no matter the stage, when brewed, Angel's Breath quickly develops and gains it's not-so-famous rotten smell.", "???", false, "", "", 6054, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden054 = new ConDot(6054, "Oh, huh, that's actually pretty interesting.", "You", false, "", "", 6055, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden055 = new ConDot(6055, "Wait.", "You", false, "", "", 6056, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
@@ -319,7 +319,32 @@ public class GameManager : MonoBehaviour
     public ConDot nightGarden064 = new ConDot(6064, "No. No no no no no. It has to be some mistake or--", "You", false, "", "", 6065, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden065 = new ConDot(6065, "Your father claimed he was King of Kings to the Kindgom to the West last week and your Mother called the Kingdom to the North's heir a bastard child yesterday.", "???", false, "", "", 6066, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden066 = new ConDot(6066, "The mystery woman keeps listing more things but your ears start ringing. Your legs almost buckle but you steady yourself against a tree.", "", false, "", "", 6067, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot nightGarden067 = new ConDot(6067, "Woah, okay, Ellie, it's okay, it's okay.", "Theodora", false, "", "", 6068, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden067 = new ConDot(6067, "Woah, okay, Ellie, it's okay, it's okay.", "Theodora", true, "They couldn't have done that-- I dont believe it!", "What are we doing about this?", 6068, 6080, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden068 = new ConDot(6068, "You want more evidence? You just got it about ten minutes ago.", "???", false, "", "", 6069, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden069 = new ConDot(6069, "What?", "You", false, "", "", 6070, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden070 = new ConDot(6070, "The explosion. You heard it. Everyone heard it.", "???", false, "", "", 6071, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden071 = new ConDot(6071, "Was-- did Father and Mother do that?", "You", false, "", "", 6072, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden072 = new ConDot(6072, "No. That was the citizens. They're fed up.", "???", false, "", "", 6073, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden073 = new ConDot(6073, "How did the citizens get cannons??", "You", false, "", "", 6074, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden074 = new ConDot(6074, "If anyone is hungry enough and done with the rule of the monarch, they can get anything.", "???", false, "", "", 6075, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden075 = new ConDot(6075, "I honest thought that was a purposeful distraction.", "You", false, "", "", 6076, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden076 = new ConDot(6076, "No, just very good timing. I didn't know they were going to try to raid the castle today.", "Theodora", false, "", "", 6077, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden077 = new ConDot(6077, "What--?! Raid?? The castle??? What?!", "You", false, "", "", 6078, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden078 = new ConDot(6078, "Listen, there's a lot of stuff you're sheltered from. You're gonna have to catch up.", "???", false, "", "", 6079, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden079 = new ConDot(6079, "Okay. Okay okay okay... okay.", "You", false, "", "", 6080, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden080 = new ConDot(6080, "What are we doing about this?", "You", false, "", "", 6081, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden081 = new ConDot(6081, "We're going to poison Mother and Father and take their place on the throne.", "Theodora", false, "", "", 6082, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden082 = new ConDot(6082, "You almost faint. You can't take this much whiplash.", "You", false, "", "", 6083, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden083 = new ConDot(6083, "It's clear that King William and Queen Katherine aren't going to change.", "???", false, "", "", 6084, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden084 = new ConDot(6084, "They would rather take the kingdom down with them than make even *one* good decision.", "???", false, "", "", 6085, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden085 = new ConDot(6085, "So, as princess and heir, we will poison them and take their place, and try to get out of the ditch they've put the Kindgom of Carisia in.", "", false, "", "", 6086, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden086 = new ConDot(6086, "Okay... Wait! What about our sister, Theodora? Kat still hasn't returned from her voyage. We would kill us if we ever did something to Father and Mother!", "You", false, "", "", 6087, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden087 = new ConDot(6087, "Let's just say... she would be okay with it.", "Theodora", false, "", "", 6088, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
+
+
+
 
 
 
@@ -545,9 +570,64 @@ public class GameManager : MonoBehaviour
         cdlist.Add(nightGarden038);
         cdlist.Add(nightGarden039);
         cdlist.Add(nightGarden040);
-        
-
-
+        cdlist.Add(nightGarden041);
+        cdlist.Add(nightGarden042);
+        cdlist.Add(nightGarden043);
+        cdlist.Add(nightGarden044);
+        cdlist.Add(nightGarden045);
+        cdlist.Add(nightGarden046);
+        cdlist.Add(nightGarden047);
+        cdlist.Add(nightGarden048);
+        cdlist.Add(nightGarden049);
+        cdlist.Add(nightGarden050);
+        cdlist.Add(nightGarden051);
+        cdlist.Add(nightGarden052);
+        cdlist.Add(nightGarden053);
+        cdlist.Add(nightGarden054);
+        cdlist.Add(nightGarden055);
+        cdlist.Add(nightGarden056);
+        cdlist.Add(nightGarden057);
+        cdlist.Add(nightGarden058);
+        cdlist.Add(nightGarden059);
+        cdlist.Add(nightGarden060);
+        cdlist.Add(nightGarden061);
+        cdlist.Add(nightGarden062);
+        cdlist.Add(nightGarden063);
+        cdlist.Add(nightGarden064);
+        cdlist.Add(nightGarden065);
+        cdlist.Add(nightGarden066);
+        cdlist.Add(nightGarden067);
+        cdlist.Add(nightGarden068);
+        cdlist.Add(nightGarden069);
+        cdlist.Add(nightGarden070);
+        cdlist.Add(nightGarden071);
+        cdlist.Add(nightGarden072);
+        cdlist.Add(nightGarden073);
+        cdlist.Add(nightGarden074);
+        cdlist.Add(nightGarden075);
+        cdlist.Add(nightGarden076);
+        cdlist.Add(nightGarden077);
+        cdlist.Add(nightGarden078);
+        cdlist.Add(nightGarden079);
+        cdlist.Add(nightGarden080);
+        /*cdlist.Add(nightGarden081);
+        cdlist.Add(nightGarden082);
+        cdlist.Add(nightGarden083);
+        cdlist.Add(nightGarden084);
+        cdlist.Add(nightGarden085);
+        cdlist.Add(nightGarden086);
+        cdlist.Add(nightGarden087);
+        cdlist.Add(nightGarden088);
+        cdlist.Add(nightGarden089);*/
+        /*cdlist.Add(nightGarden091);
+        cdlist.Add(nightGarden092);
+        cdlist.Add(nightGarden093);
+        cdlist.Add(nightGarden094);
+        cdlist.Add(nightGarden095);
+        cdlist.Add(nightGarden096);
+        cdlist.Add(nightGarden097);
+        cdlist.Add(nightGarden098);
+        cdlist.Add(nightGarden099);*/
 
         ImageBank imageBankScript = ImageBankObject.GetComponent<ImageBank>();
         imagelist = imageBankScript.imagelist;
