@@ -337,21 +337,48 @@ public class GameManager : MonoBehaviour
     public ConDot nightGarden082 = new ConDot(6082, "You almost faint. You can't take this much whiplash.", "You", false, "", "", 6083, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden083 = new ConDot(6083, "It's clear that King William and Queen Katherine aren't going to change.", "???", false, "", "", 6084, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden084 = new ConDot(6084, "They would rather take the kingdom down with them than make even *one* good decision.", "???", false, "", "", 6085, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot nightGarden085 = new ConDot(6085, "So, as princess and heir, we will poison them and take their place, and try to get out of the ditch they've put the Kindgom of Carisia in.", "", false, "", "", 6086, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot nightGarden086 = new ConDot(6086, "Okay... Wait! What about our sister, Theodora? Kat still hasn't returned from her voyage. We would kill us if we ever did something to Father and Mother!", "You", false, "", "", 6087, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden085 = new ConDot(6085, "So, as princess and heir, we will poison them and take their place, and try to get out of the ditch they've put the Kindgom of Carisia in.", "Theodora", false, "", "", 6086, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden086 = new ConDot(6086, "Okay... Wait! Theodora, what about our sister? Kat still hasn't returned from her voyage. We would kill us if we ever did something to Father and Mother!", "You", false, "", "", 6087, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot nightGarden087 = new ConDot(6087, "Let's just say... she would be okay with it.", "Theodora", false, "", "", 6088, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden088 = new ConDot(6088, "What?! How can you know that?", "You", false, "", "", 6089, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden089 = new ConDot(6089, "Just-- trust me! She'll be just fine, we just need to do this.", "Theodora", false, "", "", 6090, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden090 = new ConDot(6090, "How can I trust you at all, Theodora? You're trying to *murder* Father and Mother, and now you're trying to tell me you have some secert corrospondence with Kat!", "You", false, "", "", 6091, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden091 = new ConDot(6091, "Just *please*, Elena, trust me! *Please*!", "Theodora", false, "", "", 6092, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot nightGarden092 = new ConDot(6092, "Your heart sinks. She's your sister but... how can you trust her?", "", true, "I trust you. I will join you.", "I don't trust you. I can't support your actions.", 7101, 7001, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
+    public ConDot hostileNightGardenEnd001 = new ConDot(7001, "Your stomach churns. The world starts to warp around you.", "", false, "", "", 7002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd002 = new ConDot(7002, "I don't trust you. I can't support your actions.", "You", false, "", "", 7003, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd003 = new ConDot(7003, "The night is quiet for a moment. You can't see either of their faces anymore. The trees seem to bend.", "", false, "", "", 7004, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd004 = new ConDot(7004, "Theodora's voice is grave.", "", false, "", "", 7005, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd005 = new ConDot(7005, "Then... we can't have you here anymore.", "Theodora", false, "", "", 7006, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd006 = new ConDot(7006, "...What?", "You", false, "", "", 7007, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd007 = new ConDot(7007, "You know too much. You're just a liability now.", "???", false, "", "", 7008, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd008 = new ConDot(7008, "Wait, wait, no no no no no, I don't wanna die!", "You", false, "", "", 7009, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd009 = new ConDot(7009, "They can't seem to hear you.", "", false, "", "", 7010, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd010 = new ConDot(7010, "Either you can travel East, go far enough where you won't interfere, or--", "???", false, "", "", 7011, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd011 = new ConDot(7011, "Suddenly, there's the loud clanging of plate armor approaching.", "", false, "", "", 7012, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd012 = new ConDot(7012, "Curses. They've found us. We need to--", "???", false, "", "", 7013, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd013 = new ConDot(7013, "Half a dozen guards emerge out of the undergrowth, one of them holding a crossbow pointed at the mystery woman.", "", false, "", "", 7014, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd014 = new ConDot(7014, "Hands in the air, Assassin, drop your weapons, or we will shoot!", "Crossbow Guard", false, "", "", 7015, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd015 = new ConDot(7015, "It will be a cold day in hell when I follow one of you pigs.", "???", false, "", "", 7016, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd016 = new ConDot(7016, "On a trigger finger, the guard holding the crossbow fires.", "", false, "", "", 7017, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd017 = new ConDot(7017, "But, in such close quarters, the bolt wildly misfires.", "", false, "", "", 7018, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd018 = new ConDot(7018, "Theodora and the mystery woman seem to dive towards you, but it's too late.", "", false, "", "", 7019, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd019 = new ConDot(7019, "The bolt goes straight", "", false, "", "", 7020, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd020 = new ConDot(7020, "through", "", false, "", "", 7021, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd021 = new ConDot(7021, "your", "", false, "", "", 7022, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd022 = new ConDot(7022, "heart.", "", false, "", "", 7023, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd023 = new ConDot(7023, "", "", false, "", "", 7024, 0, 0, FlagState.NotSet, 0, 0, 0, 1, 1);
+    public ConDot hostileNightGardenEnd024 = new ConDot(7024, "[ ENDING 2 / 5 : HEARTBREAK ]", "", false, "", "", 7025, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd025 = new ConDot(7025, "...", "", false, "", "", 7026, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd026 = new ConDot(7026, "But you never feel the bolt hit. You never hear your sister or the woman cry out. You never hit the ground dead.", "", false, "", "", 7027, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd027 = new ConDot(7027, "You open your eyes.", "", false, "", "", 7028, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
 
 
 
-
-
-
-
-
-    public ConDot hostileNightGardenEnd001 = new ConDot(7001, "Your stomach churns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-
-    public ConDot sisterNightGardenEnd001 = new ConDot (7101, "", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot sisterNightGardenEnd001 = new ConDot(7101, "", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
 
 
@@ -610,7 +637,7 @@ public class GameManager : MonoBehaviour
         cdlist.Add(nightGarden078);
         cdlist.Add(nightGarden079);
         cdlist.Add(nightGarden080);
-        /*cdlist.Add(nightGarden081);
+        cdlist.Add(nightGarden081);
         cdlist.Add(nightGarden082);
         cdlist.Add(nightGarden083);
         cdlist.Add(nightGarden084);
@@ -618,16 +645,38 @@ public class GameManager : MonoBehaviour
         cdlist.Add(nightGarden086);
         cdlist.Add(nightGarden087);
         cdlist.Add(nightGarden088);
-        cdlist.Add(nightGarden089);*/
-        /*cdlist.Add(nightGarden091);
+        cdlist.Add(nightGarden089);
+        cdlist.Add(nightGarden090);
+        cdlist.Add(nightGarden091);
         cdlist.Add(nightGarden092);
-        cdlist.Add(nightGarden093);
-        cdlist.Add(nightGarden094);
-        cdlist.Add(nightGarden095);
-        cdlist.Add(nightGarden096);
-        cdlist.Add(nightGarden097);
-        cdlist.Add(nightGarden098);
-        cdlist.Add(nightGarden099);*/
+
+        cdlist.Add(hostileNightGardenEnd001);
+        cdlist.Add(hostileNightGardenEnd002);
+        cdlist.Add(hostileNightGardenEnd003);
+        cdlist.Add(hostileNightGardenEnd004);
+        cdlist.Add(hostileNightGardenEnd005);
+        cdlist.Add(hostileNightGardenEnd006);
+        cdlist.Add(hostileNightGardenEnd007);
+        cdlist.Add(hostileNightGardenEnd008);
+        cdlist.Add(hostileNightGardenEnd009);
+        cdlist.Add(hostileNightGardenEnd010);
+        cdlist.Add(hostileNightGardenEnd011);
+        cdlist.Add(hostileNightGardenEnd012);
+        cdlist.Add(hostileNightGardenEnd013);
+        cdlist.Add(hostileNightGardenEnd014);
+        cdlist.Add(hostileNightGardenEnd015);
+        cdlist.Add(hostileNightGardenEnd016);
+        cdlist.Add(hostileNightGardenEnd017);
+        cdlist.Add(hostileNightGardenEnd018);
+        cdlist.Add(hostileNightGardenEnd019);
+        cdlist.Add(hostileNightGardenEnd020);
+        cdlist.Add(hostileNightGardenEnd021);
+        cdlist.Add(hostileNightGardenEnd022);
+        cdlist.Add(hostileNightGardenEnd023);
+        cdlist.Add(hostileNightGardenEnd024);
+        cdlist.Add(hostileNightGardenEnd025);
+        cdlist.Add(hostileNightGardenEnd026);
+        cdlist.Add(hostileNightGardenEnd027);
 
         ImageBank imageBankScript = ImageBankObject.GetComponent<ImageBank>();
         imagelist = imageBankScript.imagelist;
@@ -931,7 +980,7 @@ public class GameManager : MonoBehaviour
 
 
 
-        if (currentConDot.Id == 5002 || currentConDot.Id == 5102)
+        if (currentConDot.Id == 5002 || currentConDot.Id == 5102 || currentConDot.Id == 7023)
         {
             background.GetComponent<UnityEngine.UI.Image>().color = Color.black;
         }

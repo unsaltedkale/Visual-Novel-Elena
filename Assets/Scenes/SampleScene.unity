@@ -5269,6 +5269,203 @@ MonoBehaviour:
     conDotIfFlagFalse: 0
     idForLeftImage: 0
     idForRightImage: 0
+  nightGarden081:
+    id: 6081
+    dia: We're going to poison Mother and Father and take their place on the throne.
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6082
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden082:
+    id: 6082
+    dia: You almost faint. You can't take this much whiplash.
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6083
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden083:
+    id: 6083
+    dia: It's clear that King William and Queen Katherine aren't going to change.
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6084
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden084:
+    id: 6084
+    dia: They would rather take the kingdom down with them than make even *one* good
+      decision.
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6085
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden085:
+    id: 6085
+    dia: So, as princess and heir, we will poison them and take their place, and
+      try to get out of the ditch they've put the Kindgom of Carisia in.
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6086
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden086:
+    id: 6086
+    dia: Okay... Wait! Theodora, what about our sister? Kat still hasn't returned
+      from her voyage. We would kill us if we ever did something to Father and Mother!
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6087
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden087:
+    id: 6087
+    dia: Let's just say... she would be okay with it.
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6088
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden088:
+    id: 6088
+    dia: What?! How can you know that?
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6089
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden089:
+    id: 6089
+    dia: Just-- trust me! She'll be just fine, we just need to do this.
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6090
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden090:
+    id: 6090
+    dia: How can I trust you at all, Theodora? You're trying to *murder* Father and
+      Mother, and now you're trying to tell me you have some secert corrospondence
+      with Kat!
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6091
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden091:
+    id: 6091
+    dia: Just *please*, Elena, trust me! *Please*!
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 6092
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  nightGarden092:
+    id: 6092
+    dia: Your heart sinks. She's your sister but... how can you trust her?
+    characterName: 
+    buttonBool: 1
+    leftChoice: I trust you. I will join you.
+    rightChoice: I don't trust you. I can't support your actions.
+    leftConDot: 7101
+    rightConDot: 7001
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
   hostileNightGardenEnd001:
     id: 7001
     dia: Your stomach churns. The world starts to warp around you.
@@ -5276,7 +5473,426 @@ MonoBehaviour:
     buttonBool: 0
     leftChoice: 
     rightChoice: 
-    leftConDot: 0
+    leftConDot: 7002
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd002:
+    id: 7002
+    dia: I don't trust you. I can't support your actions.
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7003
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd003:
+    id: 7003
+    dia: The night is quiet for a moment. You can't see either of their faces anymore.
+      The trees seem to bend.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7004
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd004:
+    id: 7004
+    dia: Theodora's voice is grave.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7005
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd005:
+    id: 7005
+    dia: Then... we can't have you here anymore.
+    characterName: Theodora
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7006
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd006:
+    id: 7006
+    dia: ...What?
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7007
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd007:
+    id: 7007
+    dia: You know too much. You're just a liability now.
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7008
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd008:
+    id: 7008
+    dia: Wait, wait, no no no no no, I don't wanna die!
+    characterName: You
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7009
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd009:
+    id: 7009
+    dia: They can't seem to hear you.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7010
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd010:
+    id: 7010
+    dia: Either you can travel East, go far enough where you won't interfere, or--
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7011
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd011:
+    id: 7011
+    dia: Suddenly, there's the loud clanging of plate armor approaching.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7012
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd012:
+    id: 7012
+    dia: Curses. They've found us. We need to--
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7013
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd013:
+    id: 7013
+    dia: Half a dozen guards emerge out of the undergrowth, one of them holding a
+      crossbow pointed at the mystery woman.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7014
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd014:
+    id: 7014
+    dia: Hands in the air, Assassin, drop your weapons, or we will shoot!
+    characterName: Crossbow Guard
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7015
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd015:
+    id: 7015
+    dia: It will be a cold day in hell when I follow one of you pigs.
+    characterName: ???
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7016
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd016:
+    id: 7016
+    dia: On a trigger finger, the guard holding the crossbow fires.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7017
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd017:
+    id: 7017
+    dia: But, in such close quarters, the bolt wildly misfires.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7018
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd018:
+    id: 7018
+    dia: Theodora and the mystery woman seem to dive towards you, but it's too late.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7019
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd019:
+    id: 7019
+    dia: The bolt goes straight
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7020
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd020:
+    id: 7020
+    dia: through
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7021
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd021:
+    id: 7021
+    dia: your
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7022
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd022:
+    id: 7022
+    dia: heart.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7023
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd023:
+    id: 7023
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7024
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd024:
+    id: 7024
+    dia: '[ ENDING 2 / 5 : HEARTBREAK ]'
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7025
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd025:
+    id: 7025
+    dia: ...
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7026
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd026:
+    id: 7026
+    dia: But you never feel the bolt hit. You never hear your sister or the woman
+      cry out. You never hit the ground dead.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7027
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  hostileNightGardenEnd027:
+    id: 7027
+    dia: You open your eyes.
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 7028
     rightConDot: 0
     flagIdToBeSet: 0
     flagIdStateToBeSet: 0
