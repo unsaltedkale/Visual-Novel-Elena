@@ -370,7 +370,7 @@ public class GameManager : MonoBehaviour
     public ConDot hostileNightGardenEnd021 = new ConDot(7021, "your", "", false, "", "", 7022, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot hostileNightGardenEnd022 = new ConDot(7022, "heart.", "", false, "", "", 7023, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot hostileNightGardenEnd023 = new ConDot(7023, "", "", false, "", "", 7024, 0, 0, FlagState.NotSet, 0, 0, 0, 1, 1);
-    public ConDot hostileNightGardenEnd024 = new ConDot(7024, "[ ENDING 2 / 5 : HEARTBREAK ]", "", false, "", "", 7025, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd024 = new ConDot(7024, "[ ENDING 3 / 5 : HEARTBREAK ]", "", false, "", "", 7025, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot hostileNightGardenEnd025 = new ConDot(7025, "...", "", false, "", "", 7026, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot hostileNightGardenEnd026 = new ConDot(7026, "But you never feel the bolt hit. You never hear your sister or the woman cry out. You never hit the ground dead.", "", false, "", "", 7027, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot hostileNightGardenEnd027 = new ConDot(7027, "You open your eyes.", "", false, "", "", 7028, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
@@ -379,6 +379,7 @@ public class GameManager : MonoBehaviour
 
 
     public ConDot sisterNightGardenEnd001 = new ConDot(7101, "", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    
 
 
 
@@ -387,15 +388,43 @@ public class GameManager : MonoBehaviour
 
     public ConDot hostileTeaJoinedEnd001 = new ConDot(8101, "Your stomach churns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
+
+
+
+    public ConDot hostileTeaJoinedEnd000 = new ConDot(8100, "[ ENDING 1 / 5 : nn ]", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
+
+
+
     public ConDot hostileTeaDissentEnd001 = new ConDot(8201, "Your stomach churns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
+
+    public ConDot hostileTeaDissentEnd000 = new ConDot(8201, "[ ENDING 2 / 5 : HONOR ]", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
 
 
     public ConDot sisterTea = new ConDot(9001, "", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
+
+
     public ConDot sisterTeaJoinedEnd001 = new ConDot(9101, "Your stomach churns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
-    public ConDot sisterTeaDissentEnd001 = new ConDot(9201, "Your stomach churns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);    
+
+    public ConDot sisterTeaJoinedEnd000 = new ConDot(9101, "[ ENDING 4 / 5 : SISTERHOOD ]", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
+
+
+
+
+    public ConDot sisterTeaDissentEnd001 = new ConDot(9201, "Your stomach churns. The world starts to warp around you.", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
+
+
+    public ConDot sisterTeaDissentEnd000 = new ConDot(9201, "[ ENDING 5 / 5 : BETRAYAL ]", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);    
 
 
 
