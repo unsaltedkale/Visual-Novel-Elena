@@ -133,6 +133,12 @@ public class GameManager : MonoBehaviour
     public GameObject speakerRectangle;
     public GameObject background;
     public Color32 color137 = new Color32(137, 137, 137, 255);
+    public FFlag endingNightGardenCompleted = new FFlag(001, FlagState.NotSet);
+    public FFlag endingSisterTeaSisterCompleted = new FFlag(002, FlagState.NotSet);
+    public FFlag endingSisterTeaHostileCompleted = new FFlag(003, FlagState.NotSet);
+    public FFlag endingHostileTeaSisterCompleted = new FFlag(004, FlagState.NotSet);
+    public FFlag endingHostileTeaHostileCompleted = new FFlag(005, FlagState.NotSet);
+
     public ConDot prolouge1 = new ConDot(1001, "Welcome to the Kingdom of Carisia.", "", false, "", "", 1002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot prolouge2 = new ConDot(1002, "You, Princess Elena I, are the youngest princess of Carisia.", "", false, "", "", 1003, 0, 0, FlagState.NotSet, 0, 0, 0, 2, 0);
     public ConDot prolouge3 = new ConDot(1003, "Your dear Father, King William IV, and your dear Mother, Queen Katherine XXII, are the rulers of Carisia.", "", false, "", "", 1004, 0, 0, FlagState.NotSet, 0, 0, 0, 6, 5);
@@ -373,7 +379,7 @@ public class GameManager : MonoBehaviour
     public ConDot hostileNightGardenEnd024 = new ConDot(7024, "[ ENDING 3 / 5 : HEARTBREAK ]", "", false, "", "", 7025, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot hostileNightGardenEnd025 = new ConDot(7025, "...", "", false, "", "", 7026, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot hostileNightGardenEnd026 = new ConDot(7026, "But you never feel the bolt hit. You never hear your sister or the woman cry out. You never hit the ground dead.", "", false, "", "", 7027, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot hostileNightGardenEnd027 = new ConDot(7027, "You open your eyes.", "", false, "", "", 7028, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileNightGardenEnd027 = new ConDot(7027, "You open your eyes.", "", false, "", "", 9999, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
 
 
@@ -391,7 +397,7 @@ public class GameManager : MonoBehaviour
 
 
 
-    public ConDot hostileTeaJoinedEnd000 = new ConDot(8100, "[ ENDING 1 / 5 : nn ]", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot hostileTeaJoinedEnd000 = new ConDot(8100, "[ ENDING 1 / 5 : REUNION ]", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
 
 
@@ -424,9 +430,38 @@ public class GameManager : MonoBehaviour
 
 
 
-    public ConDot sisterTeaDissentEnd000 = new ConDot(9201, "[ ENDING 5 / 5 : BETRAYAL ]", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);    
+    public ConDot sisterTeaDissentEnd000 = new ConDot(9201, "[ ENDING 5 / 5 : BETRAYAL ]", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
 
+
+    public ConDot firstVoid001 = new ConDot(11001, "You're weightless, floating in space in a black void.", "", false, "", "", 11002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid002 = new ConDot(11002, "As your head looks up, you see a tiny point of light, almost like a star.", "", false, "", "", 11003, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid003 = new ConDot(11003, "You look back down and notice a figure in the void, almost invisible.", "", false, "", "", 11004, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid004 = new ConDot(11004, "They seem to smile, however you can only see their eye.", "", false, "", "", 11005, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid005 = new ConDot(11005, "Why, hello Elena. Welcome!", "???", false, "", "", 11006, 00, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+    public ConDot firstVoid006 = new ConDot(11006, "Who are you?", "You", false, "", "", 11007, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid007 = new ConDot(11007, "I am you, a part of you-- repressed, yes, but you.", "???", false, "", "", 11008, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid008 = new ConDot(11008, "Me? But I'm Elena!", "You", false, "", "", 11009, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid009 = new ConDot(11009, "I'm Elena too.", "Elena?", false, "", "", 11010, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid010 = new ConDot(11010, "But I'm Elena!", "You", false, "", "", 11010, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid011 = new ConDot(11011, "And why can't we have the same name?", "Elena?", false, "", "", 11011, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid012 = new ConDot(11012, "Something weird is in your stomach.", "", false, "", "", 11013, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid013 = new ConDot(11013, "It feels like it isn't mine. I want it to be my name. *My* name.", "You", false, "", "", 11014, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid014 = new ConDot(11014, "It will be, Elena, don't worry.", "Elena?", false, "", "", 11015, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+    public ConDot firstVoid015 = new ConDot(11015, "You don't know how to react. You feel distant happiness, but also distant... sadness?", "", false, "", "", 11016, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid016 = new ConDot(11016, "You don't feel like yourself. Your chest tightens.", "", false, "", "", 11017, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid017 = new ConDot(11017, "Breathe, Elena, confusion is normal when you are first here.", "Elena?", false, "", "", 11010, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid018 = new ConDot(11018, "I don't feel right when I'm here. I want to go back. I want to go back!", "You", false, "", "", 11019, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid019 = new ConDot(11019, "The other Elena seems sad.", "", false, "", "", 11020, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid020 = new ConDot(11020, "Okay. You can go back.", "Elena?", false, "", "", 11021, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid021 = new ConDot(11021, "What? Can you send me back?", "You", false, "", "", 11022, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid022 = new ConDot(11022, "You will it yourself. I have no control over it.", "Elena?", false, "", "", 11023, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid023 = new ConDot(11023, "You will see me again when you find another ending to the story.", "Elena?", false, "", "", 11024, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid024 = new ConDot(11024, "You don't really care about what they're saying. You just want to stop feeling empty.", "", false, "", "", 11023, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid025 = new ConDot(11025, "You clasp your hands and press them together, hoping with all your heart you can go back.", "", false, "", "", 11026, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot firstVoid026 = new ConDot(11026, "The speck in the distance grows farther and farther until it disappears, and you close your eyes.", "", false, "", "", 11027, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
 
 
@@ -707,6 +742,42 @@ public class GameManager : MonoBehaviour
         cdlist.Add(hostileNightGardenEnd026);
         cdlist.Add(hostileNightGardenEnd027);
 
+
+
+
+        cdlist.Add(firstVoid001);
+        cdlist.Add(firstVoid002);
+        cdlist.Add(firstVoid003);
+        cdlist.Add(firstVoid004);
+        cdlist.Add(firstVoid005);
+        cdlist.Add(firstVoid006);
+        cdlist.Add(firstVoid007);
+        cdlist.Add(firstVoid008);
+        cdlist.Add(firstVoid009);
+        cdlist.Add(firstVoid010);
+        cdlist.Add(firstVoid011);
+        cdlist.Add(firstVoid012);
+        cdlist.Add(firstVoid013);
+        cdlist.Add(firstVoid014);
+        cdlist.Add(firstVoid015);
+        cdlist.Add(firstVoid016);
+        cdlist.Add(firstVoid017);
+        cdlist.Add(firstVoid018);
+        cdlist.Add(firstVoid019);
+        cdlist.Add(firstVoid020);
+        cdlist.Add(firstVoid021);
+        cdlist.Add(firstVoid022);
+        cdlist.Add(firstVoid023);
+        cdlist.Add(firstVoid024);
+        cdlist.Add(firstVoid025);
+        cdlist.Add(firstVoid026);
+
+        fflaglist.Add(endingNightGardenCompleted);
+        fflaglist.Add(endingSisterTeaSisterCompleted);
+        fflaglist.Add(endingSisterTeaHostileCompleted);
+        fflaglist.Add(endingHostileTeaSisterCompleted);
+        fflaglist.Add(endingHostileTeaHostileCompleted);
+
         ImageBank imageBankScript = ImageBankObject.GetComponent<ImageBank>();
         imagelist = imageBankScript.imagelist;
 
@@ -851,6 +922,11 @@ public class GameManager : MonoBehaviour
         
         currentConDot = nextConDot;
 
+        if (targetConDotId == 9999);
+        {
+            yield return StartCoroutine(EnterVoidCalc());
+        }
+
         print(currentConDot);
 
         StartCoroutine(Dialogue());
@@ -858,6 +934,64 @@ public class GameManager : MonoBehaviour
         yield break;
     }
 
+    public IEnumerator EnterVoidCalc()
+    {
+        // if id = 9999 count the number of unique ending flag that says yes and enter that place
+
+        int i = 0;
+
+        foreach (FFlag fflag in fflaglist)
+        {
+            if (fflag == endingNightGardenCompleted && fflag.FlagState == FlagState.True)
+            {
+                i++;
+            }
+            if (fflag == endingSisterTeaSisterCompleted && fflag.FlagState == FlagState.True)
+            {
+                i++;
+            }
+            if (fflag == endingSisterTeaHostilecompleted && fflag.FlagState == FlagState.True)
+            {
+                i++;
+            }
+            if (fflag == endingHostileTeaSisterCompleted && fflag.FlagState == FlagState.True)
+            {
+                i++;
+            }
+            if (fflag == endingHostileTeaHostileCompleted && fflag.FlagState == FlagState.True)
+            {
+                i++;
+            }
+        }
+
+        if (i == prevCountOfVoidEnter)
+        {
+            //repeat ending
+        }
+
+        else if (i == 1)
+        {
+            
+        }
+        else if (i == 2)
+        {
+            
+        }
+        else if (i == 3)
+        {
+            
+        }
+        else if (i == 4)
+        {
+            
+        }
+        else if (i == 5)
+        {
+            
+        }
+
+            yield break;
+    }
     IEnumerator SetFlags()
     {
         print("A");
