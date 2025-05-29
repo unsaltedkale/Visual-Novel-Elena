@@ -72,7 +72,7 @@ public class ConDotBank : MonoBehaviour
         public override string ToString() => $"(Id: {id}, Dia: {dia}, CharacterName: {characterName}, ButtonBool: {buttonBool}, LeftChoice: {leftChoice}, RightChoice: {rightChoice}, LeftConDot: {LeftConDot}, RightConDot: {RightConDot}, FlagIdToBeSet: {flagIdToBeSet}, FlagIdStateToBeSet: {flagIdStateToBeSet}, FlagIdToReadForNextConDot: {flagIdToReadForNextConDot}, ConDotIfFlagTrue: {conDotIfFlagTrue}, ConDotIfFlagFalse: {conDotIfFlagFalse}, IdForLeftImage: {idForLeftImage}, IdForRightImage: {idForRightImage})";
     
     }
-    
+
     [System.Serializable]
     public enum FlagState
     {
@@ -81,12 +81,32 @@ public class ConDotBank : MonoBehaviour
         False
     }
 
+    [System.Serializable]
+    public struct FFlag
+    {
+        [SerializeField] private int id;
+        [SerializeField] private FlagState flagState;
+
+        // Properties to allow access in code (if needed)
+        public int Id { get => id; set => id = value; }
+        public FlagState FlagState { get => flagState; set => flagState = value; }
+
+        public FFlag(int Id, FlagState FlagState) : this()
+        {
+            id = Id;
+            flagState = FlagState;
+        }
+
+        public override string ToString() => $"(Id: {id}, FlagState: {flagState})";
+    }
+
+    public GameManager gm;
     [SerializeField] public List<ConDot> condotlist;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
