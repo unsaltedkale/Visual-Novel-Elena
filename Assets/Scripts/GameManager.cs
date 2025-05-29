@@ -133,6 +133,7 @@ public class GameManager : MonoBehaviour
     public GameObject speakerRectangle;
     public GameObject background;
     public Color32 color137 = new Color32(137, 137, 137, 255);
+    public int prevCountOfVoidEnter;
     public FFlag endingNightGardenCompleted = new FFlag(001, FlagState.NotSet);
     public FFlag endingSisterTeaSisterCompleted = new FFlag(002, FlagState.NotSet);
     public FFlag endingSisterTeaHostileCompleted = new FFlag(003, FlagState.NotSet);
@@ -464,13 +465,37 @@ public class GameManager : MonoBehaviour
     public ConDot firstVoid026 = new ConDot(11026, "The speck in the distance grows farther and farther until it disappears, and you close your eyes.", "", false, "", "", 11027, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
 
+    public ConDot repeatVoid001 = new ConDot(88001, "You're weightless, floating in space in a black void.", "", false, "", "", 99002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
+
+
+
+
+    public ConDot secondVoid001 = new ConDot(12001, "", "", false, "", "", 12002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
+
+
+    public ConDot thirdVoid001 = new ConDot(13001, "", "", false, "", "", 13002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
+
+
+    public ConDot forthVoid001 = new ConDot(14001, "", "", false, "", "", 14002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
+
+
+    public ConDot fifthVoid001 = new ConDot(15001, "", "", false, "", "", 15002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+
+
+    public ConDot trueEnd001 = new ConDot(99001, "", "", false, "", "", 15002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
 
 
     // flowbers: lavender (LGBTQ), green carnations (homosexual), rose (gay men), violets (lesbian and bi women)
     // lily (yuri, lesbians), trillium (bisexuality), watermelon (abrosexual), orchid (intersex)
     // Coltsfoot (justice shall be done)
-
-    //public ConDot garden001 = new ConDot(4001, "Dia", "Speaker", false, "", "", next id, 0, 0, FlagState.NotSet, 0, 0, 0, leftimage, rightimage);
 
     //public ConDot name = new ConDot(ID, "Dia", "Speaker", false, "", "", next id, 0, new FlagHold(), new ImageHold()
 
@@ -911,7 +936,10 @@ public class GameManager : MonoBehaviour
                 targetConDotId = currentConDot.ConDotIfFlagFalse;
             }
 
-        foreach (ConDot cd in cdlist)
+
+        if (targetConDotId != 9999)
+        {
+            foreach (ConDot cd in cdlist)
             {
                 if (cd.Id == targetConDotId)
                 {
@@ -919,13 +947,14 @@ public class GameManager : MonoBehaviour
                     break;
                 }
             }
-        
-        currentConDot = nextConDot;
+        }
 
-        if (targetConDotId == 9999);
+        else if (targetConDotId == 9999)
         {
             yield return StartCoroutine(EnterVoidCalc());
         }
+        
+        currentConDot = nextConDot;
 
         print(currentConDot);
 
@@ -942,23 +971,23 @@ public class GameManager : MonoBehaviour
 
         foreach (FFlag fflag in fflaglist)
         {
-            if (fflag == endingNightGardenCompleted && fflag.FlagState == FlagState.True)
+            if (fflag.Id == endingNightGardenCompleted.Id && fflag.FlagState == FlagState.True)
             {
                 i++;
             }
-            if (fflag == endingSisterTeaSisterCompleted && fflag.FlagState == FlagState.True)
+            else if (fflag.Id == endingSisterTeaSisterCompleted.Id && fflag.FlagState == FlagState.True)
             {
                 i++;
             }
-            if (fflag == endingSisterTeaHostilecompleted && fflag.FlagState == FlagState.True)
+            else if (fflag.Id == endingSisterTeaHostileCompleted.Id && fflag.FlagState == FlagState.True)
             {
                 i++;
             }
-            if (fflag == endingHostileTeaSisterCompleted && fflag.FlagState == FlagState.True)
+            else if (fflag.Id == endingHostileTeaSisterCompleted.Id && fflag.FlagState == FlagState.True)
             {
                 i++;
             }
-            if (fflag == endingHostileTeaHostileCompleted && fflag.FlagState == FlagState.True)
+            else if (fflag.Id == endingHostileTeaHostileCompleted.Id && fflag.FlagState == FlagState.True)
             {
                 i++;
             }
@@ -966,31 +995,50 @@ public class GameManager : MonoBehaviour
 
         if (i == prevCountOfVoidEnter)
         {
-            //repeat ending
+            targetConDotId = 88001;
         }
 
         else if (i == 1)
         {
-            
+            targetConDotId = 11001;
+
+            prevCountOfVoidEnter = 1;
         }
         else if (i == 2)
         {
-            
+            targetConDotId = 12001;
+
+            prevCountOfVoidEnter = 2;
         }
         else if (i == 3)
         {
-            
+            targetConDotId = 13001;
+
+            prevCountOfVoidEnter = 3;
         }
         else if (i == 4)
         {
-            
+            targetConDotId = 14001;
+
+            prevCountOfVoidEnter = 4;
         }
         else if (i == 5)
         {
-            
+            targetConDotId = 15001;
+
+            prevCountOfVoidEnter = 5;
         }
 
-            yield break;
+        foreach (ConDot cd in cdlist)
+            {
+                if (cd.Id == targetConDotId)
+                {
+                    nextConDot = cd;
+                    break;
+                }
+            }
+
+        yield break;
     }
     IEnumerator SetFlags()
     {
