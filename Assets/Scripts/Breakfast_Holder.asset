@@ -1,0 +1,638 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015de0292a66d4aafb1e747a17c262a2, type: 3}
+  m_Name: Breakfast_Holder
+  m_EditorClassIdentifier: 
+  cd001:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd002:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd003:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd004:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd005:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd006:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd007:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd008:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd009:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd010:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd011:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd012:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd013:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd014:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd015:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd016:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd017:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd018:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd019:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd020:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd021:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd022:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd023:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd024:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd025:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd026:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd027:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd028:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd029:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd030:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd031:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd032:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd033:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd034:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd035:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd036:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd037:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd038:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
+  cd039:
+    id: 0
+    dia: 
+    characterName: 
+    buttonBool: 0
+    leftChoice: 
+    rightChoice: 
+    leftConDot: 0
+    rightConDot: 0
+    flagIdToBeSet: 0
+    flagIdStateToBeSet: 0
+    flagIdToReadForNextConDot: 0
+    conDotIfFlagTrue: 0
+    conDotIfFlagFalse: 0
+    idForLeftImage: 0
+    idForRightImage: 0
