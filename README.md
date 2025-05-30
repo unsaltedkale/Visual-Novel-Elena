@@ -21,7 +21,7 @@ Elena is a short visual novel being developed for [⛵Shipwrecked](https://shipw
 ⭐ Decisions that *absolutely* do not matter!  
 🌟 And a true ending if you discover all other endings...  
 
-## How did (and are) making Elena?
+## How did you make (and are you making) Elena?
 
 Elena was originally developed as part of a "mobile game scam ad" jam. However I... took it a little farther and more serious that that. Most of Elena's code is built using Unity's custom structs, which makes creating a large amount of dialouge and connecting them all very breezey. It also uses a lot of IEnumerators[^1] to keep everything orderly and nice.
 
