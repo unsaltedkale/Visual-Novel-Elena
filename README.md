@@ -15,8 +15,8 @@ Elena is a short visual novel being developed for [⛵Shipwrecked](https://shipw
 ⭐ Over 4+ endings!  
 ⭐ So! Much! Text!  
 ⭐ A fast-forward key if you don't like the text!  
-⭐ Hidden lore!! (That will be unhidden as you read)  
-⭐ A fast-forward key if you don't like to read!    
+⭐ Not-so-hidden lore!!  
+⭐ A fast-forward key if you don't like the lore!    
 ⭐ Decisions that kind of matter!  
 ⭐ Decisions that *absolutely* do not matter!  
 🌟 And a true ending if you discover all other endings...  
