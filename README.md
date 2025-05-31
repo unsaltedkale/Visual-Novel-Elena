@@ -1,5 +1,5 @@
 > [!NOTE]
-> Elena is still in beta and is not released in a stable form. Hestia (Alex) is working on it, I promise!
+> Elena is still in beta and is not released in a stable form. Hestia is working on it-- promise!
 
 > [!IMPORTANT]
 > All information and screenshots shown were created while the game is still in beta and are subject to change.
