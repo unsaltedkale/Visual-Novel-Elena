@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ConDotBank : MonoBehaviour
 {
-    [System.Serializable]
+    /*[System.Serializable]
     public struct ConDot
     {
     }
@@ -47,5 +47,5 @@ public class ConDotBank : MonoBehaviour
         {
             gm.cdlist.Add(cd);
         }
-    }
+    }*/
 }
