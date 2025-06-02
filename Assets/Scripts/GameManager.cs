@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
         [SerializeField] private int leftConDot;
         [SerializeField] private int rightConDot;
 
-    // Properties to allow access in code (if needed)
+        // Properties to allow access in code (if needed)
         public int Id { get => id; set => id = value; }
         public string Dia { get => dia; set => dia = value; }
         public string CharacterName { get => characterName; set => characterName = value; }
@@ -49,21 +49,21 @@ public class GameManager : MonoBehaviour
         [SerializeField] private int conDotIfFlagTrue;
         [SerializeField] private int conDotIfFlagFalse;
 
-        public int FlagIdToBeSet{ get => flagIdToBeSet; set => flagIdToBeSet = value; }
+        public int FlagIdToBeSet { get => flagIdToBeSet; set => flagIdToBeSet = value; }
         public FlagState FlagIdStateToBeSet { get => flagIdStateToBeSet; set => flagIdStateToBeSet = value; }
         public int FlagIdToReadForNextConDot { get => flagIdToReadForNextConDot; set => flagIdToReadForNextConDot = value; }
         public int ConDotIfFlagTrue { get => conDotIfFlagTrue; set => conDotIfFlagTrue = value; }
         public int ConDotIfFlagFalse { get => conDotIfFlagFalse; set => conDotIfFlagFalse = value; }
 
-         [SerializeField] private int idForLeftImage;
+        [SerializeField] private int idForLeftImage;
         // 0 if same as before
         [SerializeField] private int idForRightImage;
         // 0 if same as before
         // Properties to allow access in code (if needed)
         public int IdForLeftImage { get => idForLeftImage; set => idForLeftImage = value; }
         public int IdForRightImage { get => idForRightImage; set => idForRightImage = value; }
-    
-    // Constructor
+
+        // Constructor
         public ConDot(int Id, string Dia, string CharacterName, bool ButtonBool, string LeftChoice, string RightChoice, int LeftConDot, int RightConDot, int FlagIdToSet, FlagState FlagIdStateToBeSet, int FlagIdToReadForNextConDot, int ConDotIfFlagTrue, int ConDotIfFlagFalse, int IdForLeftImage, int IdForRightImage) : this()
         {
             id = Id;
@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
 
         // Optional: ToString method
         public override string ToString() => $"(Id: {id}, Dia: {dia}, CharacterName: {characterName}, ButtonBool: {buttonBool}, LeftChoice: {leftChoice}, RightChoice: {rightChoice}, LeftConDot: {LeftConDot}, RightConDot: {RightConDot}, FlagIdToBeSet: {flagIdToBeSet}, FlagIdStateToBeSet: {flagIdStateToBeSet}, FlagIdToReadForNextConDot: {flagIdToReadForNextConDot}, ConDotIfFlagTrue: {conDotIfFlagTrue}, ConDotIfFlagFalse: {conDotIfFlagFalse}, IdForLeftImage: {idForLeftImage}, IdForRightImage: {idForRightImage})";
-    
+
     }
 
     [System.Serializable]
@@ -152,7 +152,7 @@ public class GameManager : MonoBehaviour
     public ConDot breakfast003 = new ConDot(2003, "Your Father stands and raises his cup. You and everyone else follow.", "", false, "", "", 2004, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 6);
     public ConDot breakfast004 = new ConDot(2004, "May the Lord in His grace protect our harvest, our Crown Princess, and our scared Kingdom, Carisia!", "Father", false, "", "", 2005, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot breakfast005 = new ConDot(2005, "Amen! Here here! Thank the lord!", "Crowd", false, "", "", 2006, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfast006 = new ConDot(2006, "Your Father sits down and everyone else follows suit. Breakfast begins and everyone starts to talk.", "", false, "", "", 2007, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);                                                    
+    public ConDot breakfast006 = new ConDot(2006, "Your Father sits down and everyone else follows suit. Breakfast begins and everyone starts to talk.", "", false, "", "", 2007, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot breakfast007 = new ConDot(2007, "Why, isn't this just the best? Everyone gathered in merriment, what joy!", "Mother", true, "Act Nice", "Act Annoyed", 2008, 2009, 0, FlagState.NotSet, 0, 0, 0, 2, 5);
     public ConDot breakfast008 = new ConDot(2008, "Yes, it's very nice, Mother. The food is very rich.", "You", false, "", "", 2010, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot breakfast009 = new ConDot(2009, "You say that every morning, Mother...", "You", false, "", "", 2011, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
@@ -181,24 +181,24 @@ public class GameManager : MonoBehaviour
     public ConDot breakfast032 = new ConDot(2032, "CHILDREN!", "Mother", false, "", "", 2033, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 5);
     public ConDot breakfast033 = new ConDot(2033, "Children, both of you! You will sit and eat like proper ladys of the court!", "Mother", false, "", "", 2034, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot breakfast034 = new ConDot(2034, "Something tightens in your chest and you look down at your food. You try eating it again, but it doesn't seem as appetizing.", "", false, "", "", 3001, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 1);
-    public ConDot breakfastend001 = new ConDot (3001, "The rest of breakfast is uneventful.", "", false, "", "", 3002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 1);
-    public ConDot breakfastend002 = new ConDot (3002, "Your Father stands and taps his fork against his glass to get the crowd's attention.", "", false, "", "", 3003, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 6);
-    public ConDot breakfastend003 = new ConDot (3003, "This breakfast is offically over. Everyone is free to go. Court will be in session in an hour.", "Father", false, "", "", 3004, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend004 = new ConDot (3004, "He sits back down and people begin to leave. Others stay to finish their meal. One of your teachers walks up to you and Theodora.", "", false, "", "", 3005, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 3);
-    public ConDot breakfastend005 = new ConDot (3005, "Remember, after your meals, you must report to the stables for your horse-back riding lessons, okay?", "Teacher", false, "", "", 3006, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend006 = new ConDot (3006, "Okay...", "You & Theodora", false, "", "", 3007, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend007 = new ConDot (3007, "Be more merry, Princesses! Today will be very exciting. You are going to learn how to make your horses jump!", "Teacher", false, "", "", 3008, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend008 = new ConDot (3008, "Mhm...", "You & Theodora", false, "", "", 3009, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend009 = new ConDot (3009, "You both know it will not be very exciting.", "", false, "", "", 3010, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend010 = new ConDot (3010, "Your teacher gets called away by a Lady-in-Waiting to discuss something you can't care about.", "", false, "", "", 3011, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend011 = new ConDot (3011, "After sitting for a few seconds, Theodora gets up and leaves.", "", false, "", "", 3012, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend012 = new ConDot (3012, "She seems to be going to the stables, but you notice at the last second she turns in the wrong direction.", "", false, "", "", 3013, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend013 = new ConDot (3013, "You quickly get up and follow her, peeking around the corner to see where she is going.", "", false, "", "", 3014, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend014 = new ConDot (3014, "Your sister turns one more corner and steps outside. She's going to the garden.", "", false, "", "", 3015, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend015 = new ConDot (3015, "She does not go to the garden randomly.", "", false, "", "", 3016, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend016 = new ConDot (3016, "She does not skip class. That's your job.", "", false, "", "", 3017, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend017 = new ConDot (3017, "Something is definitely wrong.", "", false, "", "", 3018, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    public ConDot breakfastend018 = new ConDot (3018, "You follow her into the garden.", "", false, "", "", 4001, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend001 = new ConDot(3001, "The rest of breakfast is uneventful.", "", false, "", "", 3002, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 1);
+    public ConDot breakfastend002 = new ConDot(3002, "Your Father stands and taps his fork against his glass to get the crowd's attention.", "", false, "", "", 3003, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 6);
+    public ConDot breakfastend003 = new ConDot(3003, "This breakfast is offically over. Everyone is free to go. Court will be in session in an hour.", "Father", false, "", "", 3004, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend004 = new ConDot(3004, "He sits back down and people begin to leave. Others stay to finish their meal. One of your teachers walks up to you and Theodora.", "", false, "", "", 3005, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 3);
+    public ConDot breakfastend005 = new ConDot(3005, "Remember, after your meals, you must report to the stables for your horse-back riding lessons, okay?", "Teacher", false, "", "", 3006, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend006 = new ConDot(3006, "Okay...", "You & Theodora", false, "", "", 3007, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend007 = new ConDot(3007, "Be more merry, Princesses! Today will be very exciting. You are going to learn how to make your horses jump!", "Teacher", false, "", "", 3008, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend008 = new ConDot(3008, "Mhm...", "You & Theodora", false, "", "", 3009, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend009 = new ConDot(3009, "You both know it will not be very exciting.", "", false, "", "", 3010, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend010 = new ConDot(3010, "Your teacher gets called away by a Lady-in-Waiting to discuss something you can't care about.", "", false, "", "", 3011, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend011 = new ConDot(3011, "After sitting for a few seconds, Theodora gets up and leaves.", "", false, "", "", 3012, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend012 = new ConDot(3012, "She seems to be going to the stables, but you notice at the last second she turns in the wrong direction.", "", false, "", "", 3013, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend013 = new ConDot(3013, "You quickly get up and follow her, peeking around the corner to see where she is going.", "", false, "", "", 3014, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend014 = new ConDot(3014, "Your sister turns one more corner and steps outside. She's going to the garden.", "", false, "", "", 3015, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend015 = new ConDot(3015, "She does not go to the garden randomly.", "", false, "", "", 3016, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend016 = new ConDot(3016, "She does not skip class. That's your job.", "", false, "", "", 3017, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend017 = new ConDot(3017, "Something is definitely wrong.", "", false, "", "", 3018, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
+    public ConDot breakfastend018 = new ConDot(3018, "You follow her into the garden.", "", false, "", "", 4001, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot garden001 = new ConDot(4001, "The Royal Gardens contain a while variety of plants across Carisia.", "", false, "", "", 4002, 0, 0, FlagState.NotSet, 0, 0, 0, 1, 1);
     public ConDot garden002 = new ConDot(4002, "Some beautiful, some tasty, some very toxic.", "", false, "", "", 4003, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
     public ConDot garden003 = new ConDot(4003, "Theodora is trudging around the garden grounds, dress getting progressively more muddy, seeming searching for some kind of plant.", "", false, "", "", 4004, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 3);
@@ -386,7 +386,7 @@ public class GameManager : MonoBehaviour
 
 
     public ConDot sisterNightGardenEnd001 = new ConDot(7101, "", "", false, "", "", 00, 0, 0, FlagState.NotSet, 0, 0, 0, 0, 0);
-    
+
 
 
 
@@ -801,6 +801,8 @@ public class GameManager : MonoBehaviour
         fflaglist.Add(endingHostileTeaSisterCompleted);
         fflaglist.Add(endingHostileTeaHostileCompleted);
 
+        MakeConDotSOofList();
+
         ImageBank imageBankScript = ImageBankObject.GetComponent<ImageBank>();
         imagelist = imageBankScript.imagelist;
 
@@ -814,6 +816,49 @@ public class GameManager : MonoBehaviour
 
         StartCoroutine(Dialogue());
     }
+
+    public void MakeConDotSOofList()
+    {
+        foreach (ConDot cd in cdlist)
+        {
+            ConDotSO newScriptableObject = ScriptableObject.CreateInstance<ConDotSO>();
+
+            newScriptableObject.name = cd.Id.ToString();
+
+            newScriptableObject.id = cd.Id;
+
+            newScriptableObject.dia = cd.Dia;
+
+            newScriptableObject.characterName = cd.CharacterName;
+
+            newScriptableObject.buttonBool = cd.ButtonBool;
+
+            newScriptableObject.leftChoice = cd.LeftChoice;
+
+            newScriptableObject.rightChoice = cd.RightChoice;
+
+            newScriptableObject.leftConDot = cd.LeftConDot;
+
+            newScriptableObject.rightConDot = cd.RightConDot;
+
+            newScriptableObject.flagIdToBeSet = cd.FlagIdToBeSet;
+
+            newScriptableObject.flagIdStateToBeSet = cd.FlagIdStateToBeSet;
+
+            newScriptableObject.conDotIfFlagTrue = cd.ConDotIfFlagTrue;
+
+            newScriptableObject.conDotIfFlagFalse = cd.ConDotIfFlagFalse;
+
+            newScriptableObject.idForLeftImage = cd.IdForLeftImage;
+
+            newScriptableObject.idForRightImage = cd.IdForRightImage;
+
+            Destroy(cd.Object);
+
+        }
+    
+    }
+
 
     // Update is called once per frame
     void Update()

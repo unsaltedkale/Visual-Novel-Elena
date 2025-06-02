@@ -4,33 +4,16 @@ using UnityEngine;
 
 public class ConDotBank : MonoBehaviour
 {
-    /*[System.Serializable]
-    public struct ConDot
-    {
-    }
-
-    [System.Serializable]
-    public enum FlagState
-    {
-
-    }
-
-    [System.Serializable]
-    public struct FFlag
-    {
-
-    }
 
     public GameManager gm;
     public Holder holder;
-    [SerializeField] public List<ConDot> conDotList;
+    [SerializeField] public List<Holder> holderList;
+    [SerializeField] public List<GameManager.ConDot> tempcdList;
 
     // Start is called before the first frame update
     void Start()
     {
         gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
-
-        ConDot = gm.ConDot;
     }
 
     // Update is called once per frame
@@ -39,13 +22,16 @@ public class ConDotBank : MonoBehaviour
 
     }
 
-    public void LoadtoGm()
+    public void LoadToGm()
     {
+
+        /*tempcdList.Add(holder.cd001);
+
         gm.cdlist.Clear();
         
-        foreach (ConDot cd in conDotList)
+        foreach (GameManager.ConDot cd in tempcdList)
         {
             gm.cdlist.Add(cd);
-        }
-    }*/
+        }*/
+    }
 }
