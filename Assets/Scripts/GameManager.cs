@@ -525,12 +525,22 @@ public class GameManager : MonoBehaviour
 
         background.GetComponent<UnityEngine.UI.Image>().color = color137;
 
+        StartCoroutine(afterAwake());
+
+    }
+
+    public IEnumerator afterAwake()
+    {
+
         cdlist.Add(prolouge1);
         cdlist.Add(prolouge2);
         cdlist.Add(prolouge3);
         cdlist.Add(prolouge4);
         cdlist.Add(prolouge5);
         cdlist.Add(prolouge6);
+
+
+        yield return (StartCoroutine(MakeConDotSOofList()));
 
         cdlist.Add(breakfast001);
         cdlist.Add(breakfast002);
@@ -815,9 +825,11 @@ public class GameManager : MonoBehaviour
         rightImage.SetActive(false);
 
         StartCoroutine(Dialogue());
+
+        yield break;
     }
 
-    public void MakeConDotSOofList()
+    public IEnumerator MakeConDotSOofList()
     {
         foreach (ConDot cd in cdlist)
         {
@@ -853,10 +865,16 @@ public class GameManager : MonoBehaviour
 
             newScriptableObject.idForRightImage = cd.IdForRightImage;
 
-            Destroy(cd.Object);
+            cdlist.Remove(cd);
+            //Destroy(cd);
 
+            print("Created ConDotSo: " + newScriptableObject.name);
         }
-    
+
+        cdlist.Clear();
+
+        yield break;
+
     }
 
 
