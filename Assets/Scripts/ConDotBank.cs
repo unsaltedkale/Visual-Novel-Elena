@@ -494,6 +494,8 @@ public class ConDotBank : MonoBehaviour
         tempcdList.Add(sisterGardenEnd004);
         tempcdList.Add(sisterGardenEnd005);
 
+        yield return StartCoroutine(MakeConDotSOHolderofList(gm.garden));
+
         tempcdList.Add(nightGarden001);
         tempcdList.Add(nightGarden002);
         tempcdList.Add(nightGarden003);
@@ -539,6 +541,9 @@ public class ConDotBank : MonoBehaviour
         tempcdList.Add(nightGarden043);
         tempcdList.Add(nightGarden044);
         tempcdList.Add(nightGarden045);
+
+        yield return StartCoroutine(MakeConDotSOHolderofList(gm.nightGardenPart1));
+
         tempcdList.Add(nightGarden046);
         tempcdList.Add(nightGarden047);
         tempcdList.Add(nightGarden048);
@@ -583,6 +588,9 @@ public class ConDotBank : MonoBehaviour
         tempcdList.Add(nightGarden087);
         tempcdList.Add(nightGarden088);
         tempcdList.Add(nightGarden089);
+
+        yield return StartCoroutine(MakeConDotSOHolderofList(gm.nightGardenPart2));
+
         tempcdList.Add(nightGarden090);
         tempcdList.Add(nightGarden091);
         tempcdList.Add(nightGarden092);
@@ -615,7 +623,7 @@ public class ConDotBank : MonoBehaviour
         tempcdList.Add(hostileNightGardenEnd026);
         tempcdList.Add(hostileNightGardenEnd027);
 
-
+        yield return StartCoroutine(MakeConDotSOHolderofList(gm.nightGardenEnd));
 
 
         tempcdList.Add(firstVoid001);
@@ -644,6 +652,8 @@ public class ConDotBank : MonoBehaviour
         tempcdList.Add(firstVoid024);
         tempcdList.Add(firstVoid025);
         tempcdList.Add(firstVoid026);
+
+        yield return StartCoroutine(MakeConDotSOHolderofList(gm.vVoid));
 
         yield break;
     }

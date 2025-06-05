@@ -141,6 +141,11 @@ public class GameManager : MonoBehaviour
     public FFlag endingHostileTeaHostileCompleted = new FFlag(005, FlagState.NotSet);
     public ConDotBank conDotBank;
     public Holder breakfast;
+    public Holder garden;
+    public Holder nightGardenPart1;
+    public Holder nightGardenPart2;
+    public Holder nightGardenEnd;
+    public Holder vVoid;
 
     // flowbers: lavender (LGBTQ), green carnations (homosexual), rose (gay men), violets (lesbian and bi women)
     // lily (yuri, lesbians), trillium (bisexuality), watermelon (abrosexual), orchid (intersex)
@@ -176,6 +181,28 @@ public class GameManager : MonoBehaviour
 
         breakfast = ScriptableObject.CreateInstance<Holder>();
 
+        breakfast.name = "breakfast";
+
+        garden = ScriptableObject.CreateInstance<Holder>();
+
+        garden.name = "garden";
+
+        nightGardenPart1 = ScriptableObject.CreateInstance<Holder>();
+
+        nightGardenPart1.name = "nightGardenPart1";
+
+        nightGardenPart2 = ScriptableObject.CreateInstance<Holder>();
+
+        nightGardenPart2.name = "nightGardenPart2";
+
+        nightGardenEnd = ScriptableObject.CreateInstance<Holder>();
+
+        nightGardenEnd.name = "nightGardenEnd";
+
+        vVoid = ScriptableObject.CreateInstance<Holder>();
+
+        vVoid.name = "vVoid";
+
         StartCoroutine(afterAwake());
 
     }
@@ -205,6 +232,8 @@ public class GameManager : MonoBehaviour
 
         StartCoroutine(conDotBank.Load());
 
+        Destroy(conDotBank.gameObject);
+
 
         //StartCoroutine(Dialogue());
 
@@ -215,11 +244,7 @@ public class GameManager : MonoBehaviour
     {
         print("echo Called");
 
-        foreach (ConDotSO cdSO in conDotBank.temporaryListOfConDotSOToTransfer)
-        {
-            print("called");
-            daholder.list.Add(cdSO);
-        }
+        daholder.list = new List<ConDotSO>(conDotBank.temporaryListOfConDotSOToTransfer);
 
         conDotBank.temporaryListOfConDotSOToTransfer.Clear();
         yield break;
