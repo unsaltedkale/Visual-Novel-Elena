@@ -140,7 +140,7 @@ public class GameManager : MonoBehaviour
     public FFlag endingHostileTeaSisterCompleted = new FFlag(004, FlagState.NotSet);
     public FFlag endingHostileTeaHostileCompleted = new FFlag(005, FlagState.NotSet);
     public ConDotBank conDotBank;
-
+    public Holder breakfast;
 
     // flowbers: lavender (LGBTQ), green carnations (homosexual), rose (gay men), violets (lesbian and bi women)
     // lily (yuri, lesbians), trillium (bisexuality), watermelon (abrosexual), orchid (intersex)
@@ -201,7 +201,7 @@ public class GameManager : MonoBehaviour
         leftImage.SetActive(false);
         rightImage.SetActive(false);
 
-        conDotBank.Load();
+        StartCoroutine(conDotBank.Load());
 
 
         //StartCoroutine(Dialogue());

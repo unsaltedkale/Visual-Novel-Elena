@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class ConDotBank : MonoBehaviour
 {
-
+    public GameManager gm;
+    
+    public List<Holder> holderList;
+    public List<GameManager.ConDot> tempcdList;
+    public List<ConDotSO> temporaryListOfConDotSOToTransfer;
 
     public GameManager.ConDot prolouge1 = new GameManager.ConDot(1001, "Welcome to the Kingdom of Carisia.", "", false, "", "", 1002, 0, 0, GameManager.FlagState.NotSet, 0, 0, 0, 0, 0);
     public GameManager.ConDot prolouge2 = new GameManager.ConDot(1002, "You, Princess Elena I, are the youngest princess of Carisia.", "", false, "", "", 1003, 0, 0, GameManager.FlagState.NotSet, 0, 0, 0, 2, 0);
@@ -358,13 +362,6 @@ public class ConDotBank : MonoBehaviour
 
     public GameManager.ConDot trueEnd001 = new GameManager.ConDot(99001, "", "", false, "", "", 15002, 0, 0, GameManager.FlagState.NotSet, 0, 0, 0, 0, 0);
 
-
-
-
-    public GameManager gm;
-    [SerializeField] public List<Holder> holderList;
-    [SerializeField] public List<GameManager.ConDot> tempcdList;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -373,6 +370,7 @@ public class ConDotBank : MonoBehaviour
 
     public IEnumerator Load()
     {
+        print("call");
         tempcdList.Add(prolouge1);
         tempcdList.Add(prolouge2);
         tempcdList.Add(prolouge3);
@@ -434,7 +432,9 @@ public class ConDotBank : MonoBehaviour
         tempcdList.Add(breakfastend017);
         tempcdList.Add(breakfastend018);
 
-        MakeConDotSOHolderofList("breakfast");
+        gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
+
+        yield return StartCoroutine(MakeConDotSOHolderofList(gm.breakfast));
 
         tempcdList.Add(garden001);
         tempcdList.Add(garden002);
@@ -648,13 +648,12 @@ public class ConDotBank : MonoBehaviour
         yield break;
     }
 
-    public IEnumerator MakeConDotSOHolderofList(string packageName)
+    public IEnumerator MakeConDotSOHolderofList(Holder daholder)
     {
-        Holder holder = ScriptableObject.CreateInstance<Holder>();
-        holder.name = packageName;
 
         foreach (GameManager.ConDot cd in tempcdList)
         {
+            print("call");
             ConDotSO newScriptableObject = ScriptableObject.CreateInstance<ConDotSO>();
 
             newScriptableObject.name = cd.Id.ToString();
@@ -687,13 +686,12 @@ public class ConDotBank : MonoBehaviour
 
             newScriptableObject.idForRightImage = cd.IdForRightImage;
 
-            holder.list.Add(newScriptableObject);
-
-            tempcdList.Remove(cd);
-            //Destroy(cd);
+            temporaryListOfConDotSOToTransfer.Add(newScriptableObject);
 
             print("Created ConDotSo: " + newScriptableObject.name);
         }
+
+        print(daholder);
 
         tempcdList.Clear();
 
