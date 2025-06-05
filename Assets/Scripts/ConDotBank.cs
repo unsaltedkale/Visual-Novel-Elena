@@ -692,6 +692,8 @@ public class ConDotBank : MonoBehaviour
         }
 
         print(daholder);
+        
+        yield return StartCoroutine(gm.echoLoad(daholder));
 
         tempcdList.Clear();
 

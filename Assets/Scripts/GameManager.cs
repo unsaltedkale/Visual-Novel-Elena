@@ -174,6 +174,8 @@ public class GameManager : MonoBehaviour
 
         background.GetComponent<UnityEngine.UI.Image>().color = color137;
 
+        breakfast = ScriptableObject.CreateInstance<Holder>();
+
         StartCoroutine(afterAwake());
 
     }
@@ -206,6 +208,20 @@ public class GameManager : MonoBehaviour
 
         //StartCoroutine(Dialogue());
 
+        yield break;
+    }
+
+    public IEnumerator echoLoad(Holder daholder)
+    {
+        print("echo Called");
+
+        foreach (ConDotSO cdSO in conDotBank.temporaryListOfConDotSOToTransfer)
+        {
+            print("called");
+            daholder.list.Add(cdSO);
+        }
+
+        conDotBank.temporaryListOfConDotSOToTransfer.Clear();
         yield break;
     }
 
