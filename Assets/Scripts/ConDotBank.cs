@@ -436,6 +436,8 @@ public class ConDotBank : MonoBehaviour
 
         yield return StartCoroutine(MakeConDotSOHolderofList(gm.breakfast));
 
+        print("ugh");
+
         tempcdList.Add(garden001);
         tempcdList.Add(garden002);
         tempcdList.Add(garden003);
@@ -668,33 +670,35 @@ public class ConDotBank : MonoBehaviour
 
             newScriptableObject.name = cd.Id.ToString();
 
-            newScriptableObject.id = cd.Id;
+            newScriptableObject.Id = cd.Id;
 
-            newScriptableObject.dia = cd.Dia;
+            newScriptableObject.Dia = cd.Dia;
 
-            newScriptableObject.characterName = cd.CharacterName;
+            newScriptableObject.CharacterName = cd.CharacterName;
 
-            newScriptableObject.buttonBool = cd.ButtonBool;
+            newScriptableObject.ButtonBool = cd.ButtonBool;
 
-            newScriptableObject.leftChoice = cd.LeftChoice;
+            newScriptableObject.LeftChoice = cd.LeftChoice;
 
-            newScriptableObject.rightChoice = cd.RightChoice;
+            newScriptableObject.RightChoice = cd.RightChoice;
 
-            newScriptableObject.leftConDot = cd.LeftConDot;
+            newScriptableObject.LeftConDot = cd.LeftConDot;
 
-            newScriptableObject.rightConDot = cd.RightConDot;
+            newScriptableObject.RightConDot = cd.RightConDot;
 
-            newScriptableObject.flagIdToBeSet = cd.FlagIdToBeSet;
+            newScriptableObject.FlagIdToBeSet = cd.FlagIdToBeSet;
 
-            newScriptableObject.flagIdStateToBeSet = cd.FlagIdStateToBeSet;
+            newScriptableObject.FlagIdStateToBeSet = cd.FlagIdStateToBeSet;
 
-            newScriptableObject.conDotIfFlagTrue = cd.ConDotIfFlagTrue;
+            newScriptableObject.FlagIdToReadForNextConDot = cd.FlagIdToReadForNextConDot;
 
-            newScriptableObject.conDotIfFlagFalse = cd.ConDotIfFlagFalse;
+            newScriptableObject.ConDotIfFlagTrue = cd.ConDotIfFlagTrue;
 
-            newScriptableObject.idForLeftImage = cd.IdForLeftImage;
+            newScriptableObject.ConDotIfFlagFalse = cd.ConDotIfFlagFalse;
 
-            newScriptableObject.idForRightImage = cd.IdForRightImage;
+            newScriptableObject.IdForLeftImage = cd.IdForLeftImage;
+
+            newScriptableObject.IdForRightImage = cd.IdForRightImage;
 
             temporaryListOfConDotSOToTransfer.Add(newScriptableObject);
 
@@ -717,16 +721,4 @@ public class ConDotBank : MonoBehaviour
 
     }
 
-    public void LoadToGm()
-    {
-
-        /*tempcdList.Add(holder.cd001);
-
-        gm.tempcdList.Clear();
-        
-        foreach (GameManager.ConDot cd in tempcdList)
-        {
-            gm.tempcdList.Add(cd);
-        }*/
-    }
 }

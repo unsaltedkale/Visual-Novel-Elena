@@ -116,11 +116,11 @@ public class GameManager : MonoBehaviour
     }
 
 
-    [SerializeField] public List<ConDot> cdlist;
+    [SerializeField] public List<ConDotSO> cdlist;
     [SerializeField] public List<FFlag> fflaglist;
     [SerializeField] public List<Sprite> imagelist;
     public GameObject ImageBankObject;
-    public ConDot currentConDot;
+    public ConDotSO currentConDot;
     public TextMeshProUGUI diaText;
     public TextMeshProUGUI characterNameText;
     public TextMeshProUGUI leftButtonText;
@@ -146,6 +146,12 @@ public class GameManager : MonoBehaviour
     public Holder nightGardenPart2;
     public Holder nightGardenEnd;
     public Holder vVoid;
+    public Holder currentHolder;
+
+    public ConDotSO nextConDotSO;
+    public int targetConDotId;
+    public FFlag targetFFlag;
+    public ConDotSO didNotFindConDotSO;
 
     // flowbers: lavender (LGBTQ), green carnations (homosexual), rose (gay men), violets (lesbian and bi women)
     // lily (yuri, lesbians), trillium (bisexuality), watermelon (abrosexual), orchid (intersex)
@@ -203,6 +209,14 @@ public class GameManager : MonoBehaviour
 
         vVoid.name = "vVoid";
 
+        didNotFindConDotSO = ScriptableObject.CreateInstance<ConDotSO>();
+
+        didNotFindConDotSO.name = "didNotFindConDotSO";
+
+        nextConDotSO = ScriptableObject.CreateInstance<ConDotSO>();
+
+        nextConDotSO.name = "nextConDotSO";
+
         StartCoroutine(afterAwake());
 
     }
@@ -230,12 +244,17 @@ public class GameManager : MonoBehaviour
         leftImage.SetActive(false);
         rightImage.SetActive(false);
 
-        StartCoroutine(conDotBank.Load());
+        yield return StartCoroutine(conDotBank.Load());
 
         Destroy(conDotBank.gameObject);
 
+        currentHolder = breakfast;
 
-        //StartCoroutine(Dialogue());
+        currentConDot = currentHolder.list[0];
+
+         Debug.Log(Application.persistentDataPath);
+         
+        StartCoroutine(Dialogue());
 
         yield break;
     }
@@ -246,7 +265,7 @@ public class GameManager : MonoBehaviour
 
         daholder.list = new List<ConDotSO>(conDotBank.temporaryListOfConDotSOToTransfer);
 
-        conDotBank.temporaryListOfConDotSOToTransfer.Clear();
+        conDotBank.tempcdList.Clear();
         yield break;
     }
 
@@ -320,13 +339,11 @@ public class GameManager : MonoBehaviour
         yield break;
     }
 
-    public ConDot nextConDot;
-    public int targetConDotId;
-    public FFlag targetFFlag;
-
     IEnumerator DetermineNextCondot()
     {
         yield return StartCoroutine(SetFlags());
+
+        string oldnextConDotSOName = nextConDotSO.name;
 
         if (currentConDot.ButtonBool == true)
         {
@@ -373,11 +390,12 @@ public class GameManager : MonoBehaviour
 
         if (targetConDotId != 9999)
         {
-            foreach (ConDot cd in cdlist)
+            foreach (ConDotSO cd in currentHolder.list)
             {
                 if (cd.Id == targetConDotId)
                 {
-                    nextConDot = cd;
+                    nextConDotSO = cd;
+                    nextConDotSO.name = cd.name;
                     break;
                 }
             }
@@ -387,8 +405,13 @@ public class GameManager : MonoBehaviour
         {
             yield return StartCoroutine(EnterVoidCalc());
         }
+
+        if (oldnextConDotSOName == nextConDotSO.name)
+        {
+            yield return StartCoroutine(NextHolderCalc());
+        }
         
-        currentConDot = nextConDot;
+        currentConDot = nextConDotSO;
 
         print(currentConDot);
 
@@ -401,6 +424,7 @@ public class GameManager : MonoBehaviour
     {
         // if id = 9999 count the number of unique ending flag that says yes and enter that place
 
+        currentHolder = vVoid;
         int i = 0;
 
         foreach (FFlag fflag in fflaglist)
@@ -463,14 +487,59 @@ public class GameManager : MonoBehaviour
             prevCountOfVoidEnter = 5;
         }
 
-        foreach (ConDot cd in cdlist)
+        foreach (ConDotSO cd in currentHolder.list)
             {
                 if (cd.Id == targetConDotId)
                 {
-                    nextConDot = cd;
+                    nextConDotSO = cd;
+                    nextConDotSO.name = cd.name;
                     break;
                 }
             }
+
+        yield break;
+    }
+
+    public IEnumerator NextHolderCalc()
+    {
+        if (targetConDotId == 4001)
+        {
+            currentHolder = garden;
+        }
+
+        else if (targetConDotId == 6001)
+        {
+            currentHolder = nightGardenPart1;
+        }
+
+        else if (targetConDotId == 6046)
+        {
+            currentHolder = nightGardenPart2;
+        }
+
+        else if (targetConDotId == 6090)
+        {
+            currentHolder = nightGardenEnd;
+        }
+
+        /*else if (targetConDotId == )
+        {
+            currentHolder = ;
+        }
+
+        else if (targetConDotId == )
+        {
+            currentHolder = ;
+        }
+
+        else if (targetConDotId == )
+        {
+            currentHolder = ;
+        }*/
+
+        ConDotSO tempSO = ScriptableObject.CreateInstance<ConDotSO>();
+
+        currentConDot = currentHolder.list[0];
 
         yield break;
     }

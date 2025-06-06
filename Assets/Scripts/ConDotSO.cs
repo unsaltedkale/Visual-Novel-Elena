@@ -5,18 +5,19 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New ConDotSO", menuName = "ConDotSO")]
 public class ConDotSO : ScriptableObject
 {
-    public int id;
-    public string dia;
-    public string characterName;
-    public bool buttonBool;
-    public string leftChoice;
-    public string rightChoice;
-    public int leftConDot;
-    public int rightConDot;
-    public int flagIdToBeSet;
-    public GameManager.FlagState flagIdStateToBeSet;
-    public int conDotIfFlagTrue;
-    public int conDotIfFlagFalse;
-    public int idForLeftImage;
-    public int idForRightImage;
+    public int Id;
+    public string Dia;
+    public string CharacterName;
+    public bool ButtonBool;
+    public string LeftChoice;
+    public string RightChoice;
+    public int LeftConDot;
+    public int RightConDot;
+    public int FlagIdToBeSet;
+    public GameManager.FlagState FlagIdStateToBeSet;
+    public int FlagIdToReadForNextConDot;
+    public int ConDotIfFlagTrue;
+    public int ConDotIfFlagFalse;
+    public int IdForLeftImage;
+    public int IdForRightImage;
 }
