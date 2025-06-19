@@ -276,28 +276,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public int ifortyping;
-
-    public IEnumerator WaitForTyping()
-    {
-        bool b = false;
-
-        while (b == false)
-        {
-            if (ifortyping == 1)
-            {
-                b = true;
-                yield break;
-            }
-            yield return null;
-        }
-    }
-
-    public void FinishedTyping()
-    {
-        ifortyping = 1;
-    }
-
     public IEnumerator Dialogue()
     {
         Render();
@@ -408,9 +386,10 @@ public class GameManager : MonoBehaviour
 
         if (oldnextConDotSOName == nextConDotSO.name)
         {
+            print("next holder triggered");
             yield return StartCoroutine(NextHolderCalc());
         }
-        
+
         currentConDot = nextConDotSO;
 
         print(currentConDot);
@@ -522,12 +501,12 @@ public class GameManager : MonoBehaviour
             currentHolder = nightGardenEnd;
         }
 
-        /*else if (targetConDotId == )
+        else if (targetConDotId == 11001)
         {
-            currentHolder = ;
+            currentHolder = vVoid;
         }
 
-        else if (targetConDotId == )
+        /*else if (targetConDotId == )
         {
             currentHolder = ;
         }
