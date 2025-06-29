@@ -325,14 +325,31 @@ public class GameManager : MonoBehaviour
     {
         if (!makeOpaque)
         {
-            loadMainMenu();
+           StartCoroutine(loadMainMenu());
         }
+    }
+
+    public GameObject demoOverWindow;
+    public bool _demoOver;
+
+    public void demoOver()
+    {
+        print("call 2");
+        demoOverWindow.SetActive(true);
+
+        _demoOver = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !fading)
+        if ((currentConDot.Id == 7027 || currentConDot.Id == 5004 || currentConDot.Id == 7101) && !_demoOver)
+        {
+            print("call 1");
+            demoOver();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && !fading && !_demoOver)
         {
             popUpWindow.SetActive(true);
         }
@@ -353,7 +370,7 @@ public class GameManager : MonoBehaviour
                 fadeOutBox.GetComponent<UnityEngine.UI.Image>().color = Color.Lerp(Color.black, transparentBlack, fadeOutTimer / fadeOutTimerMax);
             }
 
-            if (fadeOutTimer > fadeOutTimerMax)
+            if (fadeOutTimer > fadeOutTimerMax && !makeOpaque)
             {
                 fading = false;
                 fadeOutBox.SetActive(false);
@@ -483,6 +500,7 @@ public class GameManager : MonoBehaviour
         print(currentConDot);
 
         StartCoroutine(Dialogue());
+
 
         yield break;
     }
@@ -642,7 +660,7 @@ public class GameManager : MonoBehaviour
 
         while (b == false)
         {
-            if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKey(KeyCode.F)) && !popUpWindow.activeInHierarchy)
+            if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKey(KeyCode.F)) && !popUpWindow.activeInHierarchy && !_demoOver)
             {
                 b = true;
                 yield break;

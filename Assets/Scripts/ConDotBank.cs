@@ -255,7 +255,7 @@ public class ConDotBank : MonoBehaviour
 
 
 
-    public GameManager.ConDot sisterNightGardenEnd001 = new GameManager.ConDot(7101, "", "", false, "", "", 00, 0, 0, GameManager.FlagState.NotSet, 0, 0, 0, 0, 0);
+    public GameManager.ConDot sisterNightGardenEnd001 = new GameManager.ConDot(7101, "Okay. Let's do this.", "Theodora", false, "", "", 00, 0, 0, GameManager.FlagState.NotSet, 0, 0, 0, 0, 0);
 
 
 
@@ -596,6 +596,8 @@ public class ConDotBank : MonoBehaviour
         tempcdList.Add(nightGarden090);
         tempcdList.Add(nightGarden091);
         tempcdList.Add(nightGarden092);
+
+        tempcdList.Add(sisterNightGardenEnd001);
 
         tempcdList.Add(hostileNightGardenEnd001);
         tempcdList.Add(hostileNightGardenEnd002);
