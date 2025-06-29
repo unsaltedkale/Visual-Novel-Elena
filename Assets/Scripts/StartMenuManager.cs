@@ -40,30 +40,42 @@ public class StartMenuManager : MonoBehaviour
             if (makeOpaque)
             {
                 fadeOutBox.GetComponent<Image>().color = Color.Lerp(transparentBlack, Color.black, fadeOutTimer / fadeOutTimerMax);
-                overlay.SetActive(true);
+                fadeOutBox.SetActive(true);
             }
 
             else
             {
                 fadeOutBox.GetComponent<Image>().color = Color.Lerp(Color.black, transparentBlack, fadeOutTimer / fadeOutTimerMax);
             }
+
+
         }
 
-        else if (!makeOpaque)
+        if (fadeOutTimer > fadeOutTimerMax && !makeOpaque)
         {
-            overlay.SetActive(false);
+        
+        fadeOutBox.SetActive(false);
+
         }
+
+        
 
     }
 
     public void startButtonPressed()
     {
         StartCoroutine(StartGame());
-        
     }
 
     public IEnumerator StartGame()
     {
+        makeOpaque = true;
+        fadeOutBox.SetActive(true);
+        overlay.SetActive(false);
+
+        fadeOutTimer = 0;
+
+        yield return new WaitUntil(() => fadeOutTimer >= fadeOutTimerMax);
 
         SceneManager.LoadScene("Game_Scene");
         yield break;
@@ -71,6 +83,7 @@ public class StartMenuManager : MonoBehaviour
 
     public void fakeQuitButtonPressed()
     {
+        print("called");
         overlay.SetActive(true);
     }
 

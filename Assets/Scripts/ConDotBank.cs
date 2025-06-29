@@ -657,6 +657,8 @@ public class ConDotBank : MonoBehaviour
 
         yield return StartCoroutine(MakeConDotSOHolderofList(gm.vVoid));
 
+        StartCoroutine(gm.doneLoading());
+
         yield break;
     }
 

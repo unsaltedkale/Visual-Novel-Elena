@@ -13,6 +13,7 @@ using UnityEngine.Assertions.Comparers;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -153,6 +154,9 @@ public class GameManager : MonoBehaviour
     public FFlag targetFFlag;
     public ConDotSO didNotFindConDotSO;
 
+    public GameObject popUpWindow;
+    public Color transparentBlack = new Color(0, 0, 0, 0);
+
     // flowbers: lavender (LGBTQ), green carnations (homosexual), rose (gay men), violets (lesbian and bi women)
     // lily (yuri, lesbians), trillium (bisexuality), watermelon (abrosexual), orchid (intersex)
     // Coltsfoot (justice shall be done)
@@ -167,7 +171,7 @@ public class GameManager : MonoBehaviour
         else
         {
             gm = this;
-            DontDestroyOnLoad(this.gameObject);
+            //DontDestroyOnLoad(this.gameObject); <== WEHOO WEHOO THIS MIGHT CAUSE PROBLEMS COMMETING IT OUT BUT WE BALL!!!
         }
 
         diaText = GameObject.Find("Dia Text").GetComponent<TextMeshProUGUI>();
@@ -269,10 +273,94 @@ public class GameManager : MonoBehaviour
         yield break;
     }
 
+    public GameObject fadeOutBox;
+    public float fadeOutTimer;
+    public float fadeOutTimerMax;
+    public bool makeOpaque;
+    public bool fading = false;
+
+    public IEnumerator doneLoading()
+    {
+        makeOpaque = false;
+
+        fadeOutTimerMax = 5;
+
+        fadeOutTimer = 0;
+
+        fading = true;
+
+        yield return new WaitUntil(() => fadeOutTimer >= fadeOutTimerMax);
+
+        fadeOutBox.SetActive(false);
+        fading = false;
+
+        yield break;
+    }
+
+    public IEnumerator loadMainMenu()
+    {
+        fadeOutBox.SetActive(true);
+
+        makeOpaque = true;
+
+        fadeOutTimer = 0;
+
+        fading = true;
+
+        yield return new WaitUntil(() => fadeOutTimer >= fadeOutTimerMax);
+
+        fading = false;
+
+        SceneManager.LoadScene("Start_Scene");
+
+        yield break;
+    }
+
+    public void returnButtonPressed()
+    {
+        popUpWindow.SetActive(false);
+    }
+
+    public void realQuitButtonPressed()
+    {
+        if (!makeOpaque)
+        {
+            loadMainMenu();
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape) && !fading)
+        {
+            popUpWindow.SetActive(true);
+        }
+
+
+        if (fadeOutTimer <= fadeOutTimerMax && fading)
+        {
+            fadeOutTimer += Time.deltaTime;
+
+            if (makeOpaque)
+            {
+                fadeOutBox.GetComponent<UnityEngine.UI.Image>().color = Color.Lerp(transparentBlack, Color.black, fadeOutTimer / fadeOutTimerMax);
+                fadeOutBox.SetActive(true);
+            }
+
+            else
+            {
+                fadeOutBox.GetComponent<UnityEngine.UI.Image>().color = Color.Lerp(Color.black, transparentBlack, fadeOutTimer / fadeOutTimerMax);
+            }
+
+            if (fadeOutTimer > fadeOutTimerMax)
+            {
+                fading = false;
+                fadeOutBox.SetActive(false);
+            }
+
+
+        }
         
     }
 
@@ -554,7 +642,7 @@ public class GameManager : MonoBehaviour
 
         while (b == false)
         {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKey(KeyCode.F))
+            if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKey(KeyCode.F)) && !popUpWindow.activeInHierarchy)
             {
                 b = true;
                 yield break;
