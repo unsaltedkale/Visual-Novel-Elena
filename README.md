@@ -24,7 +24,21 @@ Elena is a short visual novel being developed for [⛵Shipwrecked](https://shipw
 ⭐ Decisions that *absolutely* do not matter!  
 🌟 And a true ending if you discover all other endings...  
 
-## How to Install Elena (MacOS)
+## How to Install Elena (MacOS) - Method 1
+
+1. Download the MacOS release of Elena from the Releases side bar on the right.
+
+2. Unzip the file.
+
+3. Run `xattr -d com.apple.quarantine /path/to/app` in the terminal
+
+> [!NOTE]
+> Don't know how to get the file path? You can actually drag the application into the terminal and it will copy the file path into the terminal. For me, it was something like `/Users/hestia/Downloads/Elena\ v0.6.29-beta.app`, but yours will be different!
+
+4. Elena should be running now!
+
+
+## How to Install Elena (MacOS) - Method 2
 
 1. Download the MacOS release version from the releases tab.
 2. Unzip the file if it didn't already unzip and attempt to open it.
